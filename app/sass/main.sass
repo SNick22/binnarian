@@ -1,0 +1,713 @@
+@import "auth", "header", "footer", about-us, faq, fees, forgot-password-1, forgot-password-2, forgot-password-3, home-login
+@import home-not-login, privacy-policy, referral, risk, security, sign-in, sign-in2, sign-up, sign-up2, sign-up3, terms-of-use
+
+$main-background: #141416
+
+body
+  background: $main-background
+
+*
+  margin: 0
+  padding: 0
+  border: 0
+
+h1, h2, h3, span
+  color: #FCFCFD
+  font-family: "DM Sans", sans-serif
+
+h1
+  font-size: 64px
+
+h2
+  font-size: 40px
+
+h3
+  font-size: 24px
+
+p
+  color: #9FA8BF
+  font-family: "Poppins", sans-serif
+  font-weight: 400
+  font-size: 16px
+  line-height: 24px
+
+a
+  text-decoration: none
+  display: block
+  width: fit-content
+
+img
+  pointer-events: none
+
+.container
+  width: 1120 / 1440 * 100vw
+  max-width: 1120px
+  margin: 0 auto
+  padding: 0
+  @media screen and (max-width: 900px)
+    width: 90vw
+
+ol, ul
+  padding: 0
+  margin: 0
+
+.white, .white:hover
+  color: #FCFCFD
+
+.grey, .grey:hover
+  color: #777E91
+
+.green, .green:hover
+  color: #58BD7D
+
+.red, .red:hover
+  color: #FF6838
+
+.gold, .gold:hover
+  color: #FFD166
+
+.black, .black:hover
+  color: #23262F
+
+.caption
+  font-weight: 400
+  font-size: 14px
+  font-family: "Poppins", sans-serif
+
+.caption-bold
+  font-weight: 500
+  font-size: 14px
+  font-family: "Poppins", sans-serif
+
+.caption2
+  font-size: 12px
+  line-height: 20px
+  font-family: "Poppins", sans-serif
+
+.caption2-medium
+  font-weight: 500
+  font-size: 12px
+  line-height: 20px
+  font-family: "Poppins", sans-serif
+
+.caption2-bold
+  font-weight: 600
+  font-size: 12px
+  line-height: 20px
+  font-family: "Poppins", sans-serif
+
+.body1
+  font-weight: 600
+  font-size: 24px
+  font-family: "Poppins", sans-serif
+
+.body2
+  font-weight: 400
+  font-size: 16px
+  font-family: "Poppins", sans-serif
+
+.button2
+  font-weight: 700
+  font-size: 14px
+  font-family: "DM Sans", sans-serif
+
+.headline2
+  font-size: 48px
+  font-weight: 700
+  font-family: "DM Sans", sans-serif
+
+.headline3
+  font-size: 40px
+  font-weight: 700
+  font-family: "DM Sans", sans-serif
+
+.headline4
+  font-size: 32px
+  font-weight: 700
+  font-family: "DM Sans", sans-serif
+
+.hairline2
+  font-weight: 700
+  font-size: 12px
+  font-family: "Poppins", sans-serif
+
+.grey-button2
+  font-family: "DM Sans", sans-serif
+  color: #FCFCFD
+  background: none
+  font-size: 14px
+  border: 2px solid #353945
+  border-radius: 90px
+  padding: 6px 16px
+  transition: 0.1s
+  &:hover
+    color: #FCFCFD
+    border-color: scale-color(#353945, $lightness: 20%)
+
+.page-title
+  border-bottom: 1px solid #23262F
+  > .container
+    height: 136px
+    display: flex
+    justify-content: space-between
+    align-items: center
+    position: relative
+    @media screen and (max-width: 768px)
+      flex-direction: column
+      justify-content: center
+      align-items: flex-start
+      height: 124px
+      margin-top: 16px
+
+.page-title__title
+  @media screen and (max-width: 768px)
+    font-size: 32px
+    margin-bottom: 16px
+
+.title__right-block
+  display: flex
+
+.arrow-right-simple
+  margin: 0 10px
+
+.profile
+  margin-top: 80px
+  margin-bottom: 80px
+  display: flex
+  justify-content: space-between
+  @media screen and (max-width: 768px)
+    flex-direction: column
+    align-items: center
+    margin: 16px auto
+
+.enter-amount
+  max-width: 748px
+  flex-grow: 1
+  background: #18191D
+  border-radius: 16px
+  margin-left: 32px
+  padding: 40px
+  box-sizing: border-box
+  @media screen and (max-width: 768px)
+    margin-left: 0
+    width: 100%
+    padding: 16px
+  .name, p
+    margin: 0
+  .blue-button
+    font-size: 16px
+    float: right
+    margin-top: 48px
+    @media screen and (max-width: 768px)
+      margin-top: 24px
+  .my_wallet
+    margin-top: 48px
+    padding: 10px 20px
+    @media screen and (max-width: 768px)
+      margin-top: 32px
+  .save_settings
+    @media screen and (max-width: 768px)
+      float: left !important
+  .promocode_desc
+    margin-top: 12px
+  table
+    width: 100%
+    th
+      color: #B1B5C4
+    tr:first-child > *
+      padding-top: 32px
+      padding-bottom: 16px
+      border-bottom: 1px solid #23262F
+
+    tr > .last-col
+      text-align: right
+      width: 64px
+
+    tr > *:nth-of-type(2)
+      text-align: left
+    tr:not(:first-child) > *
+      padding-top: 16px
+      padding-bottom: 20px
+      border-bottom: 1px solid #353945
+    .ip-addres
+      width: auto
+      text-align: left
+
+    tr:last-child > *
+      border: none
+  input[type="email"]
+    border-color: #353945
+  .auth
+    margin: 0 auto
+    h2
+      margin-top: 0
+
+.profile-nav
+  width: 100%
+  max-width: 260px
+  @media screen and (max-width: 768px)
+    max-width: 100%
+  ul
+    @media screen and (max-width: 768px)
+      display: none
+  a
+    display: flex
+    align-items: center
+
+  svg
+    margin-right: 8px
+  ul
+    list-style: none
+
+  .active
+    svg
+      fill: #FCFCFD
+
+    a
+      color: #FCFCFD
+  li
+    &:not(:last-child)
+      margin-bottom: 25px
+
+.split
+  width: 100%
+  border-bottom: 1px solid #23262F
+  @media screen and (max-width: 1024px)
+    display: none
+
+.country-choose
+  background-color: #23262F
+  width: 248px
+  height: 48px
+  border-radius: 48px
+  padding: 0 16px
+  margin-left: 15px
+  @media screen and (max-width: 768px)
+    width: 100%
+    margin: 24px 0 0
+  &:focus-visible
+    outline: none
+
+.space-between
+  display: flex
+  justify-content: space-between
+  align-items: center
+  padding: 0
+
+.features
+  margin-top: 48px
+  @media screen and (max-width: 768px)
+    margin-top: 24px
+
+.profile-switcher
+  height: 20px
+  width: 40px
+  position: relative
+  outline: none
+  background-color: rgba(0,0,0,0)
+  &:after
+    height: 100%
+    width: 100%
+    content: ''
+    position: absolute
+    background-color: #353945
+    border-radius: 32px
+    background-image: url(../img/blue-circle.svg)
+    background-repeat: no-repeat
+    background-position: 4px center
+    transition: background-position .15s ease-in-out
+  &:checked
+    &:after
+      background-color: #1DAEEF
+      background-position: 24px center
+      background-image: url(../img/white-circle.svg)
+
+.features__block
+  margin-top: 40px
+  .space-between:not(:first-child)
+    margin-top: 24px
+  .split
+    margin-top: 40px
+  @media screen and (max-width: 1024px)
+    .space-between:last-child
+      margin-top: 40px
+
+.profile-nav__mobile
+  display: none
+  width: 100%
+  box-sizing: border-box
+  margin: 0 0 24px
+  @media screen and (max-width: 768px)
+    display: block
+
+.country-choose_block
+  @media screen and (max-width: 768px)
+    flex-direction: column
+    align-items: flex-start
+
+.reward_count
+  margin-right: 8px
+
+.reward_desc
+  margin-top: 12px !important
+
+.referral_information
+  box-sizing: border-box
+  width: 100%
+  padding: 32px
+  background: #23262F
+  border-radius: 16px
+  margin-top: 48px
+  @media screen and (max-width: 768px)
+    margin-top: 32px
+  label
+    flex-grow: 1
+    text-transform: uppercase
+    @media screen and (max-width: 768px)
+      width: 100%
+    &:first-child
+      margin-right: 16px
+      @media screen and (max-width: 768px)
+        margin-right: 0
+        margin-bottom: 16px
+  input
+    margin-top: 12px
+    width: 100%
+    background: #353945
+    border-radius: 12px
+    height: 48px
+    padding: 0 16px
+    outline: none
+    border: 2px solid rgba(0,0,0,0)
+    &:focus-visible
+      border-color: #58BD7D
+
+.referral_inputs
+  margin-top: 32px
+  @media screen and (max-width: 768px)
+    flex-direction: column
+
+.gold_input:focus-visible
+  border-color: #FFD166 !important
+
+.promocode
+  margin-top: 32px
+
+.location
+  background: #FCFCFD
+  border-radius: 4px
+  display: flex
+  justify-content: center
+  align-items: center
+  padding: 4px 0
+  > img
+    margin-right: 3px
+
+.right-button
+  text-align: center
+  padding: 10px 24px
+  margin-top: 32px
+  @media screen and (max-width: 768px)
+    width: 100%
+
+.logout
+  display: flex
+  justify-content: flex-end
+
+.login-history
+  th, td
+    &:first-child
+      width: 60%
+  .ip-addres
+    @media screen and (max-width: 768px)
+      text-align: right !important
+
+.login-history__title
+  margin-top: 48px !important
+
+.password-changed
+  display: flex
+  justify-content: center
+  flex-direction: column
+  align-items: center
+  height: fit-content
+  .grey-button
+    padding: 10px 24px
+    margin-top: 32px
+
+.new-password_desc
+  margin-top: 16px !important
+
+.wallet-container
+  padding: 4px
+  display: flex
+  @media screen and (max-width: 860px)
+    flex-direction: column
+    padding: 0 3vw
+
+.left-nav
+  background: #18191D
+  border-radius: 4px
+  width: 256 / 1440 * 100%
+  display: flex
+  flex-direction: column
+  justify-content: space-between
+  @media screen and (max-width: 860px)
+    width: 100%
+    background: none
+    margin-top: 60px
+  .active
+    > *
+      color: #FCFCFD
+  ul
+    margin-top: 24px
+    @media screen and (max-width: 860px)
+      display: none
+    .divider
+      margin-left: 0
+      position: relative
+      &:after
+        position: absolute
+        width: 100%
+        border-bottom: 1px solid #23262F
+        content: ''
+    li
+      height: 48px
+      display: flex
+      align-items: center
+      margin-left: 26px
+      a
+        display: flex
+        align-items: center
+        transition: 0.1s
+        img
+          margin-right: 18px
+    li:not(.active)
+      a:hover
+        color: scale-color(#777E91, $lightness: 20%)
+
+.left-nav__select
+  display: none
+  background: #23262F
+  height: 48px
+  border: 2px solid #1DAEEF
+  border-radius: 12px
+  margin-top: 32px
+  @media screen and (max-width: 860px)
+    display: block
+
+.wallet-main
+  flex-grow: 1
+  margin-left: 4px
+  @media screen and (max-width: 860px)
+    margin: 0
+  > p
+    margin-top: 20px
+    margin-bottom: 8px
+    margin-left: 36px
+
+.overview
+  background: #18191D
+  border-radius: 4px
+  padding: 32px
+  display: flex
+  justify-content: space-between
+  @media screen and (max-width: 860px)
+    margin-top: 16px
+  @media screen and (max-width: 768px)
+    flex-direction: column-reverse
+  *
+    margin: 0
+
+.currency-code
+  background: #58BD7D
+  border-radius: 4px
+  padding: 4px 8px
+  margin-left: 8px
+
+.balance
+  display: flex
+  align-items: center
+
+.overview__title
+  margin-bottom: 20px
+  @media screen and (max-width: 768px)
+    display: none
+
+.overview__title-mobile
+  display: none
+  @media screen and (max-width: 768px)
+    display: block
+    margin-bottom: 20px
+
+.overview-right
+  height: 40px
+  display: flex
+  @media screen and (max-width: 768px)
+    flex-direction: column
+    height: auto
+  > *:not(:last-child)
+    margin-right: 8px
+
+.search-coin
+  width: 256px
+  height: 40px
+  position: relative
+  @media screen and (max-width: 768px)
+    margin-bottom: 20px
+  input
+    width: 100%
+    height: 100%
+    outline: none
+    background-color: inherit
+    border: 2px solid #353945
+    border-radius: 40px
+    padding: 0 16px
+  button
+    height: 18px
+    width: 18px
+    display: flex
+    justify-content: center
+    align-items: center
+    background-color: inherit
+    position: absolute
+    right: 14px
+    top: 12px
+
+.currency-select
+  width: 90px
+  background: #353945
+  border-radius: 100px
+  padding-left: 16px
+  outline: none
+  @media screen and (max-width: 768px)
+    display: none
+
+.show-balance
+  background: #FCFCFD
+  border-radius: 90px
+  padding: 0 16px
+  transition: 0.1s
+  @media screen and (max-width: 768px)
+    display: none
+  &:hover
+    background-color: scale-color(#FCFCFD, $lightness: -10%)
+
+.account-balances
+  display: flex
+  @media screen and (max-width: 768px)
+    flex-direction: column
+  p
+    margin: 0
+  .balance-title
+    display: flex
+    align-items: center
+    img
+      margin-right: 8px
+  > div
+    flex-grow: 1
+    background: #17181B
+    border-radius: 4px
+    padding: 20px 0
+    &:not(:last-child)
+      margin-right: 4px
+      @media screen and (max-width: 768px)
+        margin-right: 0
+        margin-bottom: 4px
+
+.login
+  padding: 9px 16px
+
+.accout-balance__top
+  display: flex
+  align-items: flex-start
+  justify-content: space-between
+  border-bottom: 1px solid #23262F
+  padding: 0 32px 20px
+
+.account-balance__bottom
+  margin-top: 20px
+  padding: 0 32px
+  display: flex
+  justify-content: space-between
+  .grey-button2
+    display: flex
+    align-items: center
+    img
+      margin-left: 18px
+  .buttons
+    display: flex
+    a:not(:last-child)
+      margin-right: 8px
+
+.ta-right
+  text-align: right
+
+.asset-balances
+  width: 100%
+  background: #17181B
+  border-radius: 4px
+  tr
+    td, th
+      padding-top: 20px
+      padding-bottom: 16px
+      &:first-child
+        padding-left: 32px
+      &:last-child
+        padding-right: 32px
+      &:nth-child(2), &:nth-child(3), &:nth-child(4)
+        @media screen and (max-width: 768px)
+          display: none
+    th
+      border-bottom: 1px solid #23262F
+    td
+      padding-top: 16px
+      padding-bottom: 0
+      p
+        margin: 0
+      img
+        margin-right: 20px
+      &:first-child
+        .td__container
+          display: flex
+  tr:not(:last-child)
+    .td__container
+      border-bottom: 1px solid #23262F
+  tr:hover
+    td
+      background: #23262F
+
+.earn
+  padding: 5px 10px
+  background: #58BD7D
+  border-radius: 4px
+  width: fit-content
+
+.td__container
+  width: 100%
+  height: 48px
+  box-sizing: content-box
+  padding-bottom: 20px
+
+.left-buttons
+  width: 100%
+  padding: 0 16px
+  @media screen and (max-width: 860px)
+    display: flex
+    justify-content: space-between
+    padding: 0
+  a
+    display: block
+    text-align: center
+    padding: 8px 0
+    width: 100%
+    @media screen and (max-width: 860px)
+      width: 31%
+  .transfer
+    display: none
+    @media screen and (max-width: 860px)
+      display: block
+  .blue-button
+    margin-bottom: 12px
+    @media screen and (max-width: 860px)
+      margin: 0

@@ -1,0 +1,26 @@
+{% set title = 'Sign up' %}
+{% set css = 'sign-up2.css' %}
+
+{% extends 'templates/auth.html' %}
+
+{% block ifnot %}
+<span>Already have an account?</span>
+<a href="">Login</a>
+{% endblock %}
+
+{% block content %}
+<div class="auth sign-up2">
+  <form action="">
+    <h2>Let’s confirm it’s you</h2>
+    <p>Help us secure your account.<br>Please complete the verifications below</p>
+    <div class="radio-block">
+      <div class="radio">
+        <input type="radio" name="get_code" checked>
+        <div class="custom-radio"></div>
+      </div>
+      <span class="check">Get the code by email at<br>user••••••••••••@gmail.com</span>
+    </div>
+    <input type="submit" value="Continue">
+  </form>
+</div>
+{% endblock %}

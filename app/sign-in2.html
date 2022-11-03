@@ -1,0 +1,30 @@
+{% set title = 'Sign in' %}
+{% set css = 'sign-in2.css' %}
+
+{% extends 'templates/auth.html' %}
+
+{% block ifnot %}
+<span>Don’t have an account?</span>
+<a href="">Sign up for free</a>
+{% endblock %}
+
+{% block content %}
+<div class="auth sign-in2">
+  <h2>Sign in</h2>
+  <form action="">
+    <label>
+      email
+      <input type="email" placeholder="Email address" name="email">
+    </label>
+    <label>
+      password
+      <div class="password">
+        <input type="password" placeholder="Password" name="password">
+        <button class="eye"></button>
+      </div>
+    </label>
+    <a href="">Forgot password?</a>
+    <input type="submit" value="Login">
+  </form>
+</div>
+{% endblock %}

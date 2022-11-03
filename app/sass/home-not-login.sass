@@ -1,0 +1,208 @@
+.home-not-login
+  .hero-header
+    display: flex
+    justify-content: space-between
+    align-items: center
+    margin-top: 32px
+    @media screen and (max-width: 840px)
+      flex-direction: column
+    > img
+      padding: 15px
+      box-sizing: border-box
+      @media screen and (max-width: 1200px)
+        width: 420px
+      @media screen and (max-width: 1000px)
+        width: 350px
+      @media screen and (max-width: 905px)
+        width: 300px
+      @media screen and (max-width: 840px)
+        width: 60%
+        margin-top: 60px
+      @media screen and (max-width: 620px)
+        width: 85%
+
+  .hero-header__text
+    > h2
+      @media screen and (max-width: 1200px)
+        font-size: 32px
+    > p
+      color: #777E91
+      margin-top: 20px
+
+  .hero-header__button
+    font-size: 16px
+    margin-top: 32px
+
+  .market-trend
+    margin-top: 136px
+    margin-bottom: 136px
+    @media screen and (max-width: 1024px)
+      margin-bottom: 112px
+      margin-top: 112px
+    @media screen and (max-width: 768px)
+      margin-top: 60px
+      margin-bottom: 60px
+    .grey-button
+      border-color: #353945
+    > h2
+      width: fit-content
+      float: left
+    .market-trend__top
+      display: flex
+      justify-content: space-between
+      align-items: center
+
+  .view-more
+    @media screen and (max-width: 768px)
+      display: none
+
+  .view-more-mobile
+    display: none
+    box-sizing: border-box
+    width: 100%
+    text-align: center
+    margin-top: 32px
+    @media screen and (max-width: 768px)
+      display: block
+
+  .table
+    margin-top: 88px
+    @media screen and (max-width: 768px)
+      margin-top: 50px
+
+  .string
+    display: flex
+    align-items: center
+    justify-content: flex-start
+    font-family: "Poppins", sans-serif
+    div:first-child
+      text-align: center
+    &:first-child
+      border-bottom: 1px solid #353945
+      padding-bottom: 24px
+      font-size: 14px
+    &:not(:first-child)
+      padding: 16px 0
+      margin-top: 12px
+      border-radius: 12px
+      &:hover
+        background-color: #23262F
+
+  .first-el
+    width: (40 + 12 + 32) / 1120 * 100%
+    flex-shrink: 0
+    @media screen and (max-width: 768px)
+      display: none
+
+  .second-el
+    width: (43 + 341) / 1120 * 100%
+    display: flex
+    align-items: center
+    flex-shrink: 0
+    @media screen and (max-width: 1024px)
+      width: 30%
+    @media screen and (max-width: 768px)
+      width: 40%
+    span
+      margin-left: 12px
+      font-weight: 500
+      color: #B1B5C4
+      font-family: "Poppins", sans-serif
+      @media screen and (max-width: 840px)
+        display: none
+    img
+      margin-right: 36px
+      @media screen and (max-width: 1024px)
+        margin-right: 20px
+
+  .third-el
+    width: (34 + 158) / 1120 * 100%
+    flex-shrink: 0
+    @media screen and (max-width: 768px)
+      width: 40%
+
+  .fourth-el
+    width: (84 + 108) / 1120 * 100%
+    @media screen and (max-width: 768px)
+      width: 20%
+
+  .fifth-el
+    min-width: 136 + 48px
+    @media screen and (max-width: 1024px)
+      min-width: 148px
+    @media screen and (max-width: 768px)
+      display: none
+
+  .sixth-el
+    @media screen and (max-width: 768px)
+      display: none
+
+  .how-it-works
+    padding-top: 60px
+    margin-bottom: 100px
+    @media screen and (max-width: 1024px)
+      margin-bottom: 0
+    @media screen and (max-width: 776px)
+      margin-bottom: 60px
+    h2
+      text-align: center
+
+  .scroll-wrapper
+    width: 100%
+    height: 340px
+    margin-top: 80px
+    overflow: auto
+    &::-webkit-scrollbar
+      width: 0
+      height: 0
+
+  .scrollable
+    width: 1120px
+    height: 100%
+
+  h6
+    font-size: 12px
+    font-family: "Poppins", sans-serif
+    font-weight: 600
+    color: #777E90
+
+  .scroll-wrapper__text
+    display: flex
+    justify-content: space-between
+
+  .text__block
+    margin-top: 80px
+    max-width: 256px
+    text-align: center
+    @media screen and (max-width: 776px)
+      text-align: left
+    span
+      display: block
+      padding-top: 32px
+    p
+      color: #F4F5F6
+      font-size: 14px
+      margin-top: 16px
+
+  .scroll-buttons
+    display: none
+    justify-content: center
+    margin-top: 50px
+    margin-bottom: 60px
+    @media screen and (max-width: 1440px)
+      display: flex
+    @media screen and (max-width: 776px)
+      display: none
+    button
+      width: 20px
+      background: rgba(0,0,0,0)
+      &:first-child
+        margin-right: 30px
+      &:not(.disabled)
+        cursor: pointer
+
+  .disabled
+    pointer-events: none
+    svg
+      fill: #23262F
+

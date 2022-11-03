@@ -1,0 +1,31 @@
+.container.privacy {
+  padding-top: 56px;
+  margin-bottom: 136px;
+}
+@media screen and (max-width: 768px) {
+  .container.privacy {
+    padding-top: 28px;
+    margin-bottom: 60px;
+  }
+}
+
+.privacy h2 {
+  padding-bottom: 32px;
+  margin-top: 80px;
+  position: relative;
+}
+@media screen and (max-width: 768px) {
+  .privacy h2 {
+    margin-top: 32px;
+  }
+}
+.privacy h2::before {
+  bottom: 0;
+  position: absolute;
+  content: "";
+  width: 166px;
+  border-bottom: 2px solid #353945;
+}
+.privacy p {
+  margin-top: 32px;
+}

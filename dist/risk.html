@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Risk Warning</title>
+</head>
+<body>
+<header>
+    <div class="header-container">
+        <div class="left-block">
+            <a href="" class="logo">
+                <img src="img/logo.svg" class="logo-image" alt="Logo">
+                <span class="logo-text">Binarrian</span>
+            </a>
+            <nav class="header-nav">
+                <a href="" id="header-open" class="nav-element"><span class="element-with-arrow">Open</span></a>
+                <a href="" class="nav-element"><span>Trade</span></a>
+                <a href="" class="nav-element"><span class="element-with-arrow">Orders</span></a>
+                <a href="" class="nav-element"><span>Swap</span></a>
+                <a href="" class="nav-element"><span>Staking</span></a>
+            </nav>
+        </div>
+        <div class="right-block">
+            <div class="notifications">
+                <svg class="new-notification" width="13px" height="13px">
+                    <circle r="6" cx="7" cy="7" fill="#58BD7D"></circle>
+                </svg>
+            </div>
+            <a class="grey-button wallet" href="">Wallet</a>
+            <div class="account-image"></div>
+            <div class="burger"></div>
+        </div>
+    </div>
+</header>
+<div class="burger-menu">
+    <nav class="burger-navigation">
+        <a href="" class="burger-nav__element grey body1">Trade</a>
+        <a class="burger-nav__element grey body1 element-with-arrow">Orders</a>
+        <a href="" class="burger-nav__element grey body1">Swap</a>
+        <a href="" class="burger-nav__element grey body1">Staking</a>
+    </nav>
+    <a href="" class="grey-button burger-menu__button" style="font-size: 16px;">Profile settings</a>
+</div>
+<script>
+    let menuToggled = false;
+    const burger = document.querySelector('.burger');
+    const menu = document.querySelector('.burger-menu');
+    const header = document.getElementsByTagName('header')[0];
+    burger.addEventListener('click', () => {
+        if (menuToggled) {
+            menu.style.left = '100%';
+            document.body.style = '';
+            burger.style.backgroundImage = 'url(img/burger-menu.svg)';
+            menuToggled = false;
+        } else {
+            menu.style.left = '0';
+            document.body.style = 'position: fixed';
+            document.body.style.width = '100vw'
+            burger.style.backgroundImage = 'url(img/close.svg)';
+            menuToggled = true;
+        }
+    });
+</script>
+
+<div class="container about risk">
+    <h1>Risk Warning</h1>
+    <div class="main-image"></div>
+    <div class="text-container">
+        <p>The trading of goods and products, real or virtual, as well as virtual currencies involves significant risk. Prices can and do fluctuate on any given day. Due to such price fluctuations, you may increase or lose value in your assets at any given moment. Any currency - virtual or not - may be subject to large swings in value and may even become worthless. There is an inherent risk that losses will occur as a result of buying, selling or trading anything on a market.
+            <br><br>
+            Bitcoin trading also has special risks not generally shared with official currencies or goods or commodities in a market. Unlike most currencies, which are backed by governments or other legal entities, or by commodities such as gold or silver, Bitcoin is a unique kind of "fiat" currency, backed by technology and trust. There is no central bank that can take corrective measure to protect the value of Bitcoins in a crisis or issue more currency.
+            <br><br>
+            Instead, Bitcoin is an as-yet autonomous and largely unregulated worldwide system of currency firms and individuals. Traders put their trust in a digital, decentralized and partially anonymous system that relies on peer-to-peer networking and cryptography to maintain its integrity.
+            <br><br>
+            Bitcoin trading is probably susceptible to irrational (or rational) bubbles or loss of confidence, which could collapse demand relative to supply. For example, confidence might collapse in Bitcoin because of unexpected changes imposed by the software developers or others, a government crackdown, the creation of superior competing alternative currencies, or a deflationary or inflationary spiral. Confidence might also collapse because of technical problems: if the anonymity of the system is compromised, if money is lost or stolen, or if hackers or governments are able to prevent any transactions from settling.
+            <br><br>
+            There may be additional risks that we have not foreseen or identified in our Terms of Use.
+            <br><br>
+            You should carefully assess whether your financial situation and tolerance for risk is suitable for buying, selling or trading Bitcoins.</p>
+    </div>
+</div>
+
+<footer>
+    <div class="footer-container">
+        <a href="" class="logo logo-footer">
+            <img src="img/logo.svg" class="logo-image" alt="Logo">
+            <span class="logo-text logo-footer-text">Binarrian</span>
+        </a>
+        <ul>
+            <li>Company</li>
+            <li><a href="">About us</a></li>
+            <li><a href="">Apply to list</a></li>
+        </ul>
+        <ul>
+            <li>Legal</li>
+            <li><a href="">Privacy Policy</a></li>
+            <li><a href="">Terms of Use</a></li>
+            <li><a href="">Security</a></li>
+            <li><a href="">Risk Warning</a></li>
+        </ul>
+        <ul>
+            <li>Service</li>
+            <li><a href="">Fees</a></li>
+            <li><a href="">Referrals</a></li>
+            <li><a href="">Welcome Bonus</a></li>
+        </ul>
+        <ul>
+            <li>Help</li>
+            <li><a href="">Support</a></li>
+            <li><a href="">FAQ</a></li>
+        </ul>
+    </div>
+    <div class="copyright"><span class="grey">Copyright © 2022 Binarrian. All rights reserved</span></div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+</body>
+</html>

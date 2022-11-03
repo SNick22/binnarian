@@ -1,0 +1,175 @@
+a
+  color: #1DAEEF
+  font-family: "DM Sans", sans-serif
+  font-size: 14px
+
+.if-not
+  margin-right: 80 / 1440 * 100vw
+  @media screen and (max-width: 768px)
+    margin: 0
+
+  a
+    display: inline
+
+  span
+    font-size: 14px
+
+.auth-body
+  display: flex
+  height: 100vh
+  @media screen and (max-width: 1024px)
+    flex-direction: column
+  @media screen and (max-width: 768px)
+    flex-direction: column
+
+.auth-header
+  position: absolute
+  display: flex
+  justify-content: space-between
+  align-items: center
+  width: 100%
+  top: 48px
+  @media screen and (max-width: 1024px)
+    position: relative
+    top: 0
+    margin-top: 48px
+  @media screen and (max-width: 768px)
+    flex-direction: column
+    position: relative
+    top: 0
+    margin-top: 60px
+
+.auth-main-block
+  flex-grow: 1
+  display: flex
+  justify-content: center
+  align-items: center
+  @media screen and (min-width: 1024px)
+    min-height: 650px
+
+.auth-image
+  background-color: #23262F
+  width: 512 / 1440 * 100vw
+  background-image: url(../img/auth-image.png)
+  background-position: right
+  background-repeat: no-repeat
+  background-size: 50vh auto
+  @media screen and (min-width: 1024px)
+    min-height: 650px
+  @media screen and (max-width: 1024px)
+    display: none
+
+.auth-logo
+  display: flex
+  align-items: center
+  margin-left: 80 / 1440 * 100vw
+  @media screen and (max-width: 768px)
+    margin: 0 0 20px
+
+  .logo-image
+    pointer-events: none
+    user-select: none
+
+  .logo-text
+    color: #FCFCFD
+    font-family: 'Poppins', sans-serif
+    font-size: 24px
+    font-weight: 600
+    margin-left: 8px
+    user-select: none
+
+.auth
+  max-width: 400px
+  width: 90%
+
+  p
+    font-size: 12px
+    max-width: 380px
+    text-align: center
+    color: #777E91
+    padding-bottom: 32px
+    margin-bottom: 32px
+    border-bottom: 1px solid #353945
+
+  h2
+    text-align: center
+    margin-bottom: 32px
+    @media screen and (max-width: 768px)
+      margin-top: 48px
+      margin-bottom: 32px
+
+  form
+    display: flex
+    flex-direction: column
+    align-items: center
+    max-width: 380px
+
+  label input
+    display: block
+
+  label
+    font-family: 'Poppins', sans-serif
+    color: #B1B5C4
+    text-transform: uppercase
+    font-weight: 700
+    font-size: 12px
+    width: 100%
+    &:not(:last-of-type)
+      input
+        margin-bottom: 25px
+    &:last-of-type
+      input
+        margin-bottom: 16px
+
+  input[type='email'], input[type='password']
+    width: 100%
+    box-sizing: border-box
+    height: 48px
+    padding: 12px 16px
+    border: 2px solid #353945
+    border-radius: 12px
+    background-color: inherit
+    font-family: 'Poppins', sans-serif
+    font-weight: 500
+    color: #777E91
+    margin-top: 12px
+    font-size: 14px
+    &:focus-visible
+      outline: none
+
+  input[type='submit']
+    width: 100%
+    height: 44px
+    background-color: #1DAEEF
+    font-family: "DM Sans", sans-serif
+    font-size: 16px
+    color: #fff
+    border-radius: 90px
+    margin-top: 16px
+    cursor: pointer
+
+  .password
+    position: relative
+
+  .eye
+    position: absolute
+    background-image: url(../img/eye.svg)
+    width: 24px
+    height: 24px
+    background-color: rgba(0,0,0,0)
+    cursor: pointer
+    right: 14px
+    top: 10px
+
+  .email
+    position: relative
+
+  .email-icon
+    position: absolute
+    background-image: url(../img/email-icon.svg)
+    width: 24px
+    height: 24px
+    right: 14px
+    top: 10px
+
+

@@ -1,0 +1,38 @@
+.container.terms
+  margin-top: 80px
+  margin-bottom: 136px
+  @media screen and (max-width: 768px)
+    margin-top: 32px
+    margin-bottom: 64px
+
+.terms
+  h1
+    text-align: center
+    margin-bottom: 136px
+    @media screen and (max-width: 768px)
+      margin-bottom: 32px
+
+  h2
+    padding-bottom: 32px
+    margin-top: 80px
+    position: relative
+    @media screen and (max-width: 768px)
+      margin-top: 32px
+    &::before
+      bottom: 0
+      position: absolute
+      content: ""
+      width: 166px
+      border-bottom: 2px solid #353945
+
+  p
+    margin-top: 32px
+
+  .for-mobile
+    display: none
+    @media screen and (max-width: 768px)
+      display: block
+
+  .p1
+    @media screen and (max-width: 768px)
+      display: none

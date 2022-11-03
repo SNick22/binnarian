@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Account Security Guide</title>
+</head>
+<body>
+<header>
+    <div class="header-container">
+        <div class="left-block">
+            <a href="" class="logo">
+                <img src="img/logo.svg" class="logo-image" alt="Logo">
+                <span class="logo-text">Binarrian</span>
+            </a>
+            <nav class="header-nav">
+                <a href="" id="header-open" class="nav-element"><span class="element-with-arrow">Open</span></a>
+                <a href="" class="nav-element"><span>Trade</span></a>
+                <a href="" class="nav-element"><span class="element-with-arrow">Orders</span></a>
+                <a href="" class="nav-element"><span>Swap</span></a>
+                <a href="" class="nav-element"><span>Staking</span></a>
+            </nav>
+        </div>
+        <div class="right-block">
+            <div class="notifications">
+                <svg class="new-notification" width="13px" height="13px">
+                    <circle r="6" cx="7" cy="7" fill="#58BD7D"></circle>
+                </svg>
+            </div>
+            <a class="grey-button wallet" href="">Wallet</a>
+            <div class="account-image"></div>
+            <div class="burger"></div>
+        </div>
+    </div>
+</header>
+<div class="burger-menu">
+    <nav class="burger-navigation">
+        <a href="" class="burger-nav__element grey body1">Trade</a>
+        <a class="burger-nav__element grey body1 element-with-arrow">Orders</a>
+        <a href="" class="burger-nav__element grey body1">Swap</a>
+        <a href="" class="burger-nav__element grey body1">Staking</a>
+    </nav>
+    <a href="" class="grey-button burger-menu__button" style="font-size: 16px;">Profile settings</a>
+</div>
+<script>
+    let menuToggled = false;
+    const burger = document.querySelector('.burger');
+    const menu = document.querySelector('.burger-menu');
+    const header = document.getElementsByTagName('header')[0];
+    burger.addEventListener('click', () => {
+        if (menuToggled) {
+            menu.style.left = '100%';
+            document.body.style = '';
+            burger.style.backgroundImage = 'url(img/burger-menu.svg)';
+            menuToggled = false;
+        } else {
+            menu.style.left = '0';
+            document.body.style = 'position: fixed';
+            document.body.style.width = '100vw'
+            burger.style.backgroundImage = 'url(img/close.svg)';
+            menuToggled = true;
+        }
+    });
+</script>
+
+<div class="container about security">
+    <h1>Account Security Guide</h1>
+    <div class="main-image"></div>
+    <div class="text-container">
+        <p>This guide was created to prevent unauthorized access to your account, as well as to inform users about how to protect your profile.</p>
+        <h2>2FA and backup code</h2>
+        <p>Enabling two-factor authentication (2FA) increases the security of your Binarrian Account, as well as coins/tokens stored on It. This method of account protection is called two-factor protection, because it is the second security barrier after the password to log in to the account. This really increases your security, because in addition to the username and password, the attacker will need to enter a 2FA-code. In the event of a hacking attempt, an attacker can reset your password through your e-mail address that you specified during registration, if it was hacked. However, even if the attacker has a username and password from your Binarrian acc</p>
+        <h2>Password</h2>
+        <p>Several rules for creating a password:
+            <br><br>
+            · The password has never been used before;<br>
+            · The minimum length is 6 characters;<br>
+            · Use upper and lower case;<br>
+            · Use special characters and numbers.
+        </p>
+        <h2>HTTP(S)</h2>
+        <p>Check the "S" after "http" in the browser's address bar. If there is no "S", the connection is not secure. It can lead to loss of access to the account and loss of funds. A green lock near the address informs the user about the security of the visited page. If there is no lock, you should pay special attention to the site name in the address bar or do not use it at all, because the http Protocol is not secure. It is safe to use websites with https Protocol only.</p>
+        <h2>Checking the SSL certificate</h2>
+        <p>To check the SSL certificate, follow the instructions. Click on the certificate details and make sure that you are on the official website.</p>
+    </div>
+</div>
+
+<footer>
+    <div class="footer-container">
+        <a href="" class="logo logo-footer">
+            <img src="img/logo.svg" class="logo-image" alt="Logo">
+            <span class="logo-text logo-footer-text">Binarrian</span>
+        </a>
+        <ul>
+            <li>Company</li>
+            <li><a href="">About us</a></li>
+            <li><a href="">Apply to list</a></li>
+        </ul>
+        <ul>
+            <li>Legal</li>
+            <li><a href="">Privacy Policy</a></li>
+            <li><a href="">Terms of Use</a></li>
+            <li><a href="">Security</a></li>
+            <li><a href="">Risk Warning</a></li>
+        </ul>
+        <ul>
+            <li>Service</li>
+            <li><a href="">Fees</a></li>
+            <li><a href="">Referrals</a></li>
+            <li><a href="">Welcome Bonus</a></li>
+        </ul>
+        <ul>
+            <li>Help</li>
+            <li><a href="">Support</a></li>
+            <li><a href="">FAQ</a></li>
+        </ul>
+    </div>
+    <div class="copyright"><span class="grey">Copyright © 2022 Binarrian. All rights reserved</span></div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+</body>
+</html>

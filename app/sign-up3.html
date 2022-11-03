@@ -1,0 +1,24 @@
+{% set title = 'Sign up' %}
+{% set css = 'sign-up3.css' %}
+
+{% extends 'templates/auth.html' %}
+
+{% block ifnot %}
+<span>Already have an account?</span>
+<a href="">Login</a>
+{% endblock %}
+
+{% block content %}
+<div class="auth sign-up3">
+  <form action="">
+    <h2>Enter your security code</h2>
+    <span class="second-text">Enter the 4 digit code below</span>
+    <div class="inputs">
+      <input type="text" autofocus>
+      <input type="text">
+      <input type="text">
+      <input type="text">
+    </div>
+  </form>
+</div>
+{% endblock %}

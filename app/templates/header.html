@@ -1,0 +1,56 @@
+<header>
+    <div class="header-container">
+        <div class="left-block">
+            <a href="" class="logo">
+                <img src="img/logo.svg" class="logo-image" alt="Logo">
+                <span class="logo-text">Binarrian</span>
+            </a>
+            <nav class="header-nav">
+                <a href="" id="header-open" class="nav-element"><span class="element-with-arrow">Open</span></a>
+                <a href="" class="nav-element"><span>Trade</span></a>
+                <a href="" class="nav-element"><span class="element-with-arrow">Orders</span></a>
+                <a href="" class="nav-element"><span>Swap</span></a>
+                <a href="" class="nav-element"><span>Staking</span></a>
+            </nav>
+        </div>
+        <div class="right-block">
+            <div class="notifications">
+                <svg class="new-notification" width="13px" height="13px">
+                    <circle r="6" cx="7" cy="7" fill="#58BD7D"></circle>
+                </svg>
+            </div>
+            <a class="grey-button wallet" href="">Wallet</a>
+            <div class="account-image"></div>
+            <div class="burger"></div>
+        </div>
+    </div>
+</header>
+<div class="burger-menu">
+    <nav class="burger-navigation">
+        <a href="" class="burger-nav__element grey body1">Trade</a>
+        <a class="burger-nav__element grey body1 element-with-arrow">Orders</a>
+        <a href="" class="burger-nav__element grey body1">Swap</a>
+        <a href="" class="burger-nav__element grey body1">Staking</a>
+    </nav>
+    <a href="" class="grey-button burger-menu__button" style="font-size: 16px;">Profile settings</a>
+</div>
+<script>
+    let menuToggled = false;
+    const burger = document.querySelector('.burger');
+    const menu = document.querySelector('.burger-menu');
+    const header = document.getElementsByTagName('header')[0];
+    burger.addEventListener('click', () => {
+        if (menuToggled) {
+            menu.style.left = '100%';
+            document.body.style = '';
+            burger.style.backgroundImage = 'url(img/burger-menu.svg)';
+            menuToggled = false;
+        } else {
+            menu.style.left = '0';
+            document.body.style = 'position: fixed';
+            document.body.style.width = '100vw'
+            burger.style.backgroundImage = 'url(img/close.svg)';
+            menuToggled = true;
+        }
+    });
+</script>

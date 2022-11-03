@@ -1,0 +1,705 @@
+{% set title = 'Wallet Overview' %}
+
+{% extends 'templates/default.html' %}
+
+{% block content %}
+  <div class="wallet-container">
+    <div class="left-nav">
+      <ul>
+        <li class="active"><a href="" class="button2 grey"><img src="img/wallet-overview.svg" alt="">Overview</a></li>
+        <li><a href="" class="button2 grey"><img src="img/wallet-margin.svg" alt="">Margin</a></li>
+        <li><a href="" class="button2 grey"><img src="img/wallet-spot.svg" alt="">Spot</a></li>
+        <li class="divider"></li>
+        <li><a href="" class="button2 grey"><img src="img/wallet-transfer.svg" alt="">Transfer</a></li>
+      </ul>
+      <div class="left-buttons">
+        <a href="" class="button2 white blue-button">Deposit</a>
+        <a href="" class="button2 white grey-button">Widthdraw</a>
+        <a href="" class="button2 white grey-button transfer">Transfer</a>
+      </div>
+      <select name="" class="left-nav__select caption-bold white">
+        <option value="">Overview</option>
+        <option value="">Margin</option>
+        <option value="">Fiat and Spot</option>
+      </select>
+    </div>
+    <div class="wallet-main">
+      <div class="overview">
+        <div class="overview-left">
+          <p class="headline4 white overview__title">Overview</p>
+          <p class="caption" style="color: #B1B5C4">Total balance</p>
+          <div class="balance">
+            <span class="body1 white">0.27894652</span>
+            <span class="currency-code hairline2 black">BTC</span>
+          </div>
+          <p class="body2 grey">$10,098.36</p>
+        </div>
+        <div class="overview-right">
+          <p class="overview__title-mobile body1 white">Overview</p>
+          <div class="search-coin">
+            <input class="caption2 grey" type="text" placeholder="Search coin">
+            <button><img src="img/search.svg" alt=""></button>
+          </div>
+          <select name="" id="" class="currency-select button2 white">
+            <option value="">USD</option>
+            <option value="">EUR</option>
+            <option value="">RUB</option>
+          </select>
+          <button class="button2 black show-balance">Show balance</button>
+        </div>
+      </div>
+      <p class="caption2-medium grey">Account Balances</p>
+      <div class="account-balances">
+        <div>
+          <div class="accout-balance__top">
+            <p class="caption-bold white balance-title">
+              <img src="img/wallet-margin.svg" alt="">
+              Margin
+            </p>
+            <div class="balance-top__right">
+              <p class="balance body2 white">0.2785689852 BTC</p>
+              <p class="balance caption grey">$10,098.36</p>
+            </div>
+          </div>
+          <div class="account-balance__bottom">
+            <div class="buttons">
+              <a href="" class="grey-button2 button2">
+                Deposit
+                <img src="img/Shape-right.svg" alt="">
+              </a>
+              <a href="" class="grey-button2 button2">Transfer</a>
+            </div>
+            <img src="img/Shape-right.svg" alt="">
+          </div>
+        </div>
+        <div>
+          <div class="accout-balance__top">
+            <p class="caption-bold white balance-title">
+              <img src="img/wallet-spot.svg" alt="">
+              Spot
+            </p>
+            <div class="balance-top__right">
+              <p class="balance body2 white">0.2785689852 BTC</p>
+              <p class="balance caption grey">$10,098.36</p>
+            </div>
+          </div>
+          <div class="account-balance__bottom">
+            <div class="buttons">
+              <a href="" class="grey-button2 button2">
+                Deposit
+                <img src="img/Shape-right.svg" alt="">
+              </a>
+              <a href="" class="grey-button2 button2">Transfer</a>
+            </div>
+            <img src="img/Shape-right.svg" alt="">
+          </div>
+        </div>
+      </div>
+      <p class="caption2-medium grey">Asset Balances</p>
+      <table class="asset-balances">
+        <tr>
+          <th class="caption2 white">Asset</th>
+          <th class="caption2 white">Earn</th>
+          <th class="caption2 white ta-right">On orders</th>
+          <th class="caption2 white ta-right">Available balance</th>
+          <th class="caption2 white ta-right">Total balance</th>
+        </tr>
+        <tr>
+          <td>
+            <div class="td__container">
+              <img src="img/btc.svg" alt="" width="32px">
+              <div class="asset-title">
+                <p class="caption-bold white">BTC</p>
+                <p class="caption grey">Bitcoin</p>
+              </div>
+            </div>
+          </td>
+          <td>
+            <div class="td__container">
+              <div class="earn hairline2 black">7.46% APR</div>
+            </div>
+          </td>
+          <td class="ta-right">
+            <div class="td__container">
+              <p class="caption white">0.2785689852 BTC</p>
+              <p class="caption grey">$10,098.36</p>
+            </div>
+          </td>
+          <td class="ta-right">
+            <div class="td__container">
+              <p class="caption white">0.2785689852 BTC</p>
+              <p class="caption grey">$10,098.36</p>
+            </div>
+          </td>
+          <td class="ta-right">
+            <div class="td__container">
+              <p class="caption white">0.2785689852 BTC</p>
+              <p class="caption grey">$10,098.36</p>
+            </div>
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <div class="td__container">
+              <img src="img/btc.svg" alt="" width="32px">
+              <div class="asset-title">
+                <p class="caption-bold white">BTC</p>
+                <p class="caption grey">Bitcoin</p>
+              </div>
+            </div>
+          </td>
+          <td>
+            <div class="td__container">
+            </div>
+          </td>
+          <td class="ta-right">
+            <div class="td__container">
+              <p class="caption white">0.2785689852 BTC</p>
+              <p class="caption grey">$10,098.36</p>
+            </div>
+          </td>
+          <td class="ta-right">
+            <div class="td__container">
+              <p class="caption white">0.2785689852 BTC</p>
+              <p class="caption grey">$10,098.36</p>
+            </div>
+          </td>
+          <td class="ta-right">
+            <div class="td__container">
+              <p class="caption white">0.2785689852 BTC</p>
+              <p class="caption grey">$10,098.36</p>
+            </div>
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <div class="td__container">
+              <img src="img/btc.svg" alt="" width="32px">
+              <div class="asset-title">
+                <p class="caption-bold white">BTC</p>
+                <p class="caption grey">Bitcoin</p>
+              </div>
+            </div>
+          </td>
+          <td>
+            <div class="td__container">
+              <div class="earn hairline2 black">7.46% APR</div>
+            </div>
+          </td>
+          <td class="ta-right">
+            <div class="td__container">
+              <p class="caption white">0.2785689852 BTC</p>
+              <p class="caption grey">$10,098.36</p>
+            </div>
+          </td>
+          <td class="ta-right">
+            <div class="td__container">
+              <p class="caption white">0.2785689852 BTC</p>
+              <p class="caption grey">$10,098.36</p>
+            </div>
+          </td>
+          <td class="ta-right">
+            <div class="td__container">
+              <p class="caption white">0.2785689852 BTC</p>
+              <p class="caption grey">$10,098.36</p>
+            </div>
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <div class="td__container">
+              <img src="img/btc.svg" alt="" width="32px">
+              <div class="asset-title">
+                <p class="caption-bold white">BTC</p>
+                <p class="caption grey">Bitcoin</p>
+              </div>
+            </div>
+          </td>
+          <td>
+            <div class="td__container">
+              <div class="earn hairline2 black">7.46% APR</div>
+            </div>
+          </td>
+          <td class="ta-right">
+            <div class="td__container">
+              <p class="caption white">0.2785689852 BTC</p>
+              <p class="caption grey">$10,098.36</p>
+            </div>
+          </td>
+          <td class="ta-right">
+            <div class="td__container">
+              <p class="caption white">0.2785689852 BTC</p>
+              <p class="caption grey">$10,098.36</p>
+            </div>
+          </td>
+          <td class="ta-right">
+            <div class="td__container">
+              <p class="caption white">0.2785689852 BTC</p>
+              <p class="caption grey">$10,098.36</p>
+            </div>
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <div class="td__container">
+              <img src="img/btc.svg" alt="" width="32px">
+              <div class="asset-title">
+                <p class="caption-bold white">BTC</p>
+                <p class="caption grey">Bitcoin</p>
+              </div>
+            </div>
+          </td>
+          <td>
+            <div class="td__container">
+              <div class="earn hairline2 black">7.46% APR</div>
+            </div>
+          </td>
+          <td class="ta-right">
+            <div class="td__container">
+              <p class="caption white">0.2785689852 BTC</p>
+              <p class="caption grey">$10,098.36</p>
+            </div>
+          </td>
+          <td class="ta-right">
+            <div class="td__container">
+              <p class="caption white">0.2785689852 BTC</p>
+              <p class="caption grey">$10,098.36</p>
+            </div>
+          </td>
+          <td class="ta-right">
+            <div class="td__container">
+              <p class="caption white">0.2785689852 BTC</p>
+              <p class="caption grey">$10,098.36</p>
+            </div>
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <div class="td__container">
+              <img src="img/btc.svg" alt="" width="32px">
+              <div class="asset-title">
+                <p class="caption-bold white">BTC</p>
+                <p class="caption grey">Bitcoin</p>
+              </div>
+            </div>
+          </td>
+          <td>
+            <div class="td__container">
+              <div class="earn hairline2 black">7.46% APR</div>
+            </div>
+          </td>
+          <td class="ta-right">
+            <div class="td__container">
+              <p class="caption white">0.2785689852 BTC</p>
+              <p class="caption grey">$10,098.36</p>
+            </div>
+          </td>
+          <td class="ta-right">
+            <div class="td__container">
+              <p class="caption white">0.2785689852 BTC</p>
+              <p class="caption grey">$10,098.36</p>
+            </div>
+          </td>
+          <td class="ta-right">
+            <div class="td__container">
+              <p class="caption white">0.2785689852 BTC</p>
+              <p class="caption grey">$10,098.36</p>
+            </div>
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <div class="td__container">
+              <img src="img/btc.svg" alt="" width="32px">
+              <div class="asset-title">
+                <p class="caption-bold white">BTC</p>
+                <p class="caption grey">Bitcoin</p>
+              </div>
+            </div>
+          </td>
+          <td>
+            <div class="td__container">
+              <div class="earn hairline2 black">7.46% APR</div>
+            </div>
+          </td>
+          <td class="ta-right">
+            <div class="td__container">
+              <p class="caption white">0.2785689852 BTC</p>
+              <p class="caption grey">$10,098.36</p>
+            </div>
+          </td>
+          <td class="ta-right">
+            <div class="td__container">
+              <p class="caption white">0.2785689852 BTC</p>
+              <p class="caption grey">$10,098.36</p>
+            </div>
+          </td>
+          <td class="ta-right">
+            <div class="td__container">
+              <p class="caption white">0.2785689852 BTC</p>
+              <p class="caption grey">$10,098.36</p>
+            </div>
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <div class="td__container">
+              <img src="img/btc.svg" alt="" width="32px">
+              <div class="asset-title">
+                <p class="caption-bold white">BTC</p>
+                <p class="caption grey">Bitcoin</p>
+              </div>
+            </div>
+          </td>
+          <td>
+            <div class="td__container">
+              <div class="earn hairline2 black">7.46% APR</div>
+            </div>
+          </td>
+          <td class="ta-right">
+            <div class="td__container">
+              <p class="caption white">0.2785689852 BTC</p>
+              <p class="caption grey">$10,098.36</p>
+            </div>
+          </td>
+          <td class="ta-right">
+            <div class="td__container">
+              <p class="caption white">0.2785689852 BTC</p>
+              <p class="caption grey">$10,098.36</p>
+            </div>
+          </td>
+          <td class="ta-right">
+            <div class="td__container">
+              <p class="caption white">0.2785689852 BTC</p>
+              <p class="caption grey">$10,098.36</p>
+            </div>
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <div class="td__container">
+              <img src="img/btc.svg" alt="" width="32px">
+              <div class="asset-title">
+                <p class="caption-bold white">BTC</p>
+                <p class="caption grey">Bitcoin</p>
+              </div>
+            </div>
+          </td>
+          <td>
+            <div class="td__container">
+              <div class="earn hairline2 black">7.46% APR</div>
+            </div>
+          </td>
+          <td class="ta-right">
+            <div class="td__container">
+              <p class="caption white">0.2785689852 BTC</p>
+              <p class="caption grey">$10,098.36</p>
+            </div>
+          </td>
+          <td class="ta-right">
+            <div class="td__container">
+              <p class="caption white">0.2785689852 BTC</p>
+              <p class="caption grey">$10,098.36</p>
+            </div>
+          </td>
+          <td class="ta-right">
+            <div class="td__container">
+              <p class="caption white">0.2785689852 BTC</p>
+              <p class="caption grey">$10,098.36</p>
+            </div>
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <div class="td__container">
+              <img src="img/btc.svg" alt="" width="32px">
+              <div class="asset-title">
+                <p class="caption-bold white">BTC</p>
+                <p class="caption grey">Bitcoin</p>
+              </div>
+            </div>
+          </td>
+          <td>
+            <div class="td__container">
+              <div class="earn hairline2 black">7.46% APR</div>
+            </div>
+          </td>
+          <td class="ta-right">
+            <div class="td__container">
+              <p class="caption white">0.2785689852 BTC</p>
+              <p class="caption grey">$10,098.36</p>
+            </div>
+          </td>
+          <td class="ta-right">
+            <div class="td__container">
+              <p class="caption white">0.2785689852 BTC</p>
+              <p class="caption grey">$10,098.36</p>
+            </div>
+          </td>
+          <td class="ta-right">
+            <div class="td__container">
+              <p class="caption white">0.2785689852 BTC</p>
+              <p class="caption grey">$10,098.36</p>
+            </div>
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <div class="td__container">
+              <img src="img/btc.svg" alt="" width="32px">
+              <div class="asset-title">
+                <p class="caption-bold white">BTC</p>
+                <p class="caption grey">Bitcoin</p>
+              </div>
+            </div>
+          </td>
+          <td>
+            <div class="td__container">
+              <div class="earn hairline2 black">7.46% APR</div>
+            </div>
+          </td>
+          <td class="ta-right">
+            <div class="td__container">
+              <p class="caption white">0.2785689852 BTC</p>
+              <p class="caption grey">$10,098.36</p>
+            </div>
+          </td>
+          <td class="ta-right">
+            <div class="td__container">
+              <p class="caption white">0.2785689852 BTC</p>
+              <p class="caption grey">$10,098.36</p>
+            </div>
+          </td>
+          <td class="ta-right">
+            <div class="td__container">
+              <p class="caption white">0.2785689852 BTC</p>
+              <p class="caption grey">$10,098.36</p>
+            </div>
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <div class="td__container">
+              <img src="img/btc.svg" alt="" width="32px">
+              <div class="asset-title">
+                <p class="caption-bold white">BTC</p>
+                <p class="caption grey">Bitcoin</p>
+              </div>
+            </div>
+          </td>
+          <td>
+            <div class="td__container">
+              <div class="earn hairline2 black">7.46% APR</div>
+            </div>
+          </td>
+          <td class="ta-right">
+            <div class="td__container">
+              <p class="caption white">0.2785689852 BTC</p>
+              <p class="caption grey">$10,098.36</p>
+            </div>
+          </td>
+          <td class="ta-right">
+            <div class="td__container">
+              <p class="caption white">0.2785689852 BTC</p>
+              <p class="caption grey">$10,098.36</p>
+            </div>
+          </td>
+          <td class="ta-right">
+            <div class="td__container">
+              <p class="caption white">0.2785689852 BTC</p>
+              <p class="caption grey">$10,098.36</p>
+            </div>
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <div class="td__container">
+              <img src="img/btc.svg" alt="" width="32px">
+              <div class="asset-title">
+                <p class="caption-bold white">BTC</p>
+                <p class="caption grey">Bitcoin</p>
+              </div>
+            </div>
+          </td>
+          <td>
+            <div class="td__container">
+              <div class="earn hairline2 black">7.46% APR</div>
+            </div>
+          </td>
+          <td class="ta-right">
+            <div class="td__container">
+              <p class="caption white">0.2785689852 BTC</p>
+              <p class="caption grey">$10,098.36</p>
+            </div>
+          </td>
+          <td class="ta-right">
+            <div class="td__container">
+              <p class="caption white">0.2785689852 BTC</p>
+              <p class="caption grey">$10,098.36</p>
+            </div>
+          </td>
+          <td class="ta-right">
+            <div class="td__container">
+              <p class="caption white">0.2785689852 BTC</p>
+              <p class="caption grey">$10,098.36</p>
+            </div>
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <div class="td__container">
+              <img src="img/btc.svg" alt="" width="32px">
+              <div class="asset-title">
+                <p class="caption-bold white">BTC</p>
+                <p class="caption grey">Bitcoin</p>
+              </div>
+            </div>
+          </td>
+          <td>
+            <div class="td__container">
+              <div class="earn hairline2 black">7.46% APR</div>
+            </div>
+          </td>
+          <td class="ta-right">
+            <div class="td__container">
+              <p class="caption white">0.2785689852 BTC</p>
+              <p class="caption grey">$10,098.36</p>
+            </div>
+          </td>
+          <td class="ta-right">
+            <div class="td__container">
+              <p class="caption white">0.2785689852 BTC</p>
+              <p class="caption grey">$10,098.36</p>
+            </div>
+          </td>
+          <td class="ta-right">
+            <div class="td__container">
+              <p class="caption white">0.2785689852 BTC</p>
+              <p class="caption grey">$10,098.36</p>
+            </div>
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <div class="td__container">
+              <img src="img/btc.svg" alt="" width="32px">
+              <div class="asset-title">
+                <p class="caption-bold white">BTC</p>
+                <p class="caption grey">Bitcoin</p>
+              </div>
+            </div>
+          </td>
+          <td>
+            <div class="td__container">
+              <div class="earn hairline2 black">7.46% APR</div>
+            </div>
+          </td>
+          <td class="ta-right">
+            <div class="td__container">
+              <p class="caption white">0.2785689852 BTC</p>
+              <p class="caption grey">$10,098.36</p>
+            </div>
+          </td>
+          <td class="ta-right">
+            <div class="td__container">
+              <p class="caption white">0.2785689852 BTC</p>
+              <p class="caption grey">$10,098.36</p>
+            </div>
+          </td>
+          <td class="ta-right">
+            <div class="td__container">
+              <p class="caption white">0.2785689852 BTC</p>
+              <p class="caption grey">$10,098.36</p>
+            </div>
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <div class="td__container">
+              <img src="img/btc.svg" alt="" width="32px">
+              <div class="asset-title">
+                <p class="caption-bold white">BTC</p>
+                <p class="caption grey">Bitcoin</p>
+              </div>
+            </div>
+          </td>
+          <td>
+            <div class="td__container">
+              <div class="earn hairline2 black">7.46% APR</div>
+            </div>
+          </td>
+          <td class="ta-right">
+            <div class="td__container">
+              <p class="caption white">0.2785689852 BTC</p>
+              <p class="caption grey">$10,098.36</p>
+            </div>
+          </td>
+          <td class="ta-right">
+            <div class="td__container">
+              <p class="caption white">0.2785689852 BTC</p>
+              <p class="caption grey">$10,098.36</p>
+            </div>
+          </td>
+          <td class="ta-right">
+            <div class="td__container">
+              <p class="caption white">0.2785689852 BTC</p>
+              <p class="caption grey">$10,098.36</p>
+            </div>
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <div class="td__container">
+              <img src="img/btc.svg" alt="" width="32px">
+              <div class="asset-title">
+                <p class="caption-bold white">BTC</p>
+                <p class="caption grey">Bitcoin</p>
+              </div>
+            </div>
+          </td>
+          <td>
+            <div class="td__container">
+              <div class="earn hairline2 black">7.46% APR</div>
+            </div>
+          </td>
+          <td class="ta-right">
+            <div class="td__container">
+              <p class="caption white">0.2785689852 BTC</p>
+              <p class="caption grey">$10,098.36</p>
+            </div>
+          </td>
+          <td class="ta-right">
+            <div class="td__container">
+              <p class="caption white">0.2785689852 BTC</p>
+              <p class="caption grey">$10,098.36</p>
+            </div>
+          </td>
+          <td class="ta-right">
+            <div class="td__container">
+              <p class="caption white">0.2785689852 BTC</p>
+              <p class="caption grey">$10,098.36</p>
+            </div>
+          </td>
+        </tr>
+
+
+      </table>
+    </div>
+  </div>
+{% endblock %}

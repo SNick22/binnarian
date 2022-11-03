@@ -1,0 +1,28 @@
+{% set title = 'Account Security Guide' %}
+{% set css = 'security.css' %}
+
+{% extends 'templates/default.html' %}
+
+{% block content %}
+<div class="container about security">
+    <h1>Account Security Guide</h1>
+    <div class="main-image"></div>
+    <div class="text-container">
+        <p>This guide was created to prevent unauthorized access to your account, as well as to inform users about how to protect your profile.</p>
+        <h2>2FA and backup code</h2>
+        <p>Enabling two-factor authentication (2FA) increases the security of your Binarrian Account, as well as coins/tokens stored on It. This method of account protection is called two-factor protection, because it is the second security barrier after the password to log in to the account. This really increases your security, because in addition to the username and password, the attacker will need to enter a 2FA-code. In the event of a hacking attempt, an attacker can reset your password through your e-mail address that you specified during registration, if it was hacked. However, even if the attacker has a username and password from your Binarrian acc</p>
+        <h2>Password</h2>
+        <p>Several rules for creating a password:
+            <br><br>
+            · The password has never been used before;<br>
+            · The minimum length is 6 characters;<br>
+            · Use upper and lower case;<br>
+            · Use special characters and numbers.
+        </p>
+        <h2>HTTP(S)</h2>
+        <p>Check the "S" after "http" in the browser's address bar. If there is no "S", the connection is not secure. It can lead to loss of access to the account and loss of funds. A green lock near the address informs the user about the security of the visited page. If there is no lock, you should pay special attention to the site name in the address bar or do not use it at all, because the http Protocol is not secure. It is safe to use websites with https Protocol only.</p>
+        <h2>Checking the SSL certificate</h2>
+        <p>To check the SSL certificate, follow the instructions. Click on the certificate details and make sure that you are on the official website.</p>
+    </div>
+</div>
+{% endblock %}

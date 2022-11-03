@@ -1,0 +1,239 @@
+{% set title = 'Home' %}
+{% set css = 'home-login.css' %}
+
+{% extends 'templates/default.html' %}
+
+{% block content %}
+<div class="container home-login">
+    <div class="hero-header">
+        <div class="hero-header__text">
+            <h1>Cryptocurrency<br>prices</h1>
+            <p>The global crypto market cap is <strong>$1.07T</strong></p>
+        </div>
+        <img src="img/home-login.png" alt="" width="600px">
+    </div>
+    <div class="actual-market">
+        <div class="elements-wrapper">
+            <div class="actual-market__element">
+                <img src="img/btc.svg" alt="" width="32px" height="32px" style="margin-right: 20px">
+                <div class="text-block">
+                    <span class="caption2-bold" style="color: #777E91">BTC/USDT</span>
+                    <span class="caption2-bold price-changed-green price-changed">+0.66%</span>
+                    <p class="body1 white" style="margin-top: 10px">20 000.00</p>
+                    <p class="caption2 white" style="margin-top: 5px">20 000.00</p>
+                </div>
+                <img src="img/green-chart2.svg" alt="" height="32px" class="chart">
+            </div>
+            <div class="actual-market__element">
+                <img src="img/eth.svg" alt="" width="32px" height="32px" style="margin-right: 20px">
+                <div class="text-block">
+                    <span class="caption2-bold" style="color: #777E91">ETH/USDT</span>
+                    <span class="caption2-bold price-changed-green price-changed">+0.66%</span>
+                    <p class="body1 white" style="margin-top: 10px">2 000.00</p>
+                    <p class="caption2 white" style="margin-top: 5px">2 000.00</p>
+                </div>
+                <img src="img/green-chart2.svg" alt="" height="32px" class="chart">
+            </div>
+            <div class="actual-market__element">
+                <img src="img/bch.svg" alt="" width="32px" height="32px" style="margin-right: 20px">
+                <div class="text-block">
+                    <span class="caption2-bold" style="color: #777E91">BCH/USDT</span>
+                    <span class="caption2-bold price-changed-red price-changed">-0.66%</span>
+                    <p class="body1 white" style="margin-top: 10px">2 000.00</p>
+                    <p class="caption2 white" style="margin-top: 5px">2 000.00</p>
+                </div>
+                <img src="img/red-chart2.svg" alt="" height="32px" class="chart">
+            </div>
+        </div>
+    </div>
+    <div class="table">
+        <div class="string">
+            <div class="first-el caption2-bold">#<img src="img/arrows.svg" alt=""></div>
+            <div class="second-el caption2-bold">Name<img src="img/arrows.svg" alt=""></div>
+            <div class="third-el caption2-bold">Price<img src="img/arrows.svg" alt=""></div>
+            <div class="fourth-el caption2-bold">24h %</div>
+            <div class="fifth-el caption2-bold">7d %</div>
+            <div class="sixth-el caption2-bold">Marketcap<img src="img/coin.svg" alt=""></div>
+            <div class="seventh-el caption2-bold">Volume (24h)<img src="img/chart-bar.svg" alt=""></div>
+            <div class="eighth-el caption2-bold">Chart</div>
+        </div>
+        <div class="string crypto">
+            <div class="first-el caption2-bold grey">1</div>
+            <div class="second-el caption-bold white"><img src="img/btc.svg" alt="">Bitcoin<span class="caption grey">BTC</span></div>
+            <div class="third-el caption-bold white">$20 000.00</div>
+            <div class="fourth-el caption green">+0.66%</div>
+            <div class="fifth-el caption green">+0.66%</div>
+            <div class="sixth-el caption-bold white">$666 666 666.000</div>
+            <div class="seventh-el caption-bold white">$666 666 666.000</div>
+            <div class="eighth-el"><img src="img/green-chart2.svg" alt=""></div>
+        </div>
+        <div class="string crypto">
+            <div class="first-el caption2-bold grey">2</div>
+            <div class="second-el caption-bold white"><img src="img/eth.svg" alt="">Ethereum<span class="caption grey">ETH</span></div>
+            <div class="third-el caption-bold white">$2 000.00</div>
+            <div class="fourth-el caption green">+0.66%</div>
+            <div class="fifth-el caption green">+0.66%</div>
+            <div class="sixth-el caption-bold white">$666 666 666.000</div>
+            <div class="seventh-el caption-bold white">$666 666 666.000</div>
+            <div class="eighth-el"><img src="img/green-chart2.svg" alt=""></div>
+        </div>
+        <div class="string crypto">
+            <div class="first-el caption2-bold grey">3</div>
+            <div class="second-el caption-bold white"><img src="img/xrp.svg" alt="">Ripple<span class="caption grey">XRP</span></div>
+            <div class="third-el caption-bold white">$2 000.00</div>
+            <div class="fourth-el caption green">+0.66%</div>
+            <div class="fifth-el caption green">+0.66%</div>
+            <div class="sixth-el caption-bold white">$666 666 666.000</div>
+            <div class="seventh-el caption-bold white">$666 666 666.000</div>
+            <div class="eighth-el"><img src="img/green-chart2.svg" alt=""></div>
+        </div>
+        <div class="string crypto">
+            <div class="first-el caption2-bold grey">4</div>
+            <div class="second-el caption-bold white"><img src="img/usdt.svg" alt="">Tether<span class="caption grey">USDT</span></div>
+            <div class="third-el caption-bold white">$2 000.00</div>
+            <div class="fourth-el caption green">+0.66%</div>
+            <div class="fifth-el caption green">+0.66%</div>
+            <div class="sixth-el caption-bold white">$666 666 666.000</div>
+            <div class="seventh-el caption-bold white">$666 666 666.000</div>
+            <div class="eighth-el"><img src="img/green-chart2.svg" alt=""></div>
+        </div>
+        <div class="string crypto">
+            <div class="first-el caption2-bold grey">5</div>
+            <div class="second-el caption-bold white"><img src="img/link.svg" alt="">Litecoin<span class="caption grey">LTC</span></div>
+            <div class="third-el caption-bold white">$2 000.00</div>
+            <div class="fourth-el caption green">+0.66%</div>
+            <div class="fifth-el caption green">+0.66%</div>
+            <div class="sixth-el caption-bold white">$666 666 666.000</div>
+            <div class="seventh-el caption-bold white">$666 666 666.000</div>
+            <div class="eighth-el"><img src="img/green-chart2.svg" alt=""></div>
+        </div>
+        <div class="string crypto">
+            <div class="first-el caption2-bold grey">6</div>
+            <div class="second-el caption-bold white"><img src="img/doge.svg" alt="">Dogecoin<span class="caption grey">DOGE</span></div>
+            <div class="third-el caption-bold white">$2 000.00</div>
+            <div class="fourth-el caption red">-0.66%</div>
+            <div class="fifth-el caption red">-0.66%</div>
+            <div class="sixth-el caption-bold white">$666 666 666.000</div>
+            <div class="seventh-el caption-bold white">$666 666 666.000</div>
+            <div class="eighth-el"><img src="img/red-chart2.svg" alt=""></div>
+        </div>
+        <div class="string crypto">
+            <div class="first-el caption2-bold grey">7</div>
+            <div class="second-el caption-bold white"><img src="img/ada.svg" alt="">Cardano<span class="caption grey">ADA</span></div>
+            <div class="third-el caption-bold white">$2 000.00</div>
+            <div class="fourth-el caption red">-0.66%</div>
+            <div class="fifth-el caption red">-0.66%</div>
+            <div class="sixth-el caption-bold white">$666 666 666.000</div>
+            <div class="seventh-el caption-bold white">$666 666 666.000</div>
+            <div class="eighth-el"><img src="img/red-chart2.svg" alt=""></div>
+        </div>
+        <div class="string crypto">
+            <div class="first-el caption2-bold grey">8</div>
+            <div class="second-el caption-bold white"><img src="img/rcn.svg" alt="">Ripio<span class="caption grey">RCN</span></div>
+            <div class="third-el caption-bold white">$2 000.00</div>
+            <div class="fourth-el caption red">-0.66%</div>
+            <div class="fifth-el caption red">-0.66%</div>
+            <div class="sixth-el caption-bold white">$666 666 666.000</div>
+            <div class="seventh-el caption-bold white">$666 666 666.000</div>
+            <div class="eighth-el"><img src="img/red-chart2.svg" alt=""></div>
+        </div>
+        <div class="string crypto">
+            <div class="first-el caption2-bold grey">9</div>
+            <div class="second-el caption-bold white"><img src="img/bts.svg" alt="">BitShares<span class="caption grey">BTS</span></div>
+            <div class="third-el caption-bold white">$2 000.00</div>
+            <div class="fourth-el caption red">-0.66%</div>
+            <div class="fifth-el caption red">-0.66%</div>
+            <div class="sixth-el caption-bold white">$666 666 666.000</div>
+            <div class="seventh-el caption-bold white">$666 666 666.000</div>
+            <div class="eighth-el"><img src="img/red-chart2.svg" alt=""></div>
+        </div>
+        <div class="string crypto">
+            <div class="first-el caption2-bold grey">10</div>
+            <div class="second-el caption-bold white"><img src="img/uni.svg" alt="">Uniswap<span class="caption grey">UNI</span></div>
+            <div class="third-el caption-bold white">$2 000.00</div>
+            <div class="fourth-el caption red">-0.66%</div>
+            <div class="fifth-el caption red">-0.66%</div>
+            <div class="sixth-el caption-bold white">$666 666 666.000</div>
+            <div class="seventh-el caption-bold white">$666 666 666.000</div>
+            <div class="eighth-el"><img src="img/red-chart2.svg" alt=""></div>
+        </div>
+    </div>
+    <div class="table-mobile">
+        <div class="table-mobile__element">
+            <div class="caption-bold white crypto-name">
+                <img src="img/btc.svg" alt="">
+                Bitcoin
+                <span class="caption grey">BTC</span>
+            </div>
+            <div class="element__text">
+                <div class="text__string">
+                    <span class="caption2-bold grey">Price</span>
+                    <span class="caption-bold white">$20 000.00</span>
+                </div>
+                <div class="text__string">
+                    <span class="caption2-bold grey">24h</span>
+                    <span class="caption green">+0.66%</span>
+                </div>
+                <div class="text__string">
+                    <span class="caption2-bold grey">7d</span>
+                    <span class="caption red">-0.66%</span>
+                </div>
+                <div class="text__string">
+                    <span class="caption2-bold grey">Marketcap</span>
+                    <span class="caption-bold white">$666 666 666.000</span>
+                </div>
+            </div>
+        </div>
+        <div class="table-mobile__element">
+            <div class="caption-bold white crypto-name">
+                <img src="img/eth.svg" alt="">
+                Ethereum
+                <span class="caption grey">ETH</span>
+            </div>
+            <div class="element__text">
+                <div class="text__string">
+                    <span class="caption2-bold grey">Price</span>
+                    <span class="caption-bold white">$2 000.00</span>
+                </div>
+                <div class="text__string">
+                    <span class="caption2-bold grey">24h</span>
+                    <span class="caption green">+0.66%</span>
+                </div>
+                <div class="text__string">
+                    <span class="caption2-bold grey">7d</span>
+                    <span class="caption red">-0.66%</span>
+                </div>
+                <div class="text__string">
+                    <span class="caption2-bold grey">Marketcap</span>
+                    <span class="caption-bold white">$666 666 666.000</span>
+                </div>
+            </div>
+        </div>
+        <div class="table-mobile__element">
+            <div class="caption-bold white crypto-name">
+                <img src="img/usdt.svg" alt="">
+                Tether
+                <span class="caption grey">USDT</span>
+            </div>
+            <div class="element__text">
+                <div class="text__string">
+                    <span class="caption2-bold grey">Price</span>
+                    <span class="caption-bold white">$2 000.00</span>
+                </div>
+                <div class="text__string">
+                    <span class="caption2-bold grey">24h</span>
+                    <span class="caption green">+0.66%</span>
+                </div>
+                <div class="text__string">
+                    <span class="caption2-bold grey">7d</span>
+                    <span class="caption red">-0.66%</span>
+                </div>
+                <div class="text__string">
+                    <span class="caption2-bold grey">Marketcap</span>
+                    <span class="caption-bold white">$666 666 666.000</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

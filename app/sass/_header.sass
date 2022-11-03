@@ -1,0 +1,180 @@
+$header-split: #23262F
+$nav: #777E91
+$text-separators: #353945
+
+header
+  width: 100%
+  height: 80px
+  border-bottom: 1px solid $header-split
+  display: flex
+  justify-content: center
+  align-items: center
+  @media screen and (max-width: 768px)
+    border: none
+    padding-top: 32px
+
+.header-container
+  width: ((1440 - 2 * 80) / 1440) * 100vw
+  height: 40px
+  display: flex
+  align-items: center
+  justify-content: space-between
+
+.left-block
+  display: flex
+  height: 100%
+
+.logo
+  display: flex
+  align-items: center
+  margin-right: 40 / 1440 * 100vw
+
+.logo-image
+  pointer-events: none
+  user-select: none
+
+.logo-text
+  color: #FCFCFD
+  font-family: 'Poppins', sans-serif
+  font-size: 24px
+  font-weight: 600
+  margin-left: 8px
+  user-select: none
+
+.header-nav
+  display: flex
+  align-items: center
+  border-left: 1px solid $text-separators
+  padding-left: 40 / 1440 * 100vw
+  @media screen and (max-width: 768px)
+    display: none
+
+#header-open
+  display: none
+  @media screen and (max-width: 1024px)
+    display: block
+
+.nav-element
+  font-family: 'DM Sans', sans-serif
+  color: $nav
+  font-size: 14px
+  vertical-align: middle
+  cursor: pointer
+  transition: 0.1s
+  &:not(.nl)
+    @media screen and (max-width: 1024px)
+      display: none
+  span
+    color: inherit
+  &:not(:last-child)
+    margin-right: 48px
+  &:hover
+    color: scale-color($nav, $lightness: 20%)
+
+.nl
+  @media screen and (max-width: 1024px)
+    margin-right: 20px !important
+
+.element-with-arrow
+  background-image: url("../img/arrow-down.svg")
+  background-repeat: no-repeat
+  background-position: right center
+  padding-right: 15px
+
+.right-block
+  width: 180px
+  height: 100%
+  display: flex
+  justify-content: space-between
+  align-items: center
+  @media screen and (max-width: 768px)
+    width: 140px
+  > a
+    @media screen and (max-width: 768px)
+      display: none
+
+.notifications
+  height: 100%
+  width: 40px
+  background-image: url(../img/notification.svg)
+  background-repeat: no-repeat
+  background-position: center center
+  cursor: pointer
+
+.new-notification
+  float: right
+
+.grey-button
+  font-family: "DM Sans", sans-serif
+  color: #FCFCFD
+  background: none
+  font-size: 14px
+  border: 2px solid $nav
+  border-radius: 90px
+  padding: 6px 16px
+  transition: 0.1s
+  &:hover
+    color: #FCFCFD
+    border-color: scale-color(#777E91, $lightness: 20%)
+
+
+.account-image
+  width: 40px
+  height: 40px
+  background-image: url(../img/account-image.png)
+  background-size: 100%
+  border-radius: 100%
+  cursor: pointer
+  @media screen and (max-width: 768px)
+    width: 32px
+    height: 32px
+
+.blue-button
+  font-family: "DM Sans", sans-serif
+  color: #fff
+  background: #1DAEEF
+  font-size: 14px
+  border: 2px solid #1DAEEF
+  border-radius: 90px
+  padding: 9px 16px
+  transition: 0.1s
+  &:hover
+    color: #fff
+    background: scale-color(#1DAEEF, $lightness: -10%)
+    border-color: scale-color(#1DAEEF, $lightness: -10%)
+
+.burger
+  display: none
+  height: 32px
+  width: 32px
+  background-image: url(../img/burger-menu.svg)
+  background-position: center
+  @media screen and (max-width: 768px)
+    display: block
+
+.burger-menu
+  height: 100vh
+  z-index: 100
+  width: 100%
+  background-color: inherit
+  position: fixed
+  left: 100%
+  transition: 0.3s
+  .element-with-arrow
+    background-size: 12px auto
+    background-position: 90% center
+
+.burger-nav__element
+  padding: 16px 0 16px 30 / 375 * 100%
+  border-left: 2px solid rgba(0,0,0,0)
+  box-sizing: border-box
+  width: 100%
+  &:hover
+    color: #FCFCFD
+    border-color: #1DAEEF
+  &:first-child
+    margin-top: 80 - 16px
+
+.burger-menu__button
+  margin: 0 auto
+  margin-top: 20vh

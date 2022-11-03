@@ -1,0 +1,66 @@
+.container.faq
+  margin-top: 96px
+  margin-bottom: 67px
+
+.faq
+  .badge
+    padding: 0 12px
+    height: 24px
+    display: flex
+    width: fit-content
+    border-radius: 32px
+    background-color: #1F2937
+    margin: 0 auto 24px
+    align-items: center
+
+  span
+    font-size: 12px
+    margin-left: 8px
+
+  h2
+    text-align: center
+    margin-bottom: 32px
+
+  p
+    text-align: center
+
+  .questions
+    margin-top: 128px
+    @media screen and (max-width: 768px)
+      margin-top: 96px
+    &:not(:first-child) .question-answer
+      margin-top: 32px
+
+  .question-answer
+    border-bottom: 1px solid #1F2937
+
+  .question-block
+    display: flex
+    justify-content: space-between
+
+  h3
+    display: block
+    margin-bottom: 32px
+
+  .answer
+    text-align: left
+    max-width: 820 / 1440 * 100vw
+    margin-bottom: 30px
+    @media screen and (max-width: 1024px)
+      max-width: 680 / 1024 * 100vw
+    @media screen and (max-width: 768px)
+      max-width: none
+
+  .toggle-close
+    width: 27px
+    height: 27px
+    background-position: center center
+    flex-shrink: 0
+    margin-left: 34px
+    cursor: pointer
+
+  .toggle
+    background-image: url(../img/open-faq.svg)
+
+  .close
+    background-image: url(../img/close-faq.svg)

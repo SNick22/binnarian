@@ -1,0 +1,342 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Home</title>
+</head>
+<body>
+<header>
+    <div class="header-container">
+        <div class="left-block">
+            <a href="" class="logo">
+                <img src="img/logo.svg" class="logo-image" alt="Logo">
+                <span class="logo-text">Binarrian</span>
+            </a>
+            <nav class="header-nav">
+                <a href="" id="header-open" class="nav-element"><span class="element-with-arrow">Open</span></a>
+                <a href="" class="nav-element"><span>Trade</span></a>
+                <a href="" class="nav-element"><span class="element-with-arrow">Orders</span></a>
+                <a href="" class="nav-element"><span>Swap</span></a>
+                <a href="" class="nav-element"><span>Staking</span></a>
+            </nav>
+        </div>
+        <div class="right-block">
+            <div class="notifications">
+                <svg class="new-notification" width="13px" height="13px">
+                    <circle r="6" cx="7" cy="7" fill="#58BD7D"></circle>
+                </svg>
+            </div>
+            <a class="grey-button wallet" href="">Wallet</a>
+            <div class="account-image"></div>
+            <div class="burger"></div>
+        </div>
+    </div>
+</header>
+<div class="burger-menu">
+    <nav class="burger-navigation">
+        <a href="" class="burger-nav__element grey body1">Trade</a>
+        <a class="burger-nav__element grey body1 element-with-arrow">Orders</a>
+        <a href="" class="burger-nav__element grey body1">Swap</a>
+        <a href="" class="burger-nav__element grey body1">Staking</a>
+    </nav>
+    <a href="" class="grey-button burger-menu__button" style="font-size: 16px;">Profile settings</a>
+</div>
+<script>
+    let menuToggled = false;
+    const burger = document.querySelector('.burger');
+    const menu = document.querySelector('.burger-menu');
+    const header = document.getElementsByTagName('header')[0];
+    burger.addEventListener('click', () => {
+        if (menuToggled) {
+            menu.style.left = '100%';
+            document.body.style = '';
+            burger.style.backgroundImage = 'url(img/burger-menu.svg)';
+            menuToggled = false;
+        } else {
+            menu.style.left = '0';
+            document.body.style = 'position: fixed';
+            document.body.style.width = '100vw'
+            burger.style.backgroundImage = 'url(img/close.svg)';
+            menuToggled = true;
+        }
+    });
+</script>
+
+<div class="container home-login">
+    <div class="hero-header">
+        <div class="hero-header__text">
+            <h1>Cryptocurrency<br>prices</h1>
+            <p>The global crypto market cap is <strong>$1.07T</strong></p>
+        </div>
+        <img src="img/home-login.png" alt="" width="600px">
+    </div>
+    <div class="actual-market">
+        <div class="elements-wrapper">
+            <div class="actual-market__element">
+                <img src="img/btc.svg" alt="" width="32px" height="32px" style="margin-right: 20px">
+                <div class="text-block">
+                    <span class="caption2-bold" style="color: #777E91">BTC/USDT</span>
+                    <span class="caption2-bold price-changed-green price-changed">+0.66%</span>
+                    <p class="body1 white" style="margin-top: 10px">20 000.00</p>
+                    <p class="caption2 white" style="margin-top: 5px">20 000.00</p>
+                </div>
+                <img src="img/green-chart2.svg" alt="" height="32px" class="chart">
+            </div>
+            <div class="actual-market__element">
+                <img src="img/eth.svg" alt="" width="32px" height="32px" style="margin-right: 20px">
+                <div class="text-block">
+                    <span class="caption2-bold" style="color: #777E91">ETH/USDT</span>
+                    <span class="caption2-bold price-changed-green price-changed">+0.66%</span>
+                    <p class="body1 white" style="margin-top: 10px">2 000.00</p>
+                    <p class="caption2 white" style="margin-top: 5px">2 000.00</p>
+                </div>
+                <img src="img/green-chart2.svg" alt="" height="32px" class="chart">
+            </div>
+            <div class="actual-market__element">
+                <img src="img/bch.svg" alt="" width="32px" height="32px" style="margin-right: 20px">
+                <div class="text-block">
+                    <span class="caption2-bold" style="color: #777E91">BCH/USDT</span>
+                    <span class="caption2-bold price-changed-red price-changed">-0.66%</span>
+                    <p class="body1 white" style="margin-top: 10px">2 000.00</p>
+                    <p class="caption2 white" style="margin-top: 5px">2 000.00</p>
+                </div>
+                <img src="img/red-chart2.svg" alt="" height="32px" class="chart">
+            </div>
+        </div>
+    </div>
+    <div class="table">
+        <div class="string">
+            <div class="first-el caption2-bold">#<img src="img/arrows.svg" alt=""></div>
+            <div class="second-el caption2-bold">Name<img src="img/arrows.svg" alt=""></div>
+            <div class="third-el caption2-bold">Price<img src="img/arrows.svg" alt=""></div>
+            <div class="fourth-el caption2-bold">24h %</div>
+            <div class="fifth-el caption2-bold">7d %</div>
+            <div class="sixth-el caption2-bold">Marketcap<img src="img/coin.svg" alt=""></div>
+            <div class="seventh-el caption2-bold">Volume (24h)<img src="img/chart-bar.svg" alt=""></div>
+            <div class="eighth-el caption2-bold">Chart</div>
+        </div>
+        <div class="string crypto">
+            <div class="first-el caption2-bold grey">1</div>
+            <div class="second-el caption-bold white"><img src="img/btc.svg" alt="">Bitcoin<span class="caption grey">BTC</span></div>
+            <div class="third-el caption-bold white">$20 000.00</div>
+            <div class="fourth-el caption green">+0.66%</div>
+            <div class="fifth-el caption green">+0.66%</div>
+            <div class="sixth-el caption-bold white">$666 666 666.000</div>
+            <div class="seventh-el caption-bold white">$666 666 666.000</div>
+            <div class="eighth-el"><img src="img/green-chart2.svg" alt=""></div>
+        </div>
+        <div class="string crypto">
+            <div class="first-el caption2-bold grey">2</div>
+            <div class="second-el caption-bold white"><img src="img/eth.svg" alt="">Ethereum<span class="caption grey">ETH</span></div>
+            <div class="third-el caption-bold white">$2 000.00</div>
+            <div class="fourth-el caption green">+0.66%</div>
+            <div class="fifth-el caption green">+0.66%</div>
+            <div class="sixth-el caption-bold white">$666 666 666.000</div>
+            <div class="seventh-el caption-bold white">$666 666 666.000</div>
+            <div class="eighth-el"><img src="img/green-chart2.svg" alt=""></div>
+        </div>
+        <div class="string crypto">
+            <div class="first-el caption2-bold grey">3</div>
+            <div class="second-el caption-bold white"><img src="img/xrp.svg" alt="">Ripple<span class="caption grey">XRP</span></div>
+            <div class="third-el caption-bold white">$2 000.00</div>
+            <div class="fourth-el caption green">+0.66%</div>
+            <div class="fifth-el caption green">+0.66%</div>
+            <div class="sixth-el caption-bold white">$666 666 666.000</div>
+            <div class="seventh-el caption-bold white">$666 666 666.000</div>
+            <div class="eighth-el"><img src="img/green-chart2.svg" alt=""></div>
+        </div>
+        <div class="string crypto">
+            <div class="first-el caption2-bold grey">4</div>
+            <div class="second-el caption-bold white"><img src="img/usdt.svg" alt="">Tether<span class="caption grey">USDT</span></div>
+            <div class="third-el caption-bold white">$2 000.00</div>
+            <div class="fourth-el caption green">+0.66%</div>
+            <div class="fifth-el caption green">+0.66%</div>
+            <div class="sixth-el caption-bold white">$666 666 666.000</div>
+            <div class="seventh-el caption-bold white">$666 666 666.000</div>
+            <div class="eighth-el"><img src="img/green-chart2.svg" alt=""></div>
+        </div>
+        <div class="string crypto">
+            <div class="first-el caption2-bold grey">5</div>
+            <div class="second-el caption-bold white"><img src="img/link.svg" alt="">Litecoin<span class="caption grey">LTC</span></div>
+            <div class="third-el caption-bold white">$2 000.00</div>
+            <div class="fourth-el caption green">+0.66%</div>
+            <div class="fifth-el caption green">+0.66%</div>
+            <div class="sixth-el caption-bold white">$666 666 666.000</div>
+            <div class="seventh-el caption-bold white">$666 666 666.000</div>
+            <div class="eighth-el"><img src="img/green-chart2.svg" alt=""></div>
+        </div>
+        <div class="string crypto">
+            <div class="first-el caption2-bold grey">6</div>
+            <div class="second-el caption-bold white"><img src="img/doge.svg" alt="">Dogecoin<span class="caption grey">DOGE</span></div>
+            <div class="third-el caption-bold white">$2 000.00</div>
+            <div class="fourth-el caption red">-0.66%</div>
+            <div class="fifth-el caption red">-0.66%</div>
+            <div class="sixth-el caption-bold white">$666 666 666.000</div>
+            <div class="seventh-el caption-bold white">$666 666 666.000</div>
+            <div class="eighth-el"><img src="img/red-chart2.svg" alt=""></div>
+        </div>
+        <div class="string crypto">
+            <div class="first-el caption2-bold grey">7</div>
+            <div class="second-el caption-bold white"><img src="img/ada.svg" alt="">Cardano<span class="caption grey">ADA</span></div>
+            <div class="third-el caption-bold white">$2 000.00</div>
+            <div class="fourth-el caption red">-0.66%</div>
+            <div class="fifth-el caption red">-0.66%</div>
+            <div class="sixth-el caption-bold white">$666 666 666.000</div>
+            <div class="seventh-el caption-bold white">$666 666 666.000</div>
+            <div class="eighth-el"><img src="img/red-chart2.svg" alt=""></div>
+        </div>
+        <div class="string crypto">
+            <div class="first-el caption2-bold grey">8</div>
+            <div class="second-el caption-bold white"><img src="img/rcn.svg" alt="">Ripio<span class="caption grey">RCN</span></div>
+            <div class="third-el caption-bold white">$2 000.00</div>
+            <div class="fourth-el caption red">-0.66%</div>
+            <div class="fifth-el caption red">-0.66%</div>
+            <div class="sixth-el caption-bold white">$666 666 666.000</div>
+            <div class="seventh-el caption-bold white">$666 666 666.000</div>
+            <div class="eighth-el"><img src="img/red-chart2.svg" alt=""></div>
+        </div>
+        <div class="string crypto">
+            <div class="first-el caption2-bold grey">9</div>
+            <div class="second-el caption-bold white"><img src="img/bts.svg" alt="">BitShares<span class="caption grey">BTS</span></div>
+            <div class="third-el caption-bold white">$2 000.00</div>
+            <div class="fourth-el caption red">-0.66%</div>
+            <div class="fifth-el caption red">-0.66%</div>
+            <div class="sixth-el caption-bold white">$666 666 666.000</div>
+            <div class="seventh-el caption-bold white">$666 666 666.000</div>
+            <div class="eighth-el"><img src="img/red-chart2.svg" alt=""></div>
+        </div>
+        <div class="string crypto">
+            <div class="first-el caption2-bold grey">10</div>
+            <div class="second-el caption-bold white"><img src="img/uni.svg" alt="">Uniswap<span class="caption grey">UNI</span></div>
+            <div class="third-el caption-bold white">$2 000.00</div>
+            <div class="fourth-el caption red">-0.66%</div>
+            <div class="fifth-el caption red">-0.66%</div>
+            <div class="sixth-el caption-bold white">$666 666 666.000</div>
+            <div class="seventh-el caption-bold white">$666 666 666.000</div>
+            <div class="eighth-el"><img src="img/red-chart2.svg" alt=""></div>
+        </div>
+    </div>
+    <div class="table-mobile">
+        <div class="table-mobile__element">
+            <div class="caption-bold white crypto-name">
+                <img src="img/btc.svg" alt="">
+                Bitcoin
+                <span class="caption grey">BTC</span>
+            </div>
+            <div class="element__text">
+                <div class="text__string">
+                    <span class="caption2-bold grey">Price</span>
+                    <span class="caption-bold white">$20 000.00</span>
+                </div>
+                <div class="text__string">
+                    <span class="caption2-bold grey">24h</span>
+                    <span class="caption green">+0.66%</span>
+                </div>
+                <div class="text__string">
+                    <span class="caption2-bold grey">7d</span>
+                    <span class="caption red">-0.66%</span>
+                </div>
+                <div class="text__string">
+                    <span class="caption2-bold grey">Marketcap</span>
+                    <span class="caption-bold white">$666 666 666.000</span>
+                </div>
+            </div>
+        </div>
+        <div class="table-mobile__element">
+            <div class="caption-bold white crypto-name">
+                <img src="img/eth.svg" alt="">
+                Ethereum
+                <span class="caption grey">ETH</span>
+            </div>
+            <div class="element__text">
+                <div class="text__string">
+                    <span class="caption2-bold grey">Price</span>
+                    <span class="caption-bold white">$2 000.00</span>
+                </div>
+                <div class="text__string">
+                    <span class="caption2-bold grey">24h</span>
+                    <span class="caption green">+0.66%</span>
+                </div>
+                <div class="text__string">
+                    <span class="caption2-bold grey">7d</span>
+                    <span class="caption red">-0.66%</span>
+                </div>
+                <div class="text__string">
+                    <span class="caption2-bold grey">Marketcap</span>
+                    <span class="caption-bold white">$666 666 666.000</span>
+                </div>
+            </div>
+        </div>
+        <div class="table-mobile__element">
+            <div class="caption-bold white crypto-name">
+                <img src="img/usdt.svg" alt="">
+                Tether
+                <span class="caption grey">USDT</span>
+            </div>
+            <div class="element__text">
+                <div class="text__string">
+                    <span class="caption2-bold grey">Price</span>
+                    <span class="caption-bold white">$2 000.00</span>
+                </div>
+                <div class="text__string">
+                    <span class="caption2-bold grey">24h</span>
+                    <span class="caption green">+0.66%</span>
+                </div>
+                <div class="text__string">
+                    <span class="caption2-bold grey">7d</span>
+                    <span class="caption red">-0.66%</span>
+                </div>
+                <div class="text__string">
+                    <span class="caption2-bold grey">Marketcap</span>
+                    <span class="caption-bold white">$666 666 666.000</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <div class="footer-container">
+        <a href="" class="logo logo-footer">
+            <img src="img/logo.svg" class="logo-image" alt="Logo">
+            <span class="logo-text logo-footer-text">Binarrian</span>
+        </a>
+        <ul>
+            <li>Company</li>
+            <li><a href="">About us</a></li>
+            <li><a href="">Apply to list</a></li>
+        </ul>
+        <ul>
+            <li>Legal</li>
+            <li><a href="">Privacy Policy</a></li>
+            <li><a href="">Terms of Use</a></li>
+            <li><a href="">Security</a></li>
+            <li><a href="">Risk Warning</a></li>
+        </ul>
+        <ul>
+            <li>Service</li>
+            <li><a href="">Fees</a></li>
+            <li><a href="">Referrals</a></li>
+            <li><a href="">Welcome Bonus</a></li>
+        </ul>
+        <ul>
+            <li>Help</li>
+            <li><a href="">Support</a></li>
+            <li><a href="">FAQ</a></li>
+        </ul>
+    </div>
+    <div class="copyright"><span class="grey">Copyright © 2022 Binarrian. All rights reserved</span></div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+</body>
+</html>

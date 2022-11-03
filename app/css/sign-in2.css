@@ -1,0 +1,22 @@
+.sign-in2 input[type=password] {
+  border-color: #DC2626;
+  color: #DC2626;
+}
+.sign-in2 input[type=password]::-webkit-input-placeholder {
+  color: #DC2626;
+}
+.sign-in2 input[type=password]::-moz-placeholder {
+  color: #DC2626;
+}
+.sign-in2 input[type=password]:-ms-input-placeholder {
+  color: #DC2626;
+}
+.sign-in2 input[type=password]::-ms-input-placeholder {
+  color: #DC2626;
+}
+.sign-in2 input[type=password]::placeholder {
+  color: #DC2626;
+}
+.sign-in2 .eye {
+  background-image: url(../img/red_eye.svg);
+}
