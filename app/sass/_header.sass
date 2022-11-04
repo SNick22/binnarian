@@ -48,11 +48,22 @@ header
   padding-left: 40 / 1440 * 100vw
   @media screen and (max-width: 768px)
     display: none
+  > *
+    height: 100%
+    display: flex
+    align-items: center
+    &:not(:last-child)
+      margin-right: 48px
 
 #header-open
   display: none
   @media screen and (max-width: 1024px)
     display: block
+
+.header-open
+  display: none
+  @media screen and (max-width: 1024px)
+    display: flex
 
 .nav-element
   font-family: 'DM Sans', sans-serif
@@ -66,8 +77,6 @@ header
       display: none
   span
     color: inherit
-  &:not(:last-child)
-    margin-right: 48px
   &:hover
     color: scale-color($nav, $lightness: 20%)
 
@@ -94,7 +103,7 @@ header
       display: none
 
 .notifications
-  height: 100%
+  height: 40px
   width: 40px
   background-image: url(../img/notification.svg)
   background-repeat: no-repeat
@@ -176,5 +185,111 @@ header
     margin-top: 80 - 16px
 
 .burger-menu__button
+  margin: 20vh auto 0
+
+.dropdown-orders
+  position: relative
+  &:hover
+    .dropdown-container
+      display: block
+    .point
+      display: block
+
+.dropdown-container
+  display: none
+  padding: 0 16px
+  background: #23262F
+  border-radius: 12px
+  position: absolute
+  width: 256px
+  left: -100px
+  top: 100%
+  z-index: 999
+  a
+    display: flex
+    padding: 16px 0
+    transition: 0.1s
+    width: 100%
+    > svg
+      margin-right: 8px
+      transition: 0.1s
+    &:not(:last-child)
+      border-bottom: 1px solid #353945
+    &:hover
+      color: #FCFCFD
+      > svg
+        fill: #FCFCFD
+
+.point
+  position: absolute
+  left: 0
+  right: 0
+  padding: 0 20px
+  bottom: 100%
   margin: 0 auto
-  margin-top: 20vh
+  display: none
+
+.notifications-drop
+  background: #23262F
+  padding: 16px
+  border-radius: 24px
+  width: 318px
+  right: -45px !important
+  .point
+    display: block
+    left: 60%
+  a
+    width: 100%
+    text-align: center
+  ul
+    margin-top: 16px
+    margin-bottom: 12px
+    li
+      display: flex
+      justify-content: space-between
+      padding-bottom: 12px
+      &:not(:last-child)
+        border-bottom: 1px solid #353945
+        margin-bottom: 12px
+      p
+        margin: 0
+
+.account-drop
+  background: #23262F
+  border-radius: 24px
+  width: 256px
+  padding: 0
+  border: none
+  right: -45px !important
+  top: 10px !important
+  .point
+    display: block
+    left: 50%
+  ul
+    border-radius: 24px
+    overflow: hidden
+    border: none
+  li
+    position: relative
+    &:not(:first-child):after
+      position: absolute
+      content: ''
+      width: 224px
+      height: 1px
+      border: none
+      background: #353945
+      top: 0
+      left: 0
+      right: 0
+      margin: 0 auto
+  a
+    display: flex
+    padding-top: 18px
+    padding-bottom: 12px
+    transition: 0.1s
+    &:hover
+      background-color: #353945
+    svg
+      margin-right: 8px
+    p
+      margin: 0

@@ -4,7 +4,31 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b79b7fe8-39e6-4b23-9501-d7477cb1e50a" name="Changes" comment="" />
+    <list default="true" id="b79b7fe8-39e6-4b23-9501-d7477cb1e50a" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/css/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/sass/_header.sass" beforeDir="false" afterPath="$PROJECT_DIR$/app/sass/_header.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/sass/main.sass" beforeDir="false" afterPath="$PROJECT_DIR$/app/sass/main.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/templates/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/header.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/about-us.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/about-us.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/dist/css/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/faq.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/faq.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/fees.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/fees.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/home-login.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/home-login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/privacy-policy.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/privacy-policy.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/profile-change_password.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/profile-change_password.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/profile-password_changed.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/profile-password_changed.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/profile.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/profile.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/profile_promocode.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/profile_promocode.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/profile_referrals.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/profile_referrals.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/profile_sessions.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/profile_sessions.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/referral.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/referral.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/risk.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/risk.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/security.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/security.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/terms-of-use.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/terms-of-use.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/wallet-overview.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/wallet-overview.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -19,10 +43,14 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2FZirO1dcMjAXXKDqMol0gPmrJH" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -70,10 +98,22 @@
       <workItem from="1667040238060" duration="5337000" />
       <workItem from="1667294651202" duration="3396000" />
       <workItem from="1667374177238" duration="19558000" />
+      <workItem from="1667485220090" duration="16076000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>
