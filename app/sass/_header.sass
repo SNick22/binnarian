@@ -162,30 +162,35 @@ header
     display: block
 
 .burger-menu
-  height: 100vh
+  height: calc(100vh - 80px)
   z-index: 100
-  width: 100%
+  width: 100vw
   background-color: inherit
   position: fixed
   left: 100%
   transition: 0.3s
+  display: flex
+  flex-direction: column
+  justify-content: space-between
+  align-items: center
   .element-with-arrow
     background-size: 12px auto
     background-position: 90% center
+  .burger-navigation
+    width: 100%
+    margin-top: 56px
+  .burger-menu__button
+    margin-bottom: 44px
 
 .burger-nav__element
-  padding: 16px 0 16px 30 / 375 * 100%
+  padding: 16px 30 / 375 * 100% 16px 30 / 375 * 100%
   border-left: 2px solid rgba(0,0,0,0)
   box-sizing: border-box
   width: 100%
+  transition: 0.1s
   &:hover
-    color: #FCFCFD
+    color: #FCFCFD !important
     border-color: #1DAEEF
-  &:first-child
-    margin-top: 80 - 16px
-
-.burger-menu__button
-  margin: 20vh auto 0
 
 .dropdown-orders
   position: relative
@@ -293,3 +298,32 @@ header
       margin-right: 8px
     p
       margin: 0
+
+.burger-dropdown:hover
+  .burger-nav__element
+    color: #FCFCFD !important
+    border-color: #1DAEEF
+  .burger-dropdown-container
+    display: block
+
+.burger-dropdown-container
+  display: none
+  svg
+    margin-right: 13px
+  a
+    margin-left: 8%
+    padding: 16px
+    width: 85%
+    border-radius: 8px
+    transition: 0.1s
+    &:hover
+      background: #353945
+
+.burger-buttons
+  display: flex
+  margin-bottom: 44px
+  .blue-button
+    margin-right: 8px
+  a
+    display: flex
+    align-items: center

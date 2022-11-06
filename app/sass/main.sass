@@ -112,6 +112,11 @@ ol, ul
   font-size: 16px
   font-family: "Poppins", sans-serif
 
+.button1
+  font-weight: 700
+  font-size: 16px
+  font-family: "DM Sans", sans-serif
+
 .button2
   font-weight: 700
   font-size: 14px
@@ -462,6 +467,8 @@ ol, ul
     width: 100%
     background: none
     margin-top: 60px
+  @media screen and (min-width: 860px)
+    min-height: calc(100vh - 84px)
   .active
     > *
       color: #FCFCFD
@@ -646,6 +653,11 @@ ol, ul
     a:not(:last-child)
       margin-right: 8px
 
+.balance-top__right
+  display: flex
+  flex-direction: column
+  align-items: flex-end
+
 .ta-right
   text-align: right
 
@@ -717,3 +729,68 @@ ol, ul
     margin-bottom: 12px
     @media screen and (max-width: 860px)
       margin: 0
+
+.wallet-balance-title
+  display: flex
+  align-items: center
+  *:not(:last-child)
+    margin-right: 12px
+
+.balance-button
+  display: flex
+  align-items: center
+  @media screen and (max-width: 860px)
+    display: none
+
+.account-balances-container
+  display: flex
+  @media screen and (max-width: 768px)
+    flex-direction: column
+  .account-balances
+    flex-grow: 1
+    flex-wrap: wrap
+    @media screen and (max-width: 1024px)
+      flex-direction: column
+    > div
+      padding: 20px 32px
+      display: flex
+      justify-content: space-between
+      align-items: flex-start
+      @media screen and (max-width: 1024px)
+        margin-right: 0
+      &:nth-child(2)
+        margin-right: 0
+        @media screen and (max-width: 1024px)
+          margin-top: 4px
+      svg
+        margin-right: 8px
+
+.balances-last
+  width: 100%
+  margin-top: 4px
+
+.wallet-rate
+  width: 285px
+  padding: 24px
+  background: #17181B
+  border-radius: 4px
+  margin-left: 4px
+  display: flex
+  flex-direction: column
+  img
+    width: 237px
+  @media screen and (max-width: 768px)
+    width: 100%
+    margin-left: 0
+    margin-top: 8px
+
+.green-stroke
+  background: #58BD7D
+  border-radius: 24px
+  padding: 2px 8px
+
+.balance-chart
+  flex-grow: 1
+  display: flex
+  flex-direction: column
+  justify-content: flex-end

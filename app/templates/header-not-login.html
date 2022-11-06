@@ -19,3 +19,34 @@
     </div>
   </div>
 </header>
+<div class="burger-menu">
+  <nav class="burger-navigation">
+    <a href="" class="burger-nav__element grey body1">Terms of Use</a>
+    <a class="burger-nav__element grey body1">Privacy Policy</a>
+    <a href="" class="burger-nav__element grey body1">Risk Warnings</a>
+  </nav>
+  <div class="burger-buttons">
+    <a href="" class="blue-button button1 white">Sign up</a>
+    <a href="" class="grey-button2 button1 white">Login</a>
+  </div>
+</div>
+<script>
+  let menuToggled = false;
+  const burger = document.querySelector('.burger');
+  const menu = document.querySelector('.burger-menu');
+  const header = document.getElementsByTagName('header')[0];
+  burger.addEventListener('click', () => {
+    if (menuToggled) {
+      menu.style.left = '100%';
+      document.body.style = '';
+      burger.style.backgroundImage = 'url(img/burger-menu.svg)';
+      menuToggled = false;
+    } else {
+      menu.style.left = '0';
+      document.body.style = 'position: fixed';
+      document.body.style.width = '100vw'
+      burger.style.backgroundImage = 'url(img/close.svg)';
+      menuToggled = true;
+    }
+  });
+</script>

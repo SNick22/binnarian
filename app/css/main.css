@@ -510,38 +510,54 @@ header {
 }
 
 .burger-menu {
-  height: 100vh;
+  height: calc(100vh - 80px);
   z-index: 100;
-  width: 100%;
+  width: 100vw;
   background-color: inherit;
   position: fixed;
   left: 100%;
   -webkit-transition: 0.3s;
   -o-transition: 0.3s;
   transition: 0.3s;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .burger-menu .element-with-arrow {
   background-size: 12px auto;
   background-position: 90% center;
 }
+.burger-menu .burger-navigation {
+  width: 100%;
+  margin-top: 56px;
+}
+.burger-menu .burger-menu__button {
+  margin-bottom: 44px;
+}
 
 .burger-nav__element {
-  padding: 16px 0 16px 8%;
+  padding: 16px 8% 16px 8%;
   border-left: 2px solid rgba(0, 0, 0, 0);
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   width: 100%;
+  -webkit-transition: 0.1s;
+  -o-transition: 0.1s;
+  transition: 0.1s;
 }
 .burger-nav__element:hover {
-  color: #FCFCFD;
+  color: #FCFCFD !important;
   border-color: #1DAEEF;
-}
-.burger-nav__element:first-child {
-  margin-top: 64px;
-}
-
-.burger-menu__button {
-  margin: 20vh auto 0;
 }
 
 .dropdown-orders {
@@ -688,6 +704,51 @@ header {
 }
 .account-drop a p {
   margin: 0;
+}
+
+.burger-dropdown:hover .burger-nav__element {
+  color: #FCFCFD !important;
+  border-color: #1DAEEF;
+}
+.burger-dropdown:hover .burger-dropdown-container {
+  display: block;
+}
+
+.burger-dropdown-container {
+  display: none;
+}
+.burger-dropdown-container svg {
+  margin-right: 13px;
+}
+.burger-dropdown-container a {
+  margin-left: 8%;
+  padding: 16px;
+  width: 85%;
+  border-radius: 8px;
+  -webkit-transition: 0.1s;
+  -o-transition: 0.1s;
+  transition: 0.1s;
+}
+.burger-dropdown-container a:hover {
+  background: #353945;
+}
+
+.burger-buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 44px;
+}
+.burger-buttons .blue-button {
+  margin-right: 8px;
+}
+.burger-buttons a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 footer {
@@ -2051,6 +2112,12 @@ ol, ul {
   font-family: "Poppins", sans-serif;
 }
 
+.button1 {
+  font-weight: 700;
+  font-size: 16px;
+  font-family: "DM Sans", sans-serif;
+}
+
 .button2 {
   font-weight: 700;
   font-size: 14px;
@@ -2607,6 +2674,11 @@ ol, ul {
     margin-top: 60px;
   }
 }
+@media screen and (min-width: 860px) {
+  .left-nav {
+    min-height: calc(100vh - 84px);
+  }
+}
 .left-nav .active > * {
   color: #FCFCFD;
 }
@@ -2929,6 +3001,19 @@ ol, ul {
   margin-right: 8px;
 }
 
+.balance-top__right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
 .ta-right {
   text-align: right;
 }
@@ -3036,4 +3121,139 @@ ol, ul {
   .left-buttons .blue-button {
     margin: 0;
   }
+}
+
+.wallet-balance-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.wallet-balance-title *:not(:last-child) {
+  margin-right: 12px;
+}
+
+.balance-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+@media screen and (max-width: 860px) {
+  .balance-button {
+    display: none;
+  }
+}
+
+.account-balances-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+@media screen and (max-width: 768px) {
+  .account-balances-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+.account-balances-container .account-balances {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+@media screen and (max-width: 1024px) {
+  .account-balances-container .account-balances {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+.account-balances-container .account-balances > div {
+  padding: 20px 32px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+@media screen and (max-width: 1024px) {
+  .account-balances-container .account-balances > div {
+    margin-right: 0;
+  }
+}
+.account-balances-container .account-balances > div:nth-child(2) {
+  margin-right: 0;
+}
+@media screen and (max-width: 1024px) {
+  .account-balances-container .account-balances > div:nth-child(2) {
+    margin-top: 4px;
+  }
+}
+.account-balances-container .account-balances > div svg {
+  margin-right: 8px;
+}
+
+.balances-last {
+  width: 100%;
+  margin-top: 4px;
+}
+
+.wallet-rate {
+  width: 285px;
+  padding: 24px;
+  background: #17181B;
+  border-radius: 4px;
+  margin-left: 4px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.wallet-rate img {
+  width: 237px;
+}
+@media screen and (max-width: 768px) {
+  .wallet-rate {
+    width: 100%;
+    margin-left: 0;
+    margin-top: 8px;
+  }
+}
+
+.green-stroke {
+  background: #58BD7D;
+  border-radius: 24px;
+  padding: 2px 8px;
+}
+
+.balance-chart {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }

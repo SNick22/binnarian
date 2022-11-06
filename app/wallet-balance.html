@@ -1,0 +1,104 @@
+{% set title = 'Wallet Balance' %}
+
+{% extends 'templates/default.html' %}
+
+{% block content %}
+<div class="wallet-container">
+  <div class="left-nav">
+    <ul>
+      <li class="active"><a href="" class="button2 grey"><img src="img/wallet-overview.svg" alt="">Overview</a></li>
+      <li><a href="" class="button2 grey"><img src="img/wallet-margin.svg" alt="">Margin</a></li>
+      <li><a href="" class="button2 grey"><img src="img/wallet-spot.svg" alt="">Spot</a></li>
+      <li class="divider"></li>
+      <li><a href="" class="button2 grey"><img src="img/wallet-transfer.svg" alt="">Transfer</a></li>
+    </ul>
+    <div class="left-buttons">
+      <a href="" class="button2 white blue-button">Deposit</a>
+      <a href="" class="button2 white grey-button">Widthdraw</a>
+      <a href="" class="button2 white grey-button transfer">Transfer</a>
+    </div>
+    <select name="" class="left-nav__select caption-bold white">
+      <option value="">Overview</option>
+      <option value="">Margin</option>
+      <option value="">Fiat and Spot</option>
+    </select>
+  </div>
+  <div class="wallet-main">
+    <div class="overview">
+      <div class="overview-left">
+        <div class="overview__title wallet-balance-title">
+          <a href="">
+            <svg width="32" height="32" viewBox="0 0 32 32" fill="#777E91" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M18.9428 10.3905C19.4635 10.9112 19.4635 11.7554 18.9428 12.2761L15.219 16L18.9428 19.7239C19.4635 20.2446 19.4635 21.0888 18.9428 21.6095C18.4221 22.1302 17.5779 22.1302 17.0572 21.6095L12.3905 16.9428C11.8698 16.4221 11.8698 15.5779 12.3905 15.0572L17.0572 10.3905C17.5779 9.86983 18.4221 9.86983 18.9428 10.3905Z"/>
+            </svg>
+          </a>
+          <span class="headline4 white">USDT</span>
+          <span class="headline4" style="color: #B1B5C4">Tether USD</span>
+        </div>
+        <p class="caption" style="color: #B1B5C4">Total balance</p>
+        <div class="balance">
+          <span class="body1 white">10075.56213968</span>
+          <span class="currency-code hairline2 white">USDT</span>
+        </div>
+        <p class="body2 grey">$10,095.35</p>
+      </div>
+      <div class="overview-right">
+        <a href="" class="button2 white blue-button balance-button">Deposit</a>
+        <a href="" class="button2 white grey-button balance-button">Widthdraw</a>
+        <a href="" class="button2 white grey-button transfer balance-button">Transfer</a>
+      </div>
+    </div>
+    <p class="caption2-medium grey">Account Balances</p>
+    <div class="account-balances-container">
+      <div class="account-balances">
+        <div>
+          <p class="caption-bold white balance-title">
+            <svg width="12" height="12" viewBox="0 0 12 12" fill="#9757D7" xmlns="http://www.w3.org/2000/svg">
+              <rect width="12" height="12" rx="4"/>
+            </svg>
+            Exchange
+          </p>
+          <div class="balance-top__right">
+            <p class="balance body2 white">10075.56213968 USDT</p>
+            <p class="balance caption grey">$10,095.35</p>
+          </div>
+        </div>
+        <div>
+          <p class="caption-bold white balance-title">
+            <svg width="12" height="12" viewBox="0 0 12 12" fill="#3772FF" xmlns="http://www.w3.org/2000/svg">
+              <rect width="12" height="12" rx="4"/>
+            </svg>
+            Futures
+          </p>
+          <div class="balance-top__right">
+            <p class="balance body2 white">0.0000000000 USDT</p>
+            <p class="balance caption grey">$0.00</p>
+          </div>
+        </div>
+        <div class="balances-last">
+          <p class="caption-bold white balance-title">
+            <svg width="12" height="12" viewBox="0 0 12 12" fill="#4BC9F0" xmlns="http://www.w3.org/2000/svg">
+              <rect width="12" height="12" rx="4"/>
+            </svg>
+            Available
+          </p>
+          <div class="balance-top__right">
+            <p class="balance body2 white">0.00004989 USDT</p>
+            <p class="balance caption grey">$0.00</p>
+          </div>
+        </div>
+      </div>
+      <div class="wallet-rate">
+        <div>
+          <span class="caption2-bold grey" style="margin-right: 12px">USDT/USDC</span>
+          <span class="white caption2-bold green-stroke">+12.96%</span>
+        </div>
+        <p class="body1 white" style="margin-top: 6px">1.00069787 USDC</p>
+        <div class="balance-chart">
+          <img src="img/wallet-balance-chart.svg" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}
