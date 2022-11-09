@@ -2792,6 +2792,8 @@ ol, ul {
   border-radius: 4px;
   padding: 4px 8px;
   margin-left: 8px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
 }
 
 .balance {
@@ -3062,6 +3064,11 @@ ol, ul {
 .asset-balances tr:hover td {
   background: #23262F;
 }
+.asset-balances tr:hover .margin-table__buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
 
 .earn {
   padding: 5px 10px;
@@ -3078,6 +3085,7 @@ ol, ul {
   -webkit-box-sizing: content-box;
           box-sizing: content-box;
   padding-bottom: 20px;
+  position: relative;
 }
 
 .left-buttons {
@@ -3256,4 +3264,131 @@ ol, ul {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+}
+
+.margin {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.margin__bottom-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+@media screen and (max-width: 920px) {
+  .margin__bottom-block {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .margin__bottom-block > div:not(:last-child) {
+    margin-bottom: 16px;
+  }
+}
+
+.margin-level {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.margin-level img {
+  margin-right: 24px;
+}
+
+.funds__search {
+  background: #17181B;
+  border-radius: 4px 4px 0 0;
+  padding: 20px 32px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+@media screen and (max-width: 768px) {
+  .funds__search {
+    display: none;
+  }
+}
+.funds__search a {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+.funds__search svg {
+  margin-left: 13px;
+}
+
+.margin-table {
+  border-radius: 0 0 4px 4px;
+}
+.margin-table td:nth-child(2) img {
+  margin-left: 10px;
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  .margin-table {
+    border-radius: 4px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .margin-table th:nth-child(2) {
+    padding-right: 95px;
+  }
+  .margin-table td:nth-child(2), .margin-table th:nth-child(2) {
+    display: table-cell !important;
+  }
+  .margin-table td:nth-child(2) .total-balance__container, .margin-table th:nth-child(2) .total-balance__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .margin-table td:nth-child(2) .total-balance__container img, .margin-table th:nth-child(2) .total-balance__container img {
+    display: block;
+  }
+}
+@media screen and (min-width: 768px) {
+  .margin-table tr:hover .td__container {
+    padding-bottom: 70px;
+  }
+}
+
+.table__currency {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.margin-table__buttons {
+  margin-top: 20px;
+  position: absolute;
+  top: 48px;
+  left: 0;
+  display: none;
+  z-index: 100;
+}
+@media screen and (max-width: 768px) {
+  .margin-table__buttons {
+    display: none !important;
+  }
+}
+.margin-table__buttons a:not(:last-child) {
+  margin-right: 8px;
 }

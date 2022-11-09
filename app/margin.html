@@ -1,0 +1,500 @@
+{% set title = 'Margin' %}
+
+{% extends 'templates/default.html' %}
+
+{% block content %}
+<div class="wallet-container">
+  <div class="left-nav">
+    <ul>
+      <li><a href="" class="button2 grey"><img src="img/wallet-overview.svg" alt="">Overview</a></li>
+      <li class="active"><a href="" class="button2 grey"><img src="img/wallet-margin.svg" alt="">Margin</a></li>
+      <li><a href="" class="button2 grey"><img src="img/wallet-spot.svg" alt="">Spot</a></li>
+      <li class="divider"></li>
+      <li><a href="" class="button2 grey"><img src="img/wallet-transfer.svg" alt="">Transfer</a></li>
+    </ul>
+    <div class="left-buttons">
+      <a href="" class="button2 white blue-button">Deposit</a>
+      <a href="" class="button2 white grey-button">Widthdraw</a>
+      <a href="" class="button2 white grey-button transfer">Transfer</a>
+    </div>
+    <select name="" class="left-nav__select caption-bold white">
+      <option value="">Overview</option>
+      <option value="" selected>Margin</option>
+      <option value="">Fiat and Spot</option>
+    </select>
+  </div>
+  <div class="wallet-main">
+    <div class="overview margin">
+      <p class="headline4 white overview__title">Margin</p>
+      <p class="headline4 white overview__title-mobile">Margin</p>
+      <div class="margin__bottom-block">
+        <div class="margin__total-balance">
+          <p class="caption" style="color: #E6E8EC">Total balance</p>
+          <div class="balance">
+            <span class="body1 white">0.27894652</span>
+            <span class="currency-code hairline2 white">BTC</span>
+          </div>
+          <p class="body2 grey">$10,098.36</p>
+        </div>
+        <div class="margin-level">
+          <img src="img/margin-level.svg" alt="">
+          <div>
+            <p class="caption-bold" style="color: #353945;">Margin level</p>
+            <div class="balance">
+              <span class="body1 green">999.00</span>
+              <span class="currency-code hairline2 white">LOW RISK</span>
+            </div>
+          </div>
+        </div>
+        <div class="account-equity">
+          <p class="body2 grey">Account Equity</p>
+          <div class="balance">
+            <span class="body1 white">0.00000000</span>
+            <span class="currency-code hairline2 white" style="background: #353945;">BTC</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <p class="caption2-medium grey">Funds</p>
+    <div class="funds__search">
+      <div class="search-coin">
+        <input class="caption2 grey" type="text" placeholder="Search coin">
+        <button><img src="img/search.svg" alt=""></button>
+      </div>
+      <a href="" class="caption2-medium grey">
+        Borrowing history
+        <svg width="6" height="10" viewBox="0 0 6 10" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M0.792893 0.792893C0.402369 1.18342 0.402369 1.81658 0.792893 2.20711L3.58579 5L0.792893 7.79289C0.402369 8.18342 0.402369 8.81658 0.792893 9.20711C1.18342 9.59763 1.81658 9.59763 2.20711 9.20711L5.70711 5.70711C6.09763 5.31658 6.09763 4.68342 5.70711 4.29289L2.20711 0.792893C1.81658 0.402369 1.18342 0.402369 0.792893 0.792893Z"/>
+        </svg>
+      </a>
+    </div>
+    <table class="asset-balances margin-table">
+      <tr>
+        <th class="caption2-bold white">Asset</th>
+        <th class="caption2-bold white ta-right">Total balance</th>
+        <th class="caption2-bold white ta-right">Available balance</th>
+        <th class="caption2-bold white ta-right">Interest</th>
+      </tr>
+
+      <tr>
+        <td>
+          <div class="td__container">
+            <img src="img/btc.svg" alt="" width="32px">
+            <div class="asset-title">
+              <p class="caption-bold white">BTC</p>
+              <p class="caption grey">Bitcoin</p>
+            </div>
+            <div class="margin-table__buttons">
+              <a href="" class="grey-button2 white">Transfer</a>
+              <a href="" class="grey-button2 white">Borrow</a>
+              <a href="" class="grey-button2 white">Trade</a>
+            </div>
+          </div>
+        </td>
+        <td class="ta-right">
+          <div class="total-balance__container">
+            <div class="td__container">
+              <p class="caption white">0.2785689852 BTC</p>
+              <p class="caption grey">$10,098.36</p>
+            </div>
+            <img src="img/more.svg" alt="">
+          </div>
+        </td>
+        <td class="ta-right">
+          <div class="td__container">
+            <p class="caption white">0.2785689852 BTC</p>
+            <p class="caption grey">$10,098.36</p>
+          </div>
+        </td>
+        <td class="ta-right">
+          <div class="td__container">
+            <p class="caption white">0.2785689852 BTC</p>
+            <p class="caption grey">$10,098.36</p>
+          </div>
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <div class="td__container">
+            <img src="img/btc.svg" alt="" width="32px">
+            <div class="asset-title">
+              <p class="caption-bold white">BTC</p>
+              <p class="caption grey">Bitcoin</p>
+            </div>
+            <div class="margin-table__buttons">
+              <a href="" class="grey-button2 white">Transfer</a>
+              <a href="" class="grey-button2 white">Borrow</a>
+              <a href="" class="grey-button2 white">Trade</a>
+            </div>
+          </div>
+        </td>
+        <td class="ta-right">
+          <div class="total-balance__container">
+            <div class="td__container">
+              <p class="caption white">0.2785689852 BTC</p>
+              <p class="caption grey">$10,098.36</p>
+            </div>
+            <img src="img/more.svg" alt="">
+          </div>
+        </td>
+        <td class="ta-right">
+          <div class="td__container">
+            <p class="caption white">0.2785689852 BTC</p>
+            <p class="caption grey">$10,098.36</p>
+          </div>
+        </td>
+        <td class="ta-right">
+          <div class="td__container">
+            <p class="caption white">0.2785689852 BTC</p>
+            <p class="caption grey">$10,098.36</p>
+          </div>
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <div class="td__container">
+            <img src="img/btc.svg" alt="" width="32px">
+            <div class="asset-title">
+              <p class="caption-bold white">BTC</p>
+              <p class="caption grey">Bitcoin</p>
+            </div>
+            <div class="margin-table__buttons">
+              <a href="" class="grey-button2 white">Transfer</a>
+              <a href="" class="grey-button2 white">Borrow</a>
+              <a href="" class="grey-button2 white">Trade</a>
+            </div>
+          </div>
+        </td>
+        <td class="ta-right">
+          <div class="total-balance__container">
+            <div class="td__container">
+              <p class="caption white">0.2785689852 BTC</p>
+              <p class="caption grey">$10,098.36</p>
+            </div>
+            <img src="img/more.svg" alt="">
+          </div>
+        </td>
+        <td class="ta-right">
+          <div class="td__container">
+            <p class="caption white">0.2785689852 BTC</p>
+            <p class="caption grey">$10,098.36</p>
+          </div>
+        </td>
+        <td class="ta-right">
+          <div class="td__container">
+            <p class="caption white">0.2785689852 BTC</p>
+            <p class="caption grey">$10,098.36</p>
+          </div>
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <div class="td__container">
+            <img src="img/btc.svg" alt="" width="32px">
+            <div class="asset-title">
+              <p class="caption-bold white">BTC</p>
+              <p class="caption grey">Bitcoin</p>
+            </div>
+            <div class="margin-table__buttons">
+              <a href="" class="grey-button2 white">Transfer</a>
+              <a href="" class="grey-button2 white">Borrow</a>
+              <a href="" class="grey-button2 white">Trade</a>
+            </div>
+          </div>
+        </td>
+        <td class="ta-right">
+          <div class="total-balance__container">
+            <div class="td__container">
+              <p class="caption white">0.2785689852 BTC</p>
+              <p class="caption grey">$10,098.36</p>
+            </div>
+            <img src="img/more.svg" alt="">
+          </div>
+        </td>
+        <td class="ta-right">
+          <div class="td__container">
+            <p class="caption white">0.2785689852 BTC</p>
+            <p class="caption grey">$10,098.36</p>
+          </div>
+        </td>
+        <td class="ta-right">
+          <div class="td__container">
+            <p class="caption white">0.2785689852 BTC</p>
+            <p class="caption grey">$10,098.36</p>
+          </div>
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <div class="td__container">
+            <img src="img/btc.svg" alt="" width="32px">
+            <div class="asset-title">
+              <p class="caption-bold white">BTC</p>
+              <p class="caption grey">Bitcoin</p>
+            </div>
+            <div class="margin-table__buttons">
+              <a href="" class="grey-button2 white">Transfer</a>
+              <a href="" class="grey-button2 white">Borrow</a>
+              <a href="" class="grey-button2 white">Trade</a>
+            </div>
+          </div>
+        </td>
+        <td class="ta-right">
+          <div class="total-balance__container">
+            <div class="td__container">
+              <p class="caption white">0.2785689852 BTC</p>
+              <p class="caption grey">$10,098.36</p>
+            </div>
+            <img src="img/more.svg" alt="">
+          </div>
+        </td>
+        <td class="ta-right">
+          <div class="td__container">
+            <p class="caption white">0.2785689852 BTC</p>
+            <p class="caption grey">$10,098.36</p>
+          </div>
+        </td>
+        <td class="ta-right">
+          <div class="td__container">
+            <p class="caption white">0.2785689852 BTC</p>
+            <p class="caption grey">$10,098.36</p>
+          </div>
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <div class="td__container">
+            <img src="img/btc.svg" alt="" width="32px">
+            <div class="asset-title">
+              <p class="caption-bold white">BTC</p>
+              <p class="caption grey">Bitcoin</p>
+            </div>
+            <div class="margin-table__buttons">
+              <a href="" class="grey-button2 white">Transfer</a>
+              <a href="" class="grey-button2 white">Borrow</a>
+              <a href="" class="grey-button2 white">Trade</a>
+            </div>
+          </div>
+        </td>
+        <td class="ta-right">
+          <div class="total-balance__container">
+            <div class="td__container">
+              <p class="caption white">0.2785689852 BTC</p>
+              <p class="caption grey">$10,098.36</p>
+            </div>
+            <img src="img/more.svg" alt="">
+          </div>
+        </td>
+        <td class="ta-right">
+          <div class="td__container">
+            <p class="caption white">0.2785689852 BTC</p>
+            <p class="caption grey">$10,098.36</p>
+          </div>
+        </td>
+        <td class="ta-right">
+          <div class="td__container">
+            <p class="caption white">0.2785689852 BTC</p>
+            <p class="caption grey">$10,098.36</p>
+          </div>
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <div class="td__container">
+            <img src="img/btc.svg" alt="" width="32px">
+            <div class="asset-title">
+              <p class="caption-bold white">BTC</p>
+              <p class="caption grey">Bitcoin</p>
+            </div>
+            <div class="margin-table__buttons">
+              <a href="" class="grey-button2 white">Transfer</a>
+              <a href="" class="grey-button2 white">Borrow</a>
+              <a href="" class="grey-button2 white">Trade</a>
+            </div>
+          </div>
+        </td>
+        <td class="ta-right">
+          <div class="total-balance__container">
+            <div class="td__container">
+              <p class="caption white">0.2785689852 BTC</p>
+              <p class="caption grey">$10,098.36</p>
+            </div>
+            <img src="img/more.svg" alt="">
+          </div>
+        </td>
+        <td class="ta-right">
+          <div class="td__container">
+            <p class="caption white">0.2785689852 BTC</p>
+            <p class="caption grey">$10,098.36</p>
+          </div>
+        </td>
+        <td class="ta-right">
+          <div class="td__container">
+            <p class="caption white">0.2785689852 BTC</p>
+            <p class="caption grey">$10,098.36</p>
+          </div>
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <div class="td__container">
+            <img src="img/btc.svg" alt="" width="32px">
+            <div class="asset-title">
+              <p class="caption-bold white">BTC</p>
+              <p class="caption grey">Bitcoin</p>
+            </div>
+            <div class="margin-table__buttons">
+              <a href="" class="grey-button2 white">Transfer</a>
+              <a href="" class="grey-button2 white">Borrow</a>
+              <a href="" class="grey-button2 white">Trade</a>
+            </div>
+          </div>
+        </td>
+        <td class="ta-right">
+          <div class="total-balance__container">
+            <div class="td__container">
+              <p class="caption white">0.2785689852 BTC</p>
+              <p class="caption grey">$10,098.36</p>
+            </div>
+            <img src="img/more.svg" alt="">
+          </div>
+        </td>
+        <td class="ta-right">
+          <div class="td__container">
+            <p class="caption white">0.2785689852 BTC</p>
+            <p class="caption grey">$10,098.36</p>
+          </div>
+        </td>
+        <td class="ta-right">
+          <div class="td__container">
+            <p class="caption white">0.2785689852 BTC</p>
+            <p class="caption grey">$10,098.36</p>
+          </div>
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <div class="td__container">
+            <img src="img/btc.svg" alt="" width="32px">
+            <div class="asset-title">
+              <p class="caption-bold white">BTC</p>
+              <p class="caption grey">Bitcoin</p>
+            </div>
+            <div class="margin-table__buttons">
+              <a href="" class="grey-button2 white">Transfer</a>
+              <a href="" class="grey-button2 white">Borrow</a>
+              <a href="" class="grey-button2 white">Trade</a>
+            </div>
+          </div>
+        </td>
+        <td class="ta-right">
+          <div class="total-balance__container">
+            <div class="td__container">
+              <p class="caption white">0.2785689852 BTC</p>
+              <p class="caption grey">$10,098.36</p>
+            </div>
+            <img src="img/more.svg" alt="">
+          </div>
+        </td>
+        <td class="ta-right">
+          <div class="td__container">
+            <p class="caption white">0.2785689852 BTC</p>
+            <p class="caption grey">$10,098.36</p>
+          </div>
+        </td>
+        <td class="ta-right">
+          <div class="td__container">
+            <p class="caption white">0.2785689852 BTC</p>
+            <p class="caption grey">$10,098.36</p>
+          </div>
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <div class="td__container">
+            <img src="img/btc.svg" alt="" width="32px">
+            <div class="asset-title">
+              <p class="caption-bold white">BTC</p>
+              <p class="caption grey">Bitcoin</p>
+            </div>
+            <div class="margin-table__buttons">
+              <a href="" class="grey-button2 white">Transfer</a>
+              <a href="" class="grey-button2 white">Borrow</a>
+              <a href="" class="grey-button2 white">Trade</a>
+            </div>
+          </div>
+        </td>
+        <td class="ta-right">
+          <div class="total-balance__container">
+            <div class="td__container">
+              <p class="caption white">0.2785689852 BTC</p>
+              <p class="caption grey">$10,098.36</p>
+            </div>
+            <img src="img/more.svg" alt="">
+          </div>
+        </td>
+        <td class="ta-right">
+          <div class="td__container">
+            <p class="caption white">0.2785689852 BTC</p>
+            <p class="caption grey">$10,098.36</p>
+          </div>
+        </td>
+        <td class="ta-right">
+          <div class="td__container">
+            <p class="caption white">0.2785689852 BTC</p>
+            <p class="caption grey">$10,098.36</p>
+          </div>
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <div class="td__container">
+            <img src="img/btc.svg" alt="" width="32px">
+            <div class="asset-title">
+              <p class="caption-bold white">BTC</p>
+              <p class="caption grey">Bitcoin</p>
+            </div>
+            <div class="margin-table__buttons">
+              <a href="" class="grey-button2 white">Transfer</a>
+              <a href="" class="grey-button2 white">Borrow</a>
+              <a href="" class="grey-button2 white">Trade</a>
+            </div>
+          </div>
+        </td>
+        <td class="ta-right">
+          <div class="total-balance__container">
+            <div class="td__container">
+              <p class="caption white">0.2785689852 BTC</p>
+              <p class="caption grey">$10,098.36</p>
+            </div>
+            <img src="img/more.svg" alt="">
+          </div>
+        </td>
+        <td class="ta-right">
+          <div class="td__container">
+            <p class="caption white">0.2785689852 BTC</p>
+            <p class="caption grey">$10,098.36</p>
+          </div>
+        </td>
+        <td class="ta-right">
+          <div class="td__container">
+            <p class="caption white">0.2785689852 BTC</p>
+            <p class="caption grey">$10,098.36</p>
+          </div>
+        </td>
+      </tr>
+
+    </table>
+  </div>
+</div>
+{% endblock %}

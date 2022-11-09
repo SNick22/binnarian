@@ -537,6 +537,7 @@ ol, ul
   border-radius: 4px
   padding: 4px 8px
   margin-left: 8px
+  flex-shrink: 0
 
 .balance
   display: flex
@@ -694,6 +695,8 @@ ol, ul
   tr:hover
     td
       background: #23262F
+    .margin-table__buttons
+      display: flex
 
 .earn
   padding: 5px 10px
@@ -706,6 +709,7 @@ ol, ul
   height: 48px
   box-sizing: content-box
   padding-bottom: 20px
+  position: relative
 
 .left-buttons
   width: 100%
@@ -794,3 +798,74 @@ ol, ul
   display: flex
   flex-direction: column
   justify-content: flex-end
+
+.margin
+  display: flex
+  flex-direction: column
+  justify-content: space-between
+
+.margin__bottom-block
+  display: flex
+  justify-content: space-between
+  @media screen and (max-width: 920px)
+    flex-direction: column
+    > div
+      &:not(:last-child)
+        margin-bottom: 16px
+
+.margin-level
+  display: flex
+  img
+    margin-right: 24px
+
+.funds__search
+  background: #17181B
+  border-radius: 4px 4px 0 0
+  padding: 20px 32px 0
+  display: flex
+  justify-content: space-between
+  @media screen and (max-width: 768px)
+    display: none
+  a
+    height: fit-content
+  svg
+    margin-left: 13px
+
+.margin-table
+  border-radius: 0 0 4px 4px
+  td:nth-child(2)
+    img
+      margin-left: 10px
+      display: none
+  @media screen and (max-width: 768px)
+    border-radius: 4px
+  @media screen and (max-width: 768px)
+    th:nth-child(2)
+      padding-right: 95px
+    td:nth-child(2), th:nth-child(2)
+      display: table-cell !important
+      .total-balance__container
+        display: flex
+        align-items: flex-start
+        img
+          display: block
+  tr:hover
+    @media screen and (min-width: 768px)
+      .td__container
+        padding-bottom: 70px
+
+.table__currency
+  display: flex
+
+.margin-table__buttons
+  margin-top: 20px
+  position: absolute
+  top: 48px
+  left: 0
+  display: none
+  z-index: 100
+  @media screen and (max-width: 768px)
+    display: none !important
+  a
+    &:not(:last-child)
+      margin-right: 8px

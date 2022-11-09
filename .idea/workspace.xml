@@ -8,29 +8,9 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/css/main.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/sass/_header.sass" beforeDir="false" afterPath="$PROJECT_DIR$/app/sass/_header.sass" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/sass/main.sass" beforeDir="false" afterPath="$PROJECT_DIR$/app/sass/main.sass" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/templates/header-not-login.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/header-not-login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/templates/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/header.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/about-us.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/about-us.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/dist/css/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/faq.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/faq.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/fees.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/fees.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/home-login.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/home-login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/home-not-login.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/home-not-login.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/privacy-policy.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/privacy-policy.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/profile-change_password.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/profile-change_password.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/profile-password_changed.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/profile-password_changed.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/profile.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/profile.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/profile_promocode.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/profile_promocode.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/profile_referrals.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/profile_referrals.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/profile_sessions.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/profile_sessions.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/referral.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/referral.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/risk.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/risk.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/security.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/security.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/terms-of-use.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/terms-of-use.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/wallet-overview.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/wallet-overview.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,20 +38,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;javascript.nodejs.core.library.configured.version&quot;: &quot;16.16.0&quot;,
-    &quot;javascript.nodejs.core.library.typings.version&quot;: &quot;16.11.62&quot;,
-    &quot;list.type.of.created.stylesheet&quot;: &quot;Sass&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;File.Encoding&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "DefaultHtmlFileTemplate": "HTML File",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "javascript.nodejs.core.library.configured.version": "16.16.0",
+    "javascript.nodejs.core.library.typings.version": "16.11.62",
+    "list.type.of.created.stylesheet": "Sass",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "File.Encoding",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -103,6 +84,7 @@
       <workItem from="1667374177238" duration="19558000" />
       <workItem from="1667485220090" duration="16076000" />
       <workItem from="1667677758185" duration="11294000" />
+      <workItem from="1667973155124" duration="13745000" />
     </task>
     <servers />
   </component>
