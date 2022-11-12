@@ -35,6 +35,7 @@ a
   text-decoration: none
   display: block
   width: fit-content
+  cursor: pointer
 
 img
   pointer-events: none
@@ -869,3 +870,237 @@ ol, ul
   a
     &:not(:last-child)
       margin-right: 8px
+
+.wallet-modal
+  background: #23262F
+  border-radius: 20px
+  padding: 32px
+  width: 448px
+  @media screen and (max-width: 768px)
+    width: 100%
+    min-height: 100vh
+    border-radius: 0
+    display: flex
+    flex-direction: column
+  p
+    margin: 0
+
+.modal-dialog
+  @media screen and (max-width: 768px)
+    margin: 0
+
+.wallet-modal__top
+  display: flex
+  justify-content: space-between
+  align-items: center
+
+.wallet-modal__close
+  border: 2px solid #353945
+  border-radius: 50%
+  padding: 10px
+  height: fit-content
+  display: flex
+  justify-content: center
+  align-items: center
+  color: #FCFCFD
+  cursor: pointer
+  transition: 0.3s
+  background-color: rgba(0,0,0,0)
+  &:hover
+    color: #c0c0c0
+
+.wallet-modal__content
+  margin-top: 32px
+  label
+    color: #B1B5C4
+    text-transform: uppercase
+    width: 100%
+  input
+    display: block
+    padding: 12px 16px
+    background-color: rgba(0,0,0,0)
+    border: 2px solid #353945
+    border-radius: 12px
+    outline: none
+    width: inherit
+    margin-top: 12px
+  .checkbox
+    width: 24px
+    height: 24px
+    display: inline-block
+    margin-right: 12px
+    position: relative
+  .blue-button
+    width: 100%
+    margin-top: 32px
+
+  input[type='checkbox']
+    cursor: pointer
+    width: 24px
+    height: 24px
+    opacity: 0
+    margin: 0
+    position: absolute
+    z-index: 2
+    &:checked
+      ~ .custom-checkbox
+        background-image: url(../img/check.svg)
+        background-position: center center
+        background-repeat: no-repeat
+
+  .custom-checkbox
+    position: absolute
+    top: 0
+    width: 100%
+    height: 100%
+    background-color: #1DAEEF
+    border-radius: 4px
+    z-index: 1
+  select
+    outline: none
+    padding: 12px
+    width: 100%
+    border: 2px solid #353945
+    border-radius: 12px
+    background-color: rgba(0,0,0,0)
+    margin-top: 12px
+
+.save-address
+  margin-top: 32px
+  display: flex
+  align-items: center
+
+.available-balance
+  margin-top: 32px
+  background: #353945
+  border-radius: 4px
+  padding: 20px 24px
+  display: flex
+  justify-content: space-between
+  > div
+    text-align: right
+
+.mt32
+  margin-top: 32px !important
+
+.mt12
+  margin-top: 12px !important
+
+.amount__input
+  width: 100%
+  position: relative
+  button
+    position: absolute
+    background-color: rgba(0,0,0,0)
+    border: 2px solid #353945
+    border-radius: 90px
+    padding: 0 14px
+    top: 12px
+    right: 16px
+
+.from-to-switch
+  background: #353945
+  border-radius: 32px
+  margin-top: 32px
+  height: 32px
+  width: 32px
+  display: flex
+  justify-content: center
+  align-items: center
+
+.success-container
+  display: flex
+  align-items: center
+  flex-direction: column
+  text-align: center
+  p
+    margin-top: 32px
+
+.status-container
+  padding: 24px
+  border: 1px solid #353945
+  border-radius: 12px
+  > p
+    margin-top: 10px
+
+.status-transaction
+  border-bottom: 1px solid #353945
+  padding-bottom: 16px
+  display: flex
+  justify-content: space-between
+  p
+    &:nth-child(2)
+      margin-top: 10px
+
+.deposit-content
+  display: flex
+  flex-direction: column
+  justify-content: space-between
+  flex-grow: 1
+
+.green-square
+  width: 12px
+  height: 12px
+  background: #00C076
+  border-radius: 4px
+
+.deposit-currency
+  text-align: center
+
+.address-input
+  display: flex
+  width: 314px
+  margin: 0 auto
+  input
+    background-color: #353945
+    margin: 0
+    border: none
+    border-radius: 4px 0 0 4px
+    padding: 8px 8px 8px 16px
+
+  button
+    background-color: rgba(0,0,0,0)
+    border-radius: 0 4px 4px 0
+    background-color: #353945
+    padding-right: 16px
+
+.dashed-square
+  width: 160px
+  height: 160px
+  background: url(../img/dashed-square.svg)
+  background-size: 100%
+  display: flex
+  justify-content: center
+  align-items: center
+  margin: 0 auto
+
+.dashed-square__inner
+  width: 128px
+  height: 128px
+  background-color: #E4D7CF
+  border-radius: 8px
+  display: flex
+  justify-content: center
+  align-items: center
+  background-image: url(../img/logo-border.svg)
+  background-repeat: no-repeat
+  background-position: center
+
+.borrow-text
+  display: flex
+  justify-content: space-between
+
+.borrow-buttons
+  display: flex
+  justify-content: space-between
+  button
+    background-color: rgba(0,0,0,0)
+    border: 2px solid #353945
+    border-radius: 90px
+    padding: 0 14px
+
+.borrow
+  display: flex
+  flex-direction: column
+  justify-content: space-between
+  flex-grow: 1

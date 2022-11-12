@@ -3,6 +3,276 @@
 {% extends 'templates/default.html' %}
 
 {% block content %}
+<div class="modal" tabindex="-1" id="deposit">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content wallet-modal">
+      <div class="wallet-modal__top">
+        <p></p>
+        <button type="button" class="wallet-modal__close" data-bs-dismiss="modal" aria-label="Close">
+          <svg width="14" height="14" viewBox="0 0 14 14" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M0.292893 0.292893C0.683417 -0.0976309 1.31658 -0.0976309 1.70711 0.292893L7 5.58579L12.2929 0.292893C12.6834 -0.0976311 13.3166 -0.0976311 13.7071 0.292893C14.0976 0.683417 14.0976 1.31658 13.7071 1.70711L8.41421 7L13.7071 12.2929C14.0976 12.6834 14.0976 13.3166 13.7071 13.7071C13.3166 14.0976 12.6834 14.0976 12.2929 13.7071L7 8.41421L1.70711 13.7071C1.31658 14.0976 0.683418 14.0976 0.292893 13.7071C-0.0976309 13.3166 -0.0976309 12.6834 0.292893 12.2929L5.58579 7L0.292893 1.70711C-0.0976311 1.31658 -0.0976311 0.683418 0.292893 0.292893Z"/>
+          </svg>
+        </button>
+      </div>
+      <div class="wallet-modal__content deposit-content">
+        <div class="success-container">
+          <img src="img/deposit.png" width="166px" height="166px" alt="">
+          <p class="body2 white">Select a protocol to see the corresponding address.</p>
+        </div>
+        <div>
+          <button class="blue-button" data-bs-toggle="modal" data-bs-target="#deposit-currency">Deposit On Tron</button>
+          <button class="blue-button" style="margin-top: 8px" data-bs-toggle="modal" data-bs-target="#deposit-currency">Deposit On Ethereum</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal" tabindex="-1" id="deposit-currency">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content wallet-modal">
+      <div class="wallet-modal__top">
+        <p class="headline4 white">Deposit USDT</p>
+        <button type="button" class="wallet-modal__close" data-bs-dismiss="modal" aria-label="Close">
+          <svg width="14" height="14" viewBox="0 0 14 14" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M0.292893 0.292893C0.683417 -0.0976309 1.31658 -0.0976309 1.70711 0.292893L7 5.58579L12.2929 0.292893C12.6834 -0.0976311 13.3166 -0.0976311 13.7071 0.292893C14.0976 0.683417 14.0976 1.31658 13.7071 1.70711L8.41421 7L13.7071 12.2929C14.0976 12.6834 14.0976 13.3166 13.7071 13.7071C13.3166 14.0976 12.6834 14.0976 12.2929 13.7071L7 8.41421L1.70711 13.7071C1.31658 14.0976 0.683418 14.0976 0.292893 13.7071C-0.0976309 13.3166 -0.0976309 12.6834 0.292893 12.2929L5.58579 7L0.292893 1.70711C-0.0976311 1.31658 -0.0976311 0.683418 0.292893 0.292893Z"/>
+          </svg>
+        </button>
+      </div>
+      <p class="body2 grey" style="margin-top: 8px">on Ethereum</p>
+      <div class="wallet-modal__content deposit-content deposit-currency">
+        <div class="success-container">
+          <img src="img/deposit.png" width="166px" height="166px" alt="">
+        </div>
+        <div class="available-balance">
+          <div class="green-square" style="margin-top: 6px"></div>
+          <div>
+            <p class="body2 white">10075.56213968 USDT</p>
+            <p class="caption grey">$2,095.35</p>
+          </div>
+        </div>
+        <p class="body2 white mt32">Address</p>
+        <p class="caption2 grey mt12">Only send USDT to this address. Sending any other asset to this address may result in the loss of your deposit!</p>
+        <div class="address-input mt32">
+          <input type="text" class="caption-bold white" value="0xf8aaa2b1842e796191e736434479" readonly>
+          <button>
+            <img src="img/coins.svg" alt="">
+          </button>
+        </div>
+        <div class="dashed-square mt32">
+          <div class="dashed-square__inner">
+            <img src="img/logo.svg" width="50px" height="50px">
+          </div>
+        </div>
+        <p class="caption3-medium grey mt32">Please be sure that the contract address is related to the tokens that you are depositing.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal" tabindex="-1" id="withdraw">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content wallet-modal">
+      <div class="wallet-modal__top">
+        <p class="headline4 white">Withdraw ETH</p>
+        <button type="button" class="wallet-modal__close" data-bs-dismiss="modal" aria-label="Close">
+          <svg width="14" height="14" viewBox="0 0 14 14" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M0.292893 0.292893C0.683417 -0.0976309 1.31658 -0.0976309 1.70711 0.292893L7 5.58579L12.2929 0.292893C12.6834 -0.0976311 13.3166 -0.0976311 13.7071 0.292893C14.0976 0.683417 14.0976 1.31658 13.7071 1.70711L8.41421 7L13.7071 12.2929C14.0976 12.6834 14.0976 13.3166 13.7071 13.7071C13.3166 14.0976 12.6834 14.0976 12.2929 13.7071L7 8.41421L1.70711 13.7071C1.31658 14.0976 0.683418 14.0976 0.292893 13.7071C-0.0976309 13.3166 -0.0976309 12.6834 0.292893 12.2929L5.58579 7L0.292893 1.70711C-0.0976311 1.31658 -0.0976311 0.683418 0.292893 0.292893Z"/>
+          </svg>
+        </button>
+      </div>
+      <div class="wallet-modal__content">
+        <label class="hairline2">
+          address
+          <input type="text" class="caption-bold grey">
+        </label>
+        <p class="caption3-medium grey" style="margin-top: 12px">Do not send Tether USD unless you are certain the destination supports TRC-20 transactions. If it does not, you could permanently lose access to your coins.</p>
+        <div class="save-address">
+          <div class="checkbox">
+            <input type="checkbox" checked>
+            <div class="custom-checkbox"></div>
+          </div>
+          <span class="caption-bold white">Save address for next time</span>
+        </div>
+        <div class="available-balance">
+          <p class="caption-bold white">Available<br>balance</p>
+          <div>
+            <p class="body2 white">10075.56213968 USDT</p>
+            <p class="caption grey">$2,095.35</p>
+          </div>
+        </div>
+        <label class="hairline2 mt32">
+          Amount to withdraw
+          <div class="amount__input">
+            <input type="text" class="caption-bold grey">
+            <button class="button2 white">Max amount</button>
+          </div>
+        </label>
+        <p class="caption3-medium grey" style="margin-top: 12px">$1,000,000.00 daily withdrawal limit remaining.</p>
+        <label class="hairline2 mt32">
+          transaction fee
+          <input type="text" class="caption-bold grey" value="0.00000000 ETH" readonly>
+        </label>
+        <label class="hairline2 mt32">
+          total
+          <input type="text" class="caption-bold grey" value="0.00000000 ETH" readonly>
+        </label>
+        <button class="blue-button" data-bs-toggle="modal" data-bs-target="#withdraw-success">Withdraw</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal" tabindex="-1" id="withdraw-success">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content wallet-modal">
+      <div class="wallet-modal__top">
+        <p></p>
+        <button type="button" class="wallet-modal__close" data-bs-dismiss="modal" aria-label="Close">
+          <svg width="14" height="14" viewBox="0 0 14 14" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M0.292893 0.292893C0.683417 -0.0976309 1.31658 -0.0976309 1.70711 0.292893L7 5.58579L12.2929 0.292893C12.6834 -0.0976311 13.3166 -0.0976311 13.7071 0.292893C14.0976 0.683417 14.0976 1.31658 13.7071 1.70711L8.41421 7L13.7071 12.2929C14.0976 12.6834 14.0976 13.3166 13.7071 13.7071C13.3166 14.0976 12.6834 14.0976 12.2929 13.7071L7 8.41421L1.70711 13.7071C1.31658 14.0976 0.683418 14.0976 0.292893 13.7071C-0.0976309 13.3166 -0.0976309 12.6834 0.292893 12.2929L5.58579 7L0.292893 1.70711C-0.0976311 1.31658 -0.0976311 0.683418 0.292893 0.292893Z"/>
+          </svg>
+        </button>
+      </div>
+      <div class="wallet-modal__content deposit-content" style="margin-top: 0">
+        <div>
+          <div class="success-container">
+            <img src="img/withdraw-success.png" width="102px" height="102px" alt="">
+            <p class="body2 white">You successfully a withdrawal<br><span class="green">100.00 USDT</span> from Binarrian</p>
+          </div>
+          <div class="status-container mt32">
+            <div class="status-transaction">
+              <div>
+                <p class="caption grey">Status</p>
+                <p class="caption-bold green">Completed</p>
+              </div>
+              <div>
+                <p class="caption grey">Transaction ID</p>
+                <p class="caption-bold white">0msx836930...87r398</p>
+              </div>
+            </div>
+            <p class="caption grey">Address</p>
+            <p class="caption-bold white">0xf8aaa2b1842e796191e736434sda....479</p>
+          </div>
+        </div>
+        <button class="blue-button mt32" data-bs-dismiss="modal" aria-label="Close">Wallet</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal" tabindex="-1" id="transfer">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content wallet-modal">
+      <div class="wallet-modal__top">
+        <p class="headline4 white">Transfer</p>
+        <button type="button" class="wallet-modal__close" data-bs-dismiss="modal" aria-label="Close">
+          <svg width="14" height="14" viewBox="0 0 14 14" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M0.292893 0.292893C0.683417 -0.0976309 1.31658 -0.0976309 1.70711 0.292893L7 5.58579L12.2929 0.292893C12.6834 -0.0976311 13.3166 -0.0976311 13.7071 0.292893C14.0976 0.683417 14.0976 1.31658 13.7071 1.70711L8.41421 7L13.7071 12.2929C14.0976 12.6834 14.0976 13.3166 13.7071 13.7071C13.3166 14.0976 12.6834 14.0976 12.2929 13.7071L7 8.41421L1.70711 13.7071C1.31658 14.0976 0.683418 14.0976 0.292893 13.7071C-0.0976309 13.3166 -0.0976309 12.6834 0.292893 12.2929L5.58579 7L0.292893 1.70711C-0.0976311 1.31658 -0.0976311 0.683418 0.292893 0.292893Z"/>
+          </svg>
+        </button>
+      </div>
+      <div class="wallet-modal__content">
+        <div class="available-balance" style="margin-top: 0">
+          <p class="caption-bold white">Available<br>balance</p>
+          <div>
+            <p class="body2 white">10075.56213968 USDT</p>
+            <p class="caption grey">$2,095.35</p>
+          </div>
+        </div>
+        <label class="hairline2 mt32">
+          from
+          <select class="caption-bold white">
+            <option>Margin</option>
+          </select>
+        </label>
+        <button class="from-to-switch">
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="#E6E8EC" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M4.86225 6.80734C5.1226 7.06769 5.54471 7.06769 5.80506 6.80734L7.66699 4.94541L9.52892 6.80734C9.78927 7.06769 10.2114 7.06769 10.4717 6.80734C10.7321 6.54699 10.7321 6.12488 10.4717 5.86453L8.1384 3.5312C7.87805 3.27085 7.45594 3.27085 7.19559 3.5312L4.86225 5.86453C4.6019 6.12488 4.6019 6.54699 4.86225 6.80734Z"/>
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M4.86225 9.19656C5.1226 8.93621 5.54471 8.93621 5.80506 9.19656L7.66699 11.0585L9.52892 9.19656C9.78927 8.93621 10.2114 8.93621 10.4717 9.19656C10.7321 9.45691 10.7321 9.87902 10.4717 10.1394L8.1384 12.4727C7.87805 12.7331 7.45594 12.7331 7.19559 12.4727L4.86225 10.1394C4.6019 9.87902 4.6019 9.45691 4.86225 9.19656Z"/>
+          </svg>
+        </button>
+        <label class="hairline2 mt32">
+          to
+          <select class="caption-bold white">
+            <option>Fiat and Spot</option>
+          </select>
+        </label>
+        <label class="hairline2 mt32">
+          coin
+          <select class="caption-bold white">
+            <option>ETH</option>
+          </select>
+        </label>
+        <label class="hairline2 mt32">
+          Amount to withdraw
+          <div class="amount__input">
+            <input type="text" class="caption-bold grey">
+            <button class="button2 white">Max amount</button>
+          </div>
+        </label>
+        <p class="caption3-medium grey" style="margin-top: 12px">2.14646231064565653 ETH available</p>
+        <div class="blue-button">Transfer</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal" tabindex="-1" id="borrow">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content wallet-modal">
+      <div class="wallet-modal__top">
+        <p class="headline4 white">Borrow</p>
+        <button type="button" class="wallet-modal__close" data-bs-dismiss="modal" aria-label="Close">
+          <svg width="14" height="14" viewBox="0 0 14 14" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M0.292893 0.292893C0.683417 -0.0976309 1.31658 -0.0976309 1.70711 0.292893L7 5.58579L12.2929 0.292893C12.6834 -0.0976311 13.3166 -0.0976311 13.7071 0.292893C14.0976 0.683417 14.0976 1.31658 13.7071 1.70711L8.41421 7L13.7071 12.2929C14.0976 12.6834 14.0976 13.3166 13.7071 13.7071C13.3166 14.0976 12.6834 14.0976 12.2929 13.7071L7 8.41421L1.70711 13.7071C1.31658 14.0976 0.683418 14.0976 0.292893 13.7071C-0.0976309 13.3166 -0.0976309 12.6834 0.292893 12.2929L5.58579 7L0.292893 1.70711C-0.0976311 1.31658 -0.0976311 0.683418 0.292893 0.292893Z"/>
+          </svg>
+        </button>
+      </div>
+      <div class="wallet-modal__content borrow">
+        <div>
+          <label class="hairline2">
+            coin
+            <select class="caption-bold white">
+              <option>ETH</option>
+            </select>
+          </label>
+          <div class="borrow-text mt32">
+            <p class="caption-bold white">Hourly Interest Rate:</p>
+            <p class="body2 white">0.00208333%</p>
+          </div>
+          <div style="text-align: right;">
+            <p class="caption grey">0.00208333%</p>
+          </div>
+          <div class="borrow-text mt12">
+            <p class="caption-bold white">Borrowed:</p>
+            <p class="body2 white">0.00000000 ETH</p>
+          </div>
+          <div class="borrow-text mt12">
+            <p class="caption-bold white">Maximum Borrow Amount:</p>
+            <p class="body2 white">0.00000000 ETH</p>
+          </div>
+          <label class="hairline2 mt32">
+            Amount to transfer
+            <div class="amount__input">
+              <input type="text" class="caption-bold grey">
+              <button class="button2 white">100%</button>
+            </div>
+          </label>
+          <p class="caption3-medium grey mt12">Available: 0.00000000000 ETH</p>
+          <div class="borrow-buttons mt32">
+            <button class="button2 white">25%</button>
+            <button class="button2 white">50%</button>
+            <button class="button2 white">75%</button>
+            <button class="button2 white">100%</button>
+          </div>
+        </div>
+        <div class="blue-button">Confirm borrow</div>
+      </div>
+    </div>
+  </div>
+</div>
+
 <div class="wallet-container">
   <div class="left-nav">
     <ul>
@@ -10,12 +280,12 @@
       <li class="active"><a href="" class="button2 grey"><img src="img/wallet-margin.svg" alt="">Margin</a></li>
       <li><a href="" class="button2 grey"><img src="img/wallet-spot.svg" alt="">Spot</a></li>
       <li class="divider"></li>
-      <li><a href="" class="button2 grey"><img src="img/wallet-transfer.svg" alt="">Transfer</a></li>
+      <li><a class="button2 grey" data-bs-toggle="modal" data-bs-target="#transfer"><img src="img/wallet-transfer.svg" alt="">Transfer</a></li>
     </ul>
     <div class="left-buttons">
-      <a href="" class="button2 white blue-button">Deposit</a>
-      <a href="" class="button2 white grey-button">Widthdraw</a>
-      <a href="" class="button2 white grey-button transfer">Transfer</a>
+      <a class="button2 white blue-button" data-bs-toggle="modal" data-bs-target="#deposit">Deposit</a>
+      <a class="button2 white grey-button" data-bs-toggle="modal" data-bs-target="#withdraw">Widthdraw</a>
+      <a class="button2 white grey-button transfer" data-bs-toggle="modal" data-bs-target="#transfer">Transfer</a>
     </div>
     <select name="" class="left-nav__select caption-bold white">
       <option value="">Overview</option>
@@ -85,8 +355,8 @@
               <p class="caption grey">Bitcoin</p>
             </div>
             <div class="margin-table__buttons">
-              <a href="" class="grey-button2 white">Transfer</a>
-              <a href="" class="grey-button2 white">Borrow</a>
+              <a class="grey-button2 white" data-bs-toggle="modal" data-bs-target="#transfer">Transfer</a>
+              <a class="grey-button2 white" data-bs-toggle="modal" data-bs-target="#borrow">Borrow</a>
               <a href="" class="grey-button2 white">Trade</a>
             </div>
           </div>
@@ -123,8 +393,8 @@
               <p class="caption grey">Bitcoin</p>
             </div>
             <div class="margin-table__buttons">
-              <a href="" class="grey-button2 white">Transfer</a>
-              <a href="" class="grey-button2 white">Borrow</a>
+              <a class="grey-button2 white" data-bs-toggle="modal" data-bs-target="#transfer">Transfer</a>
+              <a class="grey-button2 white" data-bs-toggle="modal" data-bs-target="#borrow">Borrow</a>
               <a href="" class="grey-button2 white">Trade</a>
             </div>
           </div>
@@ -161,8 +431,8 @@
               <p class="caption grey">Bitcoin</p>
             </div>
             <div class="margin-table__buttons">
-              <a href="" class="grey-button2 white">Transfer</a>
-              <a href="" class="grey-button2 white">Borrow</a>
+              <a class="grey-button2 white" data-bs-toggle="modal" data-bs-target="#transfer">Transfer</a>
+              <a class="grey-button2 white" data-bs-toggle="modal" data-bs-target="#borrow">Borrow</a>
               <a href="" class="grey-button2 white">Trade</a>
             </div>
           </div>
@@ -199,8 +469,8 @@
               <p class="caption grey">Bitcoin</p>
             </div>
             <div class="margin-table__buttons">
-              <a href="" class="grey-button2 white">Transfer</a>
-              <a href="" class="grey-button2 white">Borrow</a>
+              <a class="grey-button2 white" data-bs-toggle="modal" data-bs-target="#transfer">Transfer</a>
+              <a class="grey-button2 white" data-bs-toggle="modal" data-bs-target="#borrow">Borrow</a>
               <a href="" class="grey-button2 white">Trade</a>
             </div>
           </div>
@@ -237,8 +507,8 @@
               <p class="caption grey">Bitcoin</p>
             </div>
             <div class="margin-table__buttons">
-              <a href="" class="grey-button2 white">Transfer</a>
-              <a href="" class="grey-button2 white">Borrow</a>
+              <a class="grey-button2 white" data-bs-toggle="modal" data-bs-target="#transfer">Transfer</a>
+              <a class="grey-button2 white" data-bs-toggle="modal" data-bs-target="#borrow">Borrow</a>
               <a href="" class="grey-button2 white">Trade</a>
             </div>
           </div>
@@ -275,8 +545,8 @@
               <p class="caption grey">Bitcoin</p>
             </div>
             <div class="margin-table__buttons">
-              <a href="" class="grey-button2 white">Transfer</a>
-              <a href="" class="grey-button2 white">Borrow</a>
+              <a class="grey-button2 white" data-bs-toggle="modal" data-bs-target="#transfer">Transfer</a>
+              <a class="grey-button2 white" data-bs-toggle="modal" data-bs-target="#borrow">Borrow</a>
               <a href="" class="grey-button2 white">Trade</a>
             </div>
           </div>
@@ -313,8 +583,8 @@
               <p class="caption grey">Bitcoin</p>
             </div>
             <div class="margin-table__buttons">
-              <a href="" class="grey-button2 white">Transfer</a>
-              <a href="" class="grey-button2 white">Borrow</a>
+              <a class="grey-button2 white" data-bs-toggle="modal" data-bs-target="#transfer">Transfer</a>
+              <a class="grey-button2 white" data-bs-toggle="modal" data-bs-target="#borrow">Borrow</a>
               <a href="" class="grey-button2 white">Trade</a>
             </div>
           </div>
@@ -351,8 +621,8 @@
               <p class="caption grey">Bitcoin</p>
             </div>
             <div class="margin-table__buttons">
-              <a href="" class="grey-button2 white">Transfer</a>
-              <a href="" class="grey-button2 white">Borrow</a>
+              <a class="grey-button2 white" data-bs-toggle="modal" data-bs-target="#transfer">Transfer</a>
+              <a class="grey-button2 white" data-bs-toggle="modal" data-bs-target="#borrow">Borrow</a>
               <a href="" class="grey-button2 white">Trade</a>
             </div>
           </div>
@@ -389,8 +659,8 @@
               <p class="caption grey">Bitcoin</p>
             </div>
             <div class="margin-table__buttons">
-              <a href="" class="grey-button2 white">Transfer</a>
-              <a href="" class="grey-button2 white">Borrow</a>
+              <a class="grey-button2 white" data-bs-toggle="modal" data-bs-target="#transfer">Transfer</a>
+              <a class="grey-button2 white" data-bs-toggle="modal" data-bs-target="#borrow">Borrow</a>
               <a href="" class="grey-button2 white">Trade</a>
             </div>
           </div>
@@ -427,8 +697,8 @@
               <p class="caption grey">Bitcoin</p>
             </div>
             <div class="margin-table__buttons">
-              <a href="" class="grey-button2 white">Transfer</a>
-              <a href="" class="grey-button2 white">Borrow</a>
+              <a class="grey-button2 white" data-bs-toggle="modal" data-bs-target="#transfer">Transfer</a>
+              <a class="grey-button2 white" data-bs-toggle="modal" data-bs-target="#borrow">Borrow</a>
               <a href="" class="grey-button2 white">Trade</a>
             </div>
           </div>
@@ -465,8 +735,8 @@
               <p class="caption grey">Bitcoin</p>
             </div>
             <div class="margin-table__buttons">
-              <a href="" class="grey-button2 white">Transfer</a>
-              <a href="" class="grey-button2 white">Borrow</a>
+              <a class="grey-button2 white" data-bs-toggle="modal" data-bs-target="#transfer">Transfer</a>
+              <a class="grey-button2 white" data-bs-toggle="modal" data-bs-target="#borrow">Borrow</a>
               <a href="" class="grey-button2 white">Trade</a>
             </div>
           </div>
