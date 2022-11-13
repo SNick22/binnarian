@@ -3755,3 +3755,7 @@ ol, ul {
       -ms-flex-positive: 1;
           flex-grow: 1;
 }
+
+.dropdown-toggle::after {
+  display: none !important;
+}
