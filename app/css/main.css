@@ -698,8 +698,11 @@ header {
   -o-transition: 0.1s;
   transition: 0.1s;
 }
-.account-drop a:hover {
+.account-drop a:hover, .account-drop a:active, .account-drop a:focus {
   background-color: #353945;
+}
+.account-drop a:focus-visible {
+  outline: none;
 }
 .account-drop a svg {
   margin-right: 8px;
@@ -2677,11 +2680,6 @@ ol, ul {
     margin-top: 60px;
   }
 }
-@media screen and (min-width: 860px) {
-  .left-nav {
-    min-height: calc(100vh - 84px);
-  }
-}
 .left-nav .active > * {
   color: #FCFCFD;
 }
@@ -2754,6 +2752,17 @@ ol, ul {
 @media screen and (max-width: 860px) {
   .wallet-main {
     margin: 0;
+  }
+}
+@media screen and (min-width: 860px) {
+  .wallet-main {
+    overflow-y: scroll;
+    ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  .wallet-main::-webkit-scrollbar {
+    width: 0;
+    height: 0;
   }
 }
 .wallet-main > p {
@@ -3423,6 +3432,7 @@ ol, ul {
 @media screen and (max-width: 768px) {
   .modal-dialog {
     margin: 0;
+    max-width: 100%;
   }
 }
 
@@ -3758,4 +3768,76 @@ ol, ul {
 
 .dropdown-toggle::after {
   display: none !important;
+}
+
+.grey-section {
+  background: #17181B;
+  border-radius: 4px;
+}
+
+.trading-limit__top {
+  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.trading-limit__top svg {
+  margin-right: 4px;
+}
+.trading-limit__top .left, .trading-limit__top .right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.trading-limit__top .left p, .trading-limit__top .right p {
+  margin: 0;
+}
+.trading-limit__top .left p:not(:last-child), .trading-limit__top .right p:not(:last-child) {
+  margin-bottom: 4px;
+}
+.trading-limit__top .left > div:not(:last-child) {
+  margin-right: 32px;
+}
+.trading-limit__top .right > div {
+  width: 160px;
+}
+.trading-limit__top .right > div:not(:last-child) {
+  border-right: 1px solid #23262F;
+  margin-right: 24px;
+}
+
+.arrow-down-button {
+  border-radius: 50%;
+  border: 2px solid #353945;
+  width: 32px;
+  height: 32px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+  -webkit-transition: 0.1s;
+  -o-transition: 0.1s;
+  transition: 0.1s;
+  margin-left: 10px;
+}
+.arrow-down-button:hover {
+  border-color: #575d71;
+}
+.arrow-down-button svg {
+  margin: 0;
+}
+
+@media screen and (min-width: 860px) {
+  .left-nav, .wallet-main {
+    height: calc(100vh - 88px);
+  }
 }

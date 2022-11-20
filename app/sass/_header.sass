@@ -294,8 +294,10 @@ header
     padding-top: 18px
     padding-bottom: 12px
     transition: 0.1s
-    &:hover
+    &:hover, &:active, &:focus
       background-color: #353945
+    &:focus-visible
+      outline: none
     svg
       margin-right: 8px
     p

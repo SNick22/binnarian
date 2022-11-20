@@ -468,8 +468,6 @@ ol, ul
     width: 100%
     background: none
     margin-top: 60px
-  @media screen and (min-width: 860px)
-    min-height: calc(100vh - 84px)
   .active
     > *
       color: #FCFCFD
@@ -515,6 +513,13 @@ ol, ul
   margin-left: 4px
   @media screen and (max-width: 860px)
     margin: 0
+  @media screen and (min-width: 860px)
+    overflow-y: scroll
+    ms-overflow-style: none
+    scrollbar-width: none
+    &::-webkit-scrollbar
+      width: 0
+      height: 0
   > p
     margin-top: 20px
     margin-bottom: 8px
@@ -888,6 +893,7 @@ ol, ul
 .modal-dialog
   @media screen and (max-width: 768px)
     margin: 0
+    max-width: 100%
 
 .wallet-modal__top
   display: flex
@@ -1107,3 +1113,50 @@ ol, ul
 
 .dropdown-toggle::after
   display: none !important
+
+.grey-section
+  background: #17181B
+  border-radius: 4px
+
+.trading-limit__top
+  padding: 20px
+  display: flex
+  justify-content: space-between
+  svg
+    margin-right: 4px
+  .left, .right
+    display: flex
+    p
+      margin: 0
+      &:not(:last-child)
+        margin-bottom: 4px
+  .left
+    >div
+      &:not(:last-child)
+        margin-right: 32px
+  .right
+    >div
+      width: 160px
+      &:not(:last-child)
+        border-right: 1px solid #23262F
+        margin-right: 24px
+
+.arrow-down-button
+  border-radius: 50%
+  border: 2px solid #353945
+  width: 32px
+  height: 32px
+  display: flex
+  justify-content: center
+  align-items: center
+  cursor: pointer
+  transition: 0.1s
+  margin-left: 10px
+  &:hover
+    border-color: scale-color(#353945, $lightness: 20%)
+  svg
+    margin: 0
+
+.left-nav, .wallet-main
+  @media screen and (min-width: 860px)
+    height: calc(100vh - 88px)
