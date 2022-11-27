@@ -8,16 +8,11 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/css/main.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/margin.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/margin.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/sass/_header.sass" beforeDir="false" afterPath="$PROJECT_DIR$/app/sass/_header.sass" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/sass/main.sass" beforeDir="false" afterPath="$PROJECT_DIR$/app/sass/main.sass" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/wallet-balance.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/wallet-balance.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/wallet-overview.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/wallet-overview.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/trading-limit.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/trading-limit.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/dist/css/main.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/margin.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/margin.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/wallet-balance.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/wallet-balance.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/wallet-overview.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/wallet-overview.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/trading-limit.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/trading-limit.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -96,6 +91,9 @@
       <workItem from="1668246033898" duration="6086000" />
       <workItem from="1668345051186" duration="181000" />
       <workItem from="1668777499522" duration="9157000" />
+      <workItem from="1669130286460" duration="23455000" />
+      <workItem from="1669455040674" duration="9981000" />
+      <workItem from="1669558857377" duration="8336000" />
     </task>
     <servers />
   </component>

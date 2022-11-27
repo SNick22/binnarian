@@ -113,6 +113,11 @@ ol, ul
   font-size: 16px
   font-family: "Poppins", sans-serif
 
+.body2-bold
+  font-weight: 500
+  font-size: 16px
+  font-family: "Poppins", sans-serif
+
 .button1
   font-weight: 700
   font-size: 16px
@@ -1117,11 +1122,14 @@ ol, ul
 .grey-section
   background: #17181B
   border-radius: 4px
+  padding: 16px
 
 .trading-limit__top
   padding: 20px
   display: flex
   justify-content: space-between
+  @media screen and (max-width: 768px)
+    flex-direction: column
   svg
     margin-right: 4px
   .left, .right
@@ -1131,15 +1139,34 @@ ol, ul
       &:not(:last-child)
         margin-bottom: 4px
   .left
+    @media screen and (max-width: 768px)
+      display: flex
+      flex-direction: column
     >div
       &:not(:last-child)
         margin-right: 32px
   .right
+    @media screen and (max-width: 768px)
+      display: flex
+      flex-wrap: wrap
+      margin-top: 12px
     >div
       width: 160px
+      @media screen and (max-width: 768px)
+        margin-top: 12px
+      @media screen and (max-width: 1230px)
+        width: fit-content
+      &:last-child
+        @media screen and (max-width: 1230px)
+          display: none
+        @media screen and (max-width: 768px)
+          display: block
       &:not(:last-child)
         border-right: 1px solid #23262F
         margin-right: 24px
+        @media screen and (max-width: 1230px)
+          border-right: none
+          margin-right: 20px
 
 .arrow-down-button
   border-radius: 50%
@@ -1160,3 +1187,348 @@ ol, ul
 .left-nav, .wallet-main
   @media screen and (min-width: 860px)
     height: calc(100vh - 88px)
+
+.main-sections
+  display: flex
+  @media screen and (max-width: 860px)
+    flex-direction: column-reverse
+  > div
+    margin: 0 4px 4px
+    &:first-child
+      width: 256px
+      flex-shrink: 0
+      @media screen and (max-width: 860px)
+        display: none !important
+    &:last-child
+      width: 256px
+      flex-shrink: 0
+      @media screen and (max-width: 1230px)
+        display: none
+    &:nth-child(2)
+      flex-grow: 1
+      margin-left: 0
+      margin-right: 0
+    > .grey-section
+      &:not(:first-child)
+        margin-top: 4px
+  .button2
+    padding: 4px 12px
+    border-radius: 100px
+    background-color: rgba(0,0,0,0)
+    transition: 0.1s
+    &:hover
+      color: scale-color($nav, $lightness: 20%)
+  .active, .active:hover
+    background: #353945
+    color: #FCFCFD
+
+.grey-section
+  @media screen and (max-width: 768px)
+    margin: 16px 16px 0 !important
+  .top-left
+    display: flex
+    select
+      background: #23262F
+      padding: 8px 6px
+      outline: none
+      border-radius: 4px
+  table
+    width: 100%
+    th, td
+      padding: 4px 0
+    td
+      z-index: 10
+    tr
+      position: relative
+      &:not(:last-child)
+        .red-bar
+          height: calc(100% - 4px)
+        >*
+          padding-bottom: 8px
+      >*
+        &:not(:first-child)
+          text-align: right
+  .search-coin
+    width: 100%
+    margin-top: 12px
+    input
+      border-radius: 8px
+
+.red-bar
+  background: #FF6838
+  opacity: 0.15
+  height: 100%
+  position: absolute
+  top: 0
+  right: -16px
+  z-index: 1
+
+.right-table
+  tr
+    &:nth-child(n+10)
+      @media screen and (max-width: 1230px)
+        display: none
+  th, td
+    padding-bottom: 4px !important
+    &:nth-child(2)
+      text-align: left !important
+  th
+    padding-bottom: 16px !important
+    button
+      color: inherit
+      background-color: rgba(0,0,0,0)
+
+.green-bar
+  background: #58BD7D
+
+.market-trades
+  td
+    padding-top: 0 !important
+    padding-bottom: 4px !important
+  th
+    padding-bottom: 16px !important
+  tr
+    &:nth-child(n+16)
+      @media screen and (max-width: 1230px)
+        display: none
+
+.buy-sell
+  margin-top: 24px
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button
+  -webkit-appearance: none
+
+input[type='number'],
+input[type="number"]:hover,
+input[type="number"]:focus
+  appearance: none
+  -moz-appearance: textfield
+
+.buy, .sell
+  width: 424 / 912 * 100%
+  > button
+    width: 100%
+    height: 48px
+    border-radius: 90px
+    margin-top: 12px
+  p
+    margin: 0
+  .input
+    margin-top: 12px
+    width: 100%
+    height: 48px
+    border: 2px solid #23262F
+    border-radius: 12px
+    padding: 0 14px
+    display: flex
+    justify-content: space-between
+    align-items: center
+    p
+      margin: 0
+    input
+      flex-grow: 1
+      width: 0
+      height: 100%
+      background-color: rgba(0,0,0,0)
+      padding: 0 10px
+      outline: none
+      text-align: right
+
+.slider
+  margin-top: 12px
+  height: 24px
+  position: relative
+  display: flex
+  align-items: center
+  justify-content: space-between
+  span
+    width: 2px
+    height: 6px
+    background: #777E91
+    border-radius: 2px
+    z-index: 1
+  svg
+    position: absolute
+    top: 2px
+    left: 0
+    cursor: grab
+
+.stright
+  height: 2px
+  width: 100%
+  background: #353945
+  position: absolute
+  left: 0
+  top: 50%
+
+.buy
+  > button
+    background: #58BD7D
+
+.sell
+  > button
+    background: #FF6838
+
+.bottom-table
+  tr
+    display: table-row !important
+  th, td
+    text-align: left !important
+    width: 25%
+    @media screen and (max-width: 768px)
+      width: auto
+    &:nth-child(3)
+      @media screen and (max-width: 768px)
+        text-align: right !important
+    &:nth-child(2)
+      @media screen and (max-width: 768px)
+        text-align: center !important
+    &:last-child
+      text-align: right !important
+      @media screen and (max-width: 768px)
+        display: none
+
+.top-left__table
+  tr
+    @media screen and (max-width: 1230px)
+      &:nth-child(n+7)
+        display: none
+
+.bottom-left__table
+  tr
+    @media screen and (max-width: 1230px)
+      &:nth-child(n+8)
+        display: none
+
+.left-section
+  @media screen and (min-width: 1230px)
+    flex-grow: 1
+  @media screen and (max-width: 1230px)
+    padding-bottom: 0
+
+.grey-section-tablet
+  display: none
+  @media screen and (max-width: 1230px)
+    display: block
+
+.trading
+  width: 100%
+  height: 493px
+  background-image: url("../img/trading.svg")
+  background-repeat: no-repeat
+  background-position: right
+  @media screen and (max-width: 768px)
+    height: 354px
+
+.course-button
+  display: flex
+  @media screen and (max-width: 768px)
+    width: 100%
+    justify-content: space-between
+    margin-top: 8px
+
+.trading-interval-select
+  display: none
+  background: #23262F
+  outline: none
+  font-family: 'DM Sans', sans-serif
+  font-size: 14px
+  border-radius: 100px
+  padding: 6px 24px 6px 12px
+  @media screen and (max-width: 768px)
+    display: block
+
+.trading-interval
+  @media screen and (max-width: 768px)
+    display: none
+
+.buy-sell-section
+  @media screen and (max-width: 768px)
+    display: none
+
+.bottom-table-select
+  display: none
+  width: 100%
+  background: #23262F
+  border: 1px solid #353945
+  border-radius: 12px
+  font-family: 'Poppins', sans-serif
+  font-weight: 600
+  font-size: 12px
+  padding: 10px 12px
+  outline: none
+  @media screen and (max-width: 768px)
+    display: block
+
+.bottom-table-buttons
+  @media screen and (max-width: 768px)
+    display: none !important
+
+.sticky-buy-sell
+  display: none
+  width: 100%
+  height: 88px
+  background: #18191D
+  margin-top: 12px
+  padding: 16px
+  @media screen and (max-width: 768px)
+    display: flex
+  .buy, .sell
+    width: 0
+    flex-grow: 1
+    height: 40px
+    border-radius: 90px
+  .buy
+    margin-right: 12px
+    background: #58BD7D
+  .sell
+    background: #FF6838
+
+.sell-buy-modal
+  display: flex
+  align-items: flex-end
+  height: 100%
+  .buy, .sell
+    width: 100%
+    margin-top: 12px
+  .modal-content
+    border-radius: 0
+    border: 0
+    background: #18191D
+    .main-content
+      padding: 16px
+  .modal-top
+    display: flex
+    justify-content: space-between
+    align-items: center
+    svg
+      box-sizing: content-box
+      padding: 5px
+      cursor: pointer
+
+.buy-sell-active
+  background: #FCFCFD !important
+
+.buy-sell-disabled
+  background: #23262F !important
+
+.trading-widget
+  background-color: rgba(0,0,0,0)
+  width: 32px
+  height: 32px
+  display: flex
+  justify-content: center
+  align-items: center
+  flex-direction: column
+  border-radius: 4px
+  div
+    width: 12px
+    height: 2px
+    border-radius: 2px
+    &:not(:last-child)
+      margin-bottom: 2px
+
+.trading-widget.active
+  background: #23262F
+
