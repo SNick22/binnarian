@@ -4120,10 +4120,17 @@ input[type=number]:focus {
   text-align: right;
 }
 
-.slider {
+.range-container {
   margin-top: 12px;
-  height: 24px;
   position: relative;
+  width: 100%;
+  height: 24px;
+}
+
+.slider {
+  height: 100%;
+  position: absolute;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -4133,6 +4140,8 @@ input[type=number]:focus {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  left: 0;
+  top: 0;
 }
 .slider span {
   width: 2px;
@@ -4147,6 +4156,31 @@ input[type=number]:focus {
   left: 0;
   cursor: -webkit-grab;
   cursor: grab;
+}
+
+.custom-range {
+  width: 100%;
+  height: 100%;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background-color: rgba(0, 0, 0, 0);
+  position: absolute;
+  z-index: 5;
+  outline: none;
+}
+.custom-range::-webkit-slider-runnable-track {
+  background-color: rgba(0, 0, 0, 0);
+}
+.custom-range::-webkit-slider-thumb {
+  cursor: pointer;
+  -webkit-appearance: none;
+          appearance: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #F4F5F6;
+  border: 4px solid #777E91;
 }
 
 .stright {
