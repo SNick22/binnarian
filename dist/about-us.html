@@ -286,6 +286,193 @@
     </div>
 </div>
 
+<div class="tickets-toggle" data-bs-toggle="modal" data-bs-target="#tickets-list"></div>
+
+<div class="modal" tabindex="-1" id="tickets-list">
+    <div class="modal-dialog tickets-modal">
+        <div class="modal-content notifications-drop">
+            <div class="tickets-title">
+                <p class="body1 white">Tickets</p>
+                <div class="close" data-bs-dismiss="modal" aria-label="Close">
+                    <svg width="14" height="14" viewBox="0 0 32 32" fill="#FCFCFD" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M7.05849 7.05459C7.57919 6.53389 8.42341 6.53389 8.94411 7.05459L16.0013 14.1118L23.0585 7.05459C23.5792 6.53389 24.4234 6.53389 24.9441 7.05459C25.4648 7.57529 25.4648 8.41951 24.9441 8.94021L17.8869 15.9974L24.9441 23.0546C25.4648 23.5753 25.4648 24.4195 24.9441 24.9402C24.4234 25.4609 23.5792 25.4609 23.0585 24.9402L16.0013 17.883L8.94411 24.9402C8.42341 25.4609 7.57919 25.4609 7.05849 24.9402C6.53779 24.4195 6.53779 23.5753 7.05849 23.0546L14.1157 15.9974L7.05849 8.94021C6.53779 8.41951 6.53779 7.57529 7.05849 7.05459Z"/>
+                    </svg>
+                </div>
+            </div>
+            <ul>
+                <li data-bs-toggle="modal" data-bs-target="#ticket">
+                    <div>
+                        <p class="caption2 white">Login from new IP</p>
+                        <p class="caption3-medium grey">2022-03-10 20:20:20</p>
+                    </div>
+                    <svg width="13px" height="13px">
+                        <circle r="6" cx="7" cy="7" fill="#58BD7D"></circle>
+                    </svg>
+                </li>
+                <li>
+                    <div>
+                        <p class="caption2 white">Login from new IP</p>
+                        <p class="caption3-medium grey">2022-03-10 20:20:20</p>
+                    </div>
+                    <svg width="13px" height="13px">
+                        <circle r="6" cx="7" cy="7" fill="#58BD7D"></circle>
+                    </svg>
+                </li>
+                <li>
+                    <div>
+                        <p class="caption2 white">Login from new IP</p>
+                        <p class="caption3-medium grey">2022-03-10 20:20:20</p>
+                    </div>
+                    <svg width="13px" height="13px">
+                        <circle r="6" cx="7" cy="7" fill="#58BD7D"></circle>
+                    </svg>
+                </li>
+                <li>
+                    <div>
+                        <p class="caption2 white">Login from new IP</p>
+                        <p class="caption3-medium grey">2022-03-10 20:20:20</p>
+                    </div>
+                    <svg width="13px" height="13px">
+                        <circle r="6" cx="7" cy="7" fill="#58BD7D"></circle>
+                    </svg>
+                </li>
+                <li>
+                    <div>
+                        <p class="caption2 white">Login from new IP</p>
+                        <p class="caption3-medium grey">2022-03-10 20:20:20</p>
+                    </div>
+                    <svg width="13px" height="13px">
+                        <circle r="6" cx="7" cy="7" fill="#58BD7D"></circle>
+                    </svg>
+                </li>
+                <li>
+                    <div>
+                        <p class="caption2 white">Login from new IP</p>
+                        <p class="caption3-medium grey">2022-03-10 20:20:20</p>
+                    </div>
+                    <svg width="13px" height="13px">
+                        <circle r="6" cx="7" cy="7" fill="#58BD7D"></circle>
+                    </svg>
+                </li>
+            </ul>
+            <button class="button2 white grey-button2" data-bs-toggle="modal" data-bs-target="#new-ticket">New ticket</button>
+        </div>
+    </div>
+</div>
+
+<div class="modal" tabindex="-1" id="new-ticket">
+    <div class="modal-dialog tickets-modal">
+        <div class="modal-content notifications-drop">
+            <div class="tickets-title new-ticket">
+                <p class="body1 white">New ticket</p>
+                <div class="close" data-bs-dismiss="modal" aria-label="Close">
+                    <svg width="14" height="14" viewBox="0 0 32 32" fill="#FCFCFD" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M7.05849 7.05459C7.57919 6.53389 8.42341 6.53389 8.94411 7.05459L16.0013 14.1118L23.0585 7.05459C23.5792 6.53389 24.4234 6.53389 24.9441 7.05459C25.4648 7.57529 25.4648 8.41951 24.9441 8.94021L17.8869 15.9974L24.9441 23.0546C25.4648 23.5753 25.4648 24.4195 24.9441 24.9402C24.4234 25.4609 23.5792 25.4609 23.0585 24.9402L16.0013 17.883L8.94411 24.9402C8.42341 25.4609 7.57919 25.4609 7.05849 24.9402C6.53779 24.4195 6.53779 23.5753 7.05849 23.0546L14.1157 15.9974L7.05849 8.94021C6.53779 8.41951 6.53779 7.57529 7.05849 7.05459Z"/>
+                    </svg>
+                </div>
+            </div>
+            <label for="ticket-category" class="hairline2" style="color:#B1B5C4">Category</label>
+            <input type="text" id="ticket-category" class="ticket-input caption-bold white">
+            <label for="ticket-subject" class="hairline2" style="color:#B1B5C4">Subject</label>
+            <input type="text" id="ticket-subject" class="ticket-input caption-bold white">
+            <label for="ticket-message" class="hairline2" style="color:#B1B5C4">Message</label>
+            <textarea type="text" id="ticket-message" class="ticket-input caption-bold white"></textarea>
+            <button class="button2 white blue-button">Create ticket</button>
+        </div>
+    </div>
+</div>
+
+<div class="modal" tabindex="-1" id="ticket">
+    <div class="modal-dialog tickets-modal">
+        <div class="modal-content notifications-drop">
+            <div class="tickets-title new-ticket">
+                <p class="body1 white">Ticket #2343</p>
+                <div class="close" data-bs-dismiss="modal" aria-label="Close">
+                    <svg width="14" height="14" viewBox="0 0 32 32" fill="#FCFCFD" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M7.05849 7.05459C7.57919 6.53389 8.42341 6.53389 8.94411 7.05459L16.0013 14.1118L23.0585 7.05459C23.5792 6.53389 24.4234 6.53389 24.9441 7.05459C25.4648 7.57529 25.4648 8.41951 24.9441 8.94021L17.8869 15.9974L24.9441 23.0546C25.4648 23.5753 25.4648 24.4195 24.9441 24.9402C24.4234 25.4609 23.5792 25.4609 23.0585 24.9402L16.0013 17.883L8.94411 24.9402C8.42341 25.4609 7.57919 25.4609 7.05849 24.9402C6.53779 24.4195 6.53779 23.5753 7.05849 23.0546L14.1157 15.9974L7.05849 8.94021C6.53779 8.41951 6.53779 7.57529 7.05849 7.05459Z"/>
+                    </svg>
+                </div>
+            </div>
+            <table class="ticket-info">
+                <tr class="">
+                    <td class="caption2-bold white">Date:</td>
+                    <td class="caption2 white">2021-03-10</td>
+                </tr>
+                <tr class="">
+                    <td class="caption2-bold white">E-mail:</td>
+                    <td class="caption2 white">youremail@gmail.com</td>
+                </tr>
+                <tr class="">
+                    <td class="caption2-bold white">Topic:</td>
+                    <td class="caption2 white">Help.</td>
+                </tr>
+                <tr class="">
+                    <td class="caption2-bold white">Category:</td>
+                    <td class="caption2 white">Withdraw problem.</td>
+                </tr>
+                <tr class="">
+                    <td class="caption2-bold white">Status:</td>
+                    <td class="caption2 yellow">Prosessing</td>
+                </tr>
+            </table>
+            <button class="grey-button button2 white" data-bs-toggle="modal" data-bs-target="#ticket-chat">Open chat</button>
+            <button class="grey-button button2 white close-ticket" data-bs-dismiss="modal" aria-label="Close">Close ticket</button>
+        </div>
+    </div>
+</div>
+
+<div class="modal" tabindex="-1" id="ticket-chat">
+    <div class="modal-dialog tickets-modal">
+        <div class="modal-content notifications-drop">
+            <div class="tickets-title new-ticket">
+                <p class="body1 white">Comments</p>
+                <div class="close" data-bs-dismiss="modal" aria-label="Close">
+                    <svg width="14" height="14" viewBox="0 0 32 32" fill="#FCFCFD" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M7.05849 7.05459C7.57919 6.53389 8.42341 6.53389 8.94411 7.05459L16.0013 14.1118L23.0585 7.05459C23.5792 6.53389 24.4234 6.53389 24.9441 7.05459C25.4648 7.57529 25.4648 8.41951 24.9441 8.94021L17.8869 15.9974L24.9441 23.0546C25.4648 23.5753 25.4648 24.4195 24.9441 24.9402C24.4234 25.4609 23.5792 25.4609 23.0585 24.9402L16.0013 17.883L8.94411 24.9402C8.42341 25.4609 7.57919 25.4609 7.05849 24.9402C6.53779 24.4195 6.53779 23.5753 7.05849 23.0546L14.1157 15.9974L7.05849 8.94021C6.53779 8.41951 6.53779 7.57529 7.05849 7.05459Z"/>
+                    </svg>
+                </div>
+            </div>
+            <div class="messages">
+                <div class="message-block left-message">
+                    <img class="message-block__user-image" src="img/account-image.png" alt="" width="29px" height="29px">
+                    <div class="message-block__messages">
+                        <div class="message message-text">Hello there.</div>
+                        <div class="message message-text">I need some help.</div>
+                    </div>
+                </div>
+                <div class="message-block right-message">
+                    <img class="message-block__user-image" src="img/account-image.png" alt="" width="29px" height="29px">
+                    <div class="message-block__messages">
+                        <div class="message message-text">Good day.</div>
+                        <div class="message message-text">Your situation is under review. Please wait. We will contact you shortly.</div>
+                    </div>
+                </div>
+                <div class="message-block left-message">
+                    <img class="message-block__user-image" src="img/account-image.png" alt="" width="29px" height="29px">
+                    <div class="message-block__messages">
+                        <div class="message message-text">Hello there.</div>
+                        <div class="message message-text">I need some help.</div>
+                    </div>
+                </div>
+                <div class="message-block right-message">
+                    <img class="message-block__user-image" src="img/account-image.png" alt="" width="29px" height="29px">
+                    <div class="message-block__messages">
+                        <div class="message message-text">Good day.</div>
+                        <div class="message message-text">Your situation is under review. Please wait. We will contact you shortly.</div>
+                    </div>
+                </div>
+            </div>
+            <div class="send-message">
+                <textarea class="message-text" placeholder="Type message..."></textarea>
+                <div class="send-message__bottom-block">
+                    <div class="icons"></div>
+                    <button class="blue-button">Send</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
 <footer>
     <div class="footer-container">
         <a href="" class="logo logo-footer">

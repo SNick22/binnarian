@@ -70,6 +70,9 @@ ol, ul
 .black, .black:hover
   color: #23262F
 
+.yellow, .yellow:hover
+  color: #FFD166
+
 .caption
   font-weight: 400
   font-size: 14px
@@ -1559,3 +1562,177 @@ input[type="number"]:focus
 .trading-widget.active
   background: #23262F
 
+.tickets-toggle
+  width: 50px
+  height: 50px
+  border-radius: 50%
+  background-color: #1C98F7
+  background-image: url("../img/tickets-toggle.svg")
+  background-repeat: no-repeat
+  background-position: center
+  background-size: 60%
+  position: fixed
+  bottom: 50px
+  right: 50px
+  cursor: pointer
+
+.tickets-modal
+  position: fixed
+  margin: 0
+  right: 50px
+  bottom: 50px
+  .modal-content
+    position: static
+  p
+    margin: 0
+  label
+    margin-bottom: 12px
+  li
+    cursor: pointer
+
+.tickets-title
+  margin-bottom: 16px
+  display: flex
+  justify-content: space-between
+  align-items: center
+
+.close
+  width: 21px
+  height: 21px
+  border-radius: 50%
+  border: 1px solid #E6E8EC
+  display: flex
+  justify-content: center
+  align-items: center
+  cursor: pointer
+
+.new-ticket
+  padding-bottom: 16px
+  position: relative
+  &:after
+    position: absolute
+    left: 0
+    bottom: 0
+    width: 110px
+    height: 1px
+    background: #353945
+    content: ""
+
+.ticket-input
+  outline: none
+  background-color: rgba(0,0,0,0)
+  border: 2px solid #353945
+  border-radius: 12px
+  height: 48px
+  padding: 0 12px
+  margin-bottom: 16px
+
+textarea.ticket-input
+  resize: none
+  padding: 12px
+  height: 130px
+  &::-webkit-scrollbar
+    width: 0
+
+.ticket-info
+  margin-bottom: 16px
+  tr
+    td
+      padding: 9px 0
+    &:not(:last-child)
+      td
+        padding-bottom: 16px
+
+.close-ticket, .close-ticket:hover
+  background-color: #EF0027
+  border-color: #EF0027
+
+.messages
+  height: 280px
+  overflow-y: scroll
+  margin-bottom: 16px
+  &::-webkit-scrollbar
+    width: 0
+
+.message-text
+  font-family: 'Poppins', sans-serif
+  font-size: 12px
+  line-height: 12.3px
+  font-weight: 400
+  color: #FDFDFD
+
+.close-ticket
+  margin-top: 16px
+
+.message-block__user-image
+  border-radius: 50%
+
+.message-block
+  display: flex
+
+.message-block__messages
+  flex-grow: 1
+  width: 0
+  display: flex
+  flex-direction: column
+
+.left-message
+  .message-block__messages
+    margin-left: 6px
+    padding-right: 35px
+
+.right-message
+  justify-content: flex-end
+  flex-direction: row-reverse
+  .message-block__messages
+    align-items: flex-end
+    margin-right: 6px
+    padding-left: 35px
+
+.message-block
+  &:not(:first-child)
+    margin-top: 35px
+
+.message
+  background: rgba(20,20,22,0.7)
+  border-radius: 3.17896px
+  padding: 9px 8px
+  min-width: 95px
+  width: fit-content
+  max-width: 100%
+  overflow-wrap: break-word
+  &:not(:first-child)
+    margin-top: 8px
+
+.send-message
+  border-radius: 3.5px
+  border: 1px solid #353945
+  overflow: hidden
+  display: flex
+  flex-direction: column
+  height: 90px
+  textarea
+    height: 52px
+    background: rgba(20,20,22,0.35)
+    width: 100%
+    outline: none
+    resize: none
+    padding: 7px 12px
+    border-bottom: 1px solid #353945
+    &::placeholder
+      color: #9AA3AB
+    &::-webkit-scrollbar
+      width: 0
+
+.send-message__bottom-block
+  display: flex
+  flex-grow: 1
+  justify-content: space-between
+  align-items: center
+  padding: 0 8px
+  button
+    font-size: 12px
+    padding: 2px 16px
+  .icons
+    >*
+      cursor: pointer
