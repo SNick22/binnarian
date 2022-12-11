@@ -200,7 +200,45 @@ a {
 .auth label:last-of-type input {
   margin-bottom: 16px;
 }
-.auth input[type=email], .auth input[type=password] {
+.auth input[type=submit] {
+  width: 100%;
+  height: 44px;
+  background-color: #1DAEEF;
+  font-family: "DM Sans", sans-serif;
+  font-size: 16px;
+  color: #fff;
+  border-radius: 90px;
+  margin-top: 16px;
+  cursor: pointer;
+}
+.auth .email {
+  position: relative;
+}
+.auth .email-icon {
+  position: absolute;
+  background-image: url(../img/email-icon.svg);
+  width: 24px;
+  height: 24px;
+  right: 14px;
+  top: 10px;
+}
+
+.password {
+  position: relative;
+}
+
+.eye {
+  position: absolute;
+  background-image: url(../img/eye.svg);
+  width: 24px;
+  height: 24px;
+  background-color: rgba(0, 0, 0, 0);
+  cursor: pointer;
+  right: 14px;
+  top: 10px;
+}
+
+input[type=email], input[type=password] {
   width: 100%;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -215,43 +253,23 @@ a {
   margin-top: 12px;
   font-size: 14px;
 }
-.auth input[type=email]:focus-visible, .auth input[type=password]:focus-visible {
+input[type=email]:focus-visible, input[type=password]:focus-visible {
   outline: none;
 }
-.auth input[type=submit] {
-  width: 100%;
-  height: 44px;
-  background-color: #1DAEEF;
-  font-family: "DM Sans", sans-serif;
-  font-size: 16px;
-  color: #fff;
-  border-radius: 90px;
-  margin-top: 16px;
-  cursor: pointer;
+input[type=email]::-webkit-input-placeholder, input[type=password]::-webkit-input-placeholder {
+  color: #777E91;
 }
-.auth .password {
-  position: relative;
+input[type=email]::-moz-placeholder, input[type=password]::-moz-placeholder {
+  color: #777E91;
 }
-.auth .eye {
-  position: absolute;
-  background-image: url(../img/eye.svg);
-  width: 24px;
-  height: 24px;
-  background-color: rgba(0, 0, 0, 0);
-  cursor: pointer;
-  right: 14px;
-  top: 10px;
+input[type=email]:-ms-input-placeholder, input[type=password]:-ms-input-placeholder {
+  color: #777E91;
 }
-.auth .email {
-  position: relative;
+input[type=email]::-ms-input-placeholder, input[type=password]::-ms-input-placeholder {
+  color: #777E91;
 }
-.auth .email-icon {
-  position: absolute;
-  background-image: url(../img/email-icon.svg);
-  width: 24px;
-  height: 24px;
-  right: 14px;
-  top: 10px;
+input[type=email]::placeholder, input[type=password]::placeholder {
+  color: #777E91;
 }
 
 header {
@@ -2271,6 +2289,11 @@ ol, ul {
     margin-left: 0;
     width: 100%;
     padding: 16px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .enter-amount .red-button {
+    width: 100%;
   }
 }
 .enter-amount .name, .enter-amount p {
@@ -4718,4 +4741,160 @@ textarea.ticket-input::-webkit-scrollbar {
 }
 .send-message__bottom-block .icons > * {
   cursor: pointer;
+}
+
+.disable-2fa {
+  display: inline;
+}
+
+.twofa__inputs {
+  width: 100%;
+}
+@media screen and (max-width: 768px) {
+  .twofa__inputs {
+    width: 100%;
+  }
+}
+.twofa__inputs > * {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+@media screen and (max-width: 768px) {
+  .twofa__inputs > * {
+    width: 100%;
+  }
+}
+.twofa__inputs > *:first-child {
+  margin-right: 16px;
+}
+@media screen and (max-width: 768px) {
+  .twofa__inputs > *:first-child {
+    margin: 0 0 16px;
+  }
+}
+.twofa__inputs input {
+  width: 100%;
+  display: block;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  height: 48px;
+  padding: 12px 16px;
+  border: 2px solid #353945;
+  border-radius: 12px;
+  background-color: inherit;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  color: #777E91;
+  margin-top: 12px;
+  font-size: 14px;
+}
+.twofa__inputs input:focus-visible {
+  outline: none;
+}
+.twofa__inputs input::-webkit-input-placeholder {
+  color: #777E91;
+}
+.twofa__inputs input::-moz-placeholder {
+  color: #777E91;
+}
+.twofa__inputs input:-ms-input-placeholder {
+  color: #777E91;
+}
+.twofa__inputs input::-ms-input-placeholder {
+  color: #777E91;
+}
+.twofa__inputs input::placeholder {
+  color: #777E91;
+}
+
+.red-button {
+  background: #FF6838;
+  border-radius: 90px;
+  padding: 10px 16px;
+  -webkit-transition: 0.1s;
+  -o-transition: 0.1s;
+  transition: 0.1s;
+}
+.red-button:hover {
+  background: #ff5019;
+}
+
+.green-button {
+  background: #58BD7D;
+  border-radius: 90px;
+  padding: 10px 16px;
+  -webkit-transition: 0.1s;
+  -o-transition: 0.1s;
+  transition: 0.1s;
+}
+.green-button:hover {
+  background: #47b36e;
+}
+
+.twofa-disabled {
+  width: 100%;
+}
+
+.scancode {
+  height: 384px;
+  background: #23262F;
+  border-radius: 16px;
+  margin-top: 32px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.code {
+  background: #353945;
+  border-radius: 32px 32px 0 0;
+  width: 256px;
+  height: 320px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 32px 48px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.code .grey-button {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.verification-buttons .blue-button {
+  margin-top: 0;
+}
+.verification-buttons > button {
+  height: 40px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
 }

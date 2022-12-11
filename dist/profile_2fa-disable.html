@@ -11,7 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css">
-    <title>Verification</title>
+    <title>2FA</title>
 </head>
 <body>
 <header>
@@ -266,11 +266,11 @@
 
 <div class="page-title">
   <div class="container">
-    <h2 class="headline2 page-title__title">Verification</h2>
+    <h2 class="headline2 page-title__title">2FA</h2>
     <div class="title__right-block">
       <a href="" class="caption2-medium grey">Home</a>
       <span class="white arrow-right-simple">></span>
-      <span class="caption2-bold white">Verification</span>
+      <span class="caption2-bold white">2FA</span>
     </div>
   </div>
 </div>
@@ -280,8 +280,7 @@
       <option>Profile</option>
       <option>Referrals</option>
       <option>Promocode</option>
-      <option>2FA</option>
-      <option selected>Verification</option>
+      <option selected>2FA</option>
       <option>Sessions & login history</option>
       <option>Change password</option>
     </select>
@@ -319,7 +318,7 @@
           Promocode
         </a>
       </li>
-      <li>
+      <li class="active">
         <a href="" class="button2 grey">
           <svg width="24" height="24" viewBox="0 0 24 24" fill="#777E91" xmlns="http://www.w3.org/2000/svg">
             <path d="M2 7C2 6.44772 2.44772 6 3 6H5C5.55228 6 6 5.55228 6 5C6 4.44772 5.55228 4 5 4H3C1.34315 4 0 5.34315 0 7V9C0 9.55228 0.447715 10 1 10C1.55228 10 2 9.55228 2 9V7Z"/>
@@ -335,8 +334,8 @@
         </a>
       </li>
       <li>
-        <a href="" class="button2 grey" style="color: #FCFCFD">
-          <svg width="24" height="24" viewBox="0 0 24 24" stroke="#FCFCFD" xmlns="http://www.w3.org/2000/svg">
+        <a href="" class="button2 grey">
+          <svg width="24" height="24" viewBox="0 0 24 24" stroke="#777E91" xmlns="http://www.w3.org/2000/svg">
             <path d="M6 12L10 16L18 8" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
           </svg>
           Verification
@@ -365,19 +364,34 @@
     </ul>
   </nav>
   <div class="enter-amount">
-    <span class="headline2 white reward_count">Personal Details</span>
+    <div>
+      <span class="headline2 white reward_count">2FA</span>
+      <span class="headline2 green">Enabled</span>
+    </div>
+    <p class="caption2 grey reward_desc">If you want to turn off 2FA, input your account password and the six-digit code provided by the Google Authenticator app below, then click "<a href="" class="caption2 white disable-2fa">Disable 2FA</a>".</p>
+    <p class="body1 white" style="margin-top: 40px">Disable 2FA</p>
+    <p class="caption" style="color: #B1B5C4; margin-top: 8px">Enter your password and the six-digit code provided by the Google Authenticator app to Disable the 2FA verification</p>
+    <div style="margin-top: 24px">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="#FCFCFD" xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M20 5H4C3.44772 5 3 5.44772 3 6V18C3 18.5523 3.44772 19 4 19H20C20.5523 19 21 18.5523 21 18V6C21 5.44772 20.5523 5 20 5ZM4 3C2.34315 3 1 4.34315 1 6V18C1 19.6569 2.34315 21 4 21H20C21.6569 21 23 19.6569 23 18V6C23 4.34315 21.6569 3 20 3H4Z"/>
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M5.2318 7.35984C5.58537 6.93556 6.21593 6.87824 6.64021 7.2318L11.3598 11.1648C11.7307 11.4739 12.2694 11.4739 12.6402 11.1648L17.3598 7.2318C17.7841 6.87824 18.4147 6.93556 18.7682 7.35984C19.1218 7.78412 19.0645 8.41468 18.6402 8.76825L13.9206 12.7013C12.808 13.6284 11.192 13.6284 10.0795 12.7013L5.35984 8.76825C4.93556 8.41468 4.87824 7.78412 5.2318 7.35984Z"/>
+      </svg>
+      <span class="body2-bold white" style="margin-left: 8px">email@gmail.com</span>
+    </div>
     <div class="space-between referral_inputs twofa__inputs">
-      <input type="text" style="margin-top: 0" placeholder="Full Address">
-      <input type="text" style="margin-top: 0" placeholder="City">
+      <label class="hairline2" style="color: #B1B5C4;">
+        PASSWORD
+        <div class="password">
+          <input type="password" placeholder="Password" name="password" style="margin: 0">
+          <button class="eye" type="button"></button>
+        </div>
+      </label>
+      <label class="hairline2" style="color: #B1B5C4;">
+        2FA CODE
+        <input type="text" style="margin: 0">
+      </label>
     </div>
-    <div class="space-between referral_inputs twofa__inputs" style="margin-top: 16px">
-      <input type="text" style="margin-top: 0" placeholder="State">
-      <input type="text" style="margin-top: 0" placeholder="Pincode/ZIP">
-    </div>
-    <div class="space-between referral_inputs twofa__inputs verification-buttons">
-      <button class="grey-button button1 white">Cancel</button>
-      <button class="blue-button button1 white">Save Changes</button>
-    </div>
+    <button class="button1 white red-button" style="margin-top: 16px">Disable 2FA</button>
   </div>
 </div>
 
