@@ -30,6 +30,7 @@ p
   font-weight: 400
   font-size: 16px
   line-height: 24px
+  margin-bottom: 0
 
 a
   text-decoration: none
@@ -150,6 +151,18 @@ ol, ul
   font-weight: 700
   font-size: 12px
   font-family: "Poppins", sans-serif
+
+.swap-big
+  font-weight: 400
+  font-family: "Poppins", sans-serif
+  font-size: 34px
+  line-height: 42px
+
+.swap
+  font-weight: 400
+  font-family: "Poppins", sans-serif
+  font-size: 16px
+  line-height: 24px
 
 .grey-button2
   font-family: "DM Sans", sans-serif
@@ -678,6 +691,9 @@ ol, ul
 
 .ta-right
   text-align: right
+
+.ta-center
+  text-align: center
 
 .asset-balances
   width: 100%
@@ -1827,3 +1843,112 @@ textarea.ticket-input
     align-items: center
     justify-content: center
     flex-grow: 1
+
+.stake-blocks
+  display: flex
+  flex-wrap: wrap
+  @media screen and (max-width: 768px)
+    flex-direction: column
+
+.stake__block
+  background: #17181B
+  border-radius: 4px
+  padding: 20px 32px
+  flex-grow: 1
+  display: flex
+  flex-direction: column
+  &:first-child
+    margin-right: 4px
+    @media screen and (max-width: 768px)
+      margin-right: 0
+      margin-bottom: 4px
+  &:last-child
+    margin-top: 4px
+    width: 100%
+    flex-direction: row
+    justify-content: space-between
+    align-items: center
+    > div
+      display: flex
+      align-items: center
+  > div
+    display: flex
+    justify-content: space-between
+
+.staking__select
+  padding: 0 18px
+  outline: none
+  background-color: rgba(0,0,0,0)
+
+.count-button
+  display: flex
+  justify-content: center
+  align-items: center
+  width: 16px
+  height: 16px
+  background-color: rgba(0,0,0,0)
+
+.stake__text
+  @media screen and (max-width: 768px)
+    display: none
+
+.staking-table
+  td, th
+    &:nth-child(3)
+      @media screen and (max-width: 768px)
+        display: table-cell !important
+
+.swap__block
+  padding: 16px 32px !important
+
+.swap-table
+  width: 100%
+  td
+    height: 50px
+    padding-bottom: 8px
+    box-sizing: unset
+    > div
+      background: #18191D
+      height: 100%
+      display: flex
+      align-items: center
+    &:not(:first-child)
+      text-align: center
+      > div
+        justify-content: center
+    &:last-child
+      width: 25%
+      > div
+        display: flex
+        justify-content: flex-end
+        padding-right: 32px
+        border-radius: 0 4px 4px 0
+    &:first-child
+      @media screen and (max-width: 768px)
+        display: none
+      > div
+        padding-left: 32px
+        border-radius: 4px 0 0 4px
+
+.successfully
+  border: 1px solid #58BD7D
+  border-radius: 90px
+  padding: 4px 12px
+  width: fit-content
+
+.swap-coin-container
+  @media screen and (max-width: 768px)
+    justify-content: center !important
+
+.welcome-bonus
+  .main-image
+    background-image: url(../img/welcome-bonus.png)
+    background-size: auto 940px
+    @media screen and (max-width: 768px)
+      background-size: auto 100%
+
+.welcome-bonus__button
+  width: 100%
+  margin-bottom: 136px
+  @media screen and (max-width: 768px)
+    margin-bottom: 64px

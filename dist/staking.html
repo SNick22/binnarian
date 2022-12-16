@@ -1,0 +1,1158 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css">
+  <title>Staking</title>
+</head>
+<body>
+<header>
+    <div class="header-container">
+        <div class="left-block">
+            <a href="" class="logo">
+                <img src="img/logo.svg" class="logo-image" alt="Logo">
+                <span class="logo-text">Binarrian</span>
+            </a>
+            <nav class="header-nav">
+                <div class="dropdown-orders header-open">
+                    <a id="header-open" class="nav-element"><span class="element-with-arrow">Open</span></a>
+                    <div class="dropdown-container">
+                        <img src="img/point.svg" alt="" class="point">
+                        <a href="" class="button2 grey">Trade</a>
+                        <a href="" class="button2 grey">Exchange</a>
+                        <a href="" class="button2 grey">Menu item</a>
+                        <a href="" class="button2 grey">Swap</a>
+                        <a href="" class="button2 grey">Staking</a>
+                    </div>
+                </div>
+                <a href="" class="nav-element"><span>Trade</span></a>
+                <div class="dropdown-orders">
+                    <a href="" class="nav-element"><span class="element-with-arrow">Orders</span></a>
+                    <div class="dropdown-container">
+                        <img src="img/point.svg" alt="" class="point">
+                        <a href="" class="button2 grey">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="#777E91" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M12 13C8.13401 13 5 16.134 5 20V22C5 22.5523 4.55228 23 4 23C3.44772 23 3 22.5523 3 22V20C3 15.0294 7.02944 11 12 11C16.9706 11 21 15.0294 21 20V22C21 22.5523 20.5523 23 20 23C19.4477 23 19 22.5523 19 22V20C19 16.134 15.866 13 12 13Z"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M12 11C14.2091 11 16 9.20914 16 7C16 4.79086 14.2091 3 12 3C9.79086 3 8 4.79086 8 7C8 9.20914 9.79086 11 12 11ZM12 13C15.3137 13 18 10.3137 18 7C18 3.68629 15.3137 1 12 1C8.68629 1 6 3.68629 6 7C6 10.3137 8.68629 13 12 13Z"/>
+                            </svg>
+                            Exchange
+                        </a>
+                        <a href="" class="button2 grey">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="#777E91" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M10.0013 3.33073C8.37444 3.33073 6.87477 3.4649 5.67106 3.62388C4.58774 3.76695 3.77086 4.58383 3.62778 5.66715C3.46881 6.87086 3.33464 8.37054 3.33464 9.9974C3.33464 11.6243 3.46881 13.1239 3.62778 14.3276C3.77086 15.411 4.58774 16.2278 5.67106 16.3709C6.87477 16.5299 8.37444 16.6641 10.0013 16.6641C11.6282 16.6641 13.1278 16.5299 14.3315 16.3709C15.4149 16.2278 16.2317 15.411 16.3748 14.3276C16.5338 13.1239 16.668 11.6243 16.668 9.9974C16.668 8.37054 16.5338 6.87086 16.3748 5.66715C16.2317 4.58383 15.4149 3.76695 14.3315 3.62388C13.1278 3.4649 11.6282 3.33073 10.0013 3.33073ZM5.45284 1.97156C3.62217 2.21333 2.21724 3.61827 1.97546 5.44893C1.80925 6.70746 1.66797 8.28179 1.66797 9.9974C1.66797 11.713 1.80925 13.2873 1.97546 14.5459C2.21724 16.3765 3.62217 17.7815 5.45283 18.0232C6.71137 18.1895 8.2857 18.3307 10.0013 18.3307C11.7169 18.3307 13.2912 18.1895 14.5498 18.0232C16.3804 17.7815 17.7854 16.3765 18.0271 14.5459C18.1934 13.2873 18.3346 11.713 18.3346 9.9974C18.3346 8.28179 18.1934 6.70746 18.0271 5.44893C17.7854 3.61827 16.3804 2.21333 14.5498 1.97156C13.2912 1.80534 11.7169 1.66406 10.0013 1.66406C8.2857 1.66406 6.71137 1.80534 5.45284 1.97156Z"/>
+                                <path d="M7.49953 9.16927C8.42001 9.16927 9.1662 8.42308 9.1662 7.5026C9.1662 6.58213 8.42001 5.83594 7.49953 5.83594C6.57906 5.83594 5.83287 6.58213 5.83287 7.5026C5.83287 8.42308 6.57906 9.16927 7.49953 9.16927Z"/>
+                                <path d="M15.1006 10.592L16.5959 12.0873C16.5443 12.8675 16.469 13.5914 16.3859 14.2343L13.9221 11.7705C13.5967 11.4451 13.069 11.4451 12.7436 11.7705L10.934 13.5802C9.95765 14.5565 8.37474 14.5565 7.39843 13.5802L7.25545 13.4372C6.93001 13.1118 6.40238 13.1118 6.07694 13.4372L4.06939 15.4447C3.83682 15.1294 3.68122 14.751 3.626 14.3328C3.59588 14.1048 3.56665 13.8662 3.53906 13.618L4.89843 12.2587C5.87474 11.2824 7.45765 11.2824 8.43396 12.2587L8.57694 12.4017C8.90238 12.7271 9.43002 12.7271 9.75545 12.4017L11.5651 10.592C12.5414 9.6157 14.1243 9.61571 15.1006 10.592Z"/>
+                            </svg>
+                            Menu Item
+                        </a>
+                    </div>
+                </div>
+                <a href="" class="nav-element"><span>Swap</span></a>
+                <a href="" class="nav-element"><span>Staking</span></a>
+            </nav>
+        </div>
+        <div class="right-block">
+            <div class="dropdown">
+                <div class="notifications dropdown-toggle" id="dropdownMenuButton1" data-bs-auto-close="outside" data-bs-toggle="dropdown" aria-expanded="false">
+                    <svg class="new-notification" width="13px" height="13px">
+                        <circle r="6" cx="7" cy="7" fill="#58BD7D"></circle>
+                    </svg>
+                </div>
+                <div class="dropdown-menu notifications-drop" aria-labelledby="dropdownMenuButton1">
+                    <img src="img/point.svg" alt="" class="point">
+                    <p class="body1 white">Notifications</p>
+                    <ul>
+                        <li>
+                            <div>
+                                <p class="caption2 white">Login from new IP</p>
+                                <p class="caption3-medium grey">2022-03-10 20:20:20</p>
+                            </div>
+                            <svg width="13px" height="13px">
+                                <circle r="6" cx="7" cy="7" fill="#58BD7D"></circle>
+                            </svg>
+                        </li>
+                        <li>
+                            <div>
+                                <p class="caption2 white">Login from new IP</p>
+                                <p class="caption3-medium grey">2022-03-10 20:20:20</p>
+                            </div>
+                            <svg width="13px" height="13px">
+                                <circle r="6" cx="7" cy="7" fill="#58BD7D"></circle>
+                            </svg>
+                        </li>
+                        <li>
+                            <div>
+                                <p class="caption2 white">Login from new IP</p>
+                                <p class="caption3-medium grey">2022-03-10 20:20:20</p>
+                            </div>
+                            <svg width="13px" height="13px">
+                                <circle r="6" cx="7" cy="7" fill="#58BD7D"></circle>
+                            </svg>
+                        </li>
+                        <li>
+                            <div>
+                                <p class="caption2 white">Login from new IP</p>
+                                <p class="caption3-medium grey">2022-03-10 20:20:20</p>
+                            </div>
+                            <svg width="13px" height="13px">
+                                <circle r="6" cx="7" cy="7" fill="#58BD7D"></circle>
+                            </svg>
+                        </li>
+                        <li>
+                            <div>
+                                <p class="caption2 white">Login from new IP</p>
+                                <p class="caption3-medium grey">2022-03-10 20:20:20</p>
+                            </div>
+                            <svg width="13px" height="13px">
+                                <circle r="6" cx="7" cy="7" fill="#58BD7D"></circle>
+                            </svg>
+                        </li>
+                        <li>
+                            <div>
+                                <p class="caption2 white">Login from new IP</p>
+                                <p class="caption3-medium grey">2022-03-10 20:20:20</p>
+                            </div>
+                            <svg width="13px" height="13px">
+                                <circle r="6" cx="7" cy="7" fill="#58BD7D"></circle>
+                            </svg>
+                        </li>
+                        <li>
+                            <div>
+                                <p class="caption2 white">Login from new IP</p>
+                                <p class="caption3-medium grey">2022-03-10 20:20:20</p>
+                            </div>
+                            <svg width="13px" height="13px">
+                                <circle r="6" cx="7" cy="7" fill="#58BD7D"></circle>
+                            </svg>
+                        </li>
+                    </ul>
+                    <a href="" class="button2 white grey-button2">Clear</a>
+                </div>
+            </div>
+            <a class="grey-button wallet" href="">Wallet</a>
+            <div class="dropdown">
+                <div class="account-image dropdown-toggle" id="dropdownMenuButton2" data-bs-auto-close="outside" data-bs-toggle="dropdown" aria-expanded="false"></div>
+                <div class="dropdown-menu account-drop" aria-labelledby="dropdownMenuButton2">
+                    <img src="img/point.svg" alt="" class="point">
+                    <ul>
+                        <li>
+                            <a href="" class="dropdown-item">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="#777E91" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M12 13C8.13401 13 5 16.134 5 20V22C5 22.5523 4.55228 23 4 23C3.44772 23 3 22.5523 3 22V20C3 15.0294 7.02944 11 12 11C16.9706 11 21 15.0294 21 20V22C21 22.5523 20.5523 23 20 23C19.4477 23 19 22.5523 19 22V20C19 16.134 15.866 13 12 13Z"/>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M12 11C14.2091 11 16 9.20914 16 7C16 4.79086 14.2091 3 12 3C9.79086 3 8 4.79086 8 7C8 9.20914 9.79086 11 12 11ZM12 13C15.3137 13 18 10.3137 18 7C18 3.68629 15.3137 1 12 1C8.68629 1 6 3.68629 6 7C6 10.3137 8.68629 13 12 13Z"/>
+                                </svg>
+                                <div>
+                                    <p class="button2 white">Profile</p>
+                                    <p class="caption3-medium grey">Account details</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" class="dropdown-item">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="#777E91" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M8.99858 10.0405C9.02798 10.592 8.60474 11.063 8.05324 11.0924C7.30055 11.1325 6.7044 11.1816 6.23854 11.2307C5.61292 11.2967 5.23278 11.681 5.16959 12.2337C5.07886 13.0274 5 14.2284 5 16.0007C5 17.7729 5.07886 18.974 5.16959 19.7676C5.23289 20.3213 5.61207 20.7045 6.23675 20.7705C7.33078 20.8859 9.13925 21.0007 12 21.0007C14.8608 21.0007 16.6692 20.8859 17.7632 20.7705C18.3879 20.7045 18.7671 20.3213 18.8304 19.7676C18.9211 18.974 19 17.7729 19 16.0007C19 14.2284 18.9211 13.0274 18.8304 12.2337C18.7672 11.681 18.3871 11.2967 17.7615 11.2307C17.2956 11.1816 16.6995 11.1325 15.9468 11.0924C15.3953 11.063 14.972 10.592 15.0014 10.0405C15.0308 9.48904 15.5017 9.06579 16.0532 9.09519C16.8361 9.13693 17.4669 9.18854 17.9712 9.24173C19.4556 9.39828 20.6397 10.4514 20.8175 12.0066C20.9188 12.893 21 14.1722 21 16.0007C21 17.8292 20.9188 19.1084 20.8175 19.9948C20.6398 21.549 19.4585 22.6027 17.9732 22.7594C16.7919 22.8841 14.9108 23.0007 12 23.0007C9.08922 23.0007 7.20806 22.8841 6.02684 22.7594C4.54151 22.6027 3.36021 21.5491 3.18253 19.9948C3.0812 19.1084 3 17.8292 3 16.0007C3 14.1722 3.0812 12.893 3.18253 12.0066C3.36031 10.4514 4.54436 9.39828 6.02877 9.24173C6.53306 9.18854 7.16393 9.13693 7.94676 9.09519C8.49827 9.06579 8.96918 9.48904 8.99858 10.0405Z"/>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M9.20711 6.20711C8.81658 6.59763 8.18342 6.59763 7.79289 6.20711C7.40237 5.81658 7.40237 5.18342 7.79289 4.79289L11.2929 1.29289C11.6834 0.902369 12.3166 0.902369 12.7071 1.29289L16.2071 4.79289C16.5976 5.18342 16.5976 5.81658 16.2071 6.20711C15.8166 6.59763 15.1834 6.59763 14.7929 6.20711L13 4.41421V14C13 14.5523 12.5523 15 12 15C11.4477 15 11 14.5523 11 14V4.41421L9.20711 6.20711Z"/>
+                                </svg>
+                                <div>
+                                    <p class="button2 white">Referrals</p>
+                                    <p class="caption3-medium grey">Invite and earn rewards</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" class="dropdown-item">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="#777E91" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M20 6H4C2.89543 6 2 6.89543 2 8V16C2 17.1046 2.89543 18 4 18H20C21.1046 18 22 17.1046 22 16V8C22 6.89543 21.1046 6 20 6ZM4 4C1.79086 4 0 5.79086 0 8V16C0 18.2091 1.79086 20 4 20H20C22.2091 20 24 18.2091 24 16V8C24 5.79086 22.2091 4 20 4H4Z"/>
+                                    <path d="M16 10C16 9.44772 16.4477 9 17 9H19C19.5523 9 20 9.44772 20 10C20 10.5523 19.5523 11 19 11H17C16.4477 11 16 10.5523 16 10Z"/>
+                                    <path d="M4 14C4 13.4477 4.44772 13 5 13C5.55228 13 6 13.4477 6 14C6 14.5523 5.55228 15 5 15C4.44772 15 4 14.5523 4 14Z"/>
+                                    <path d="M8 14C8 13.4477 8.44772 13 9 13H15C15.5523 13 16 13.4477 16 14C16 14.5523 15.5523 15 15 15H9C8.44772 15 8 14.5523 8 14Z"/>
+                                    <path d="M19 13C18.4477 13 18 13.4477 18 14C18 14.5523 18.4477 15 19 15C19.5523 15 20 14.5523 20 14C20 13.4477 19.5523 13 19 13Z"/>
+                                    <path d="M13 9C12.4477 9 12 9.44772 12 10C12 10.5523 12.4477 11 13 11C13.5523 11 14 10.5523 14 10C14 9.44772 13.5523 9 13 9Z"/>
+                                    <path d="M8 10C8 9.44772 8.44772 9 9 9C9.55228 9 10 9.44772 10 10C10 10.5523 9.55228 11 9 11C8.44772 11 8 10.5523 8 10Z"/>
+                                    <path d="M5 9C4.44772 9 4 9.44772 4 10C4 10.5523 4.44772 11 5 11C5.55228 11 6 10.5523 6 10C6 9.44772 5.55228 9 5 9Z"/>
+                                </svg>
+                                <div>
+                                    <p class="button2 white">Promocode</p>
+                                    <p class="caption3-medium grey">Increase your income</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" class="dropdown-item">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="#777E91" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M16.6259 5.90607C16.6345 5.25516 16.3905 4.60151 15.8939 4.10484C15.3972 3.60817 14.7435 3.36417 14.0926 3.37283C14.0924 3.37283 14.0929 3.37283 14.0926 3.37283C13.7329 3.37772 13.3732 3.45981 13.0421 3.61907C12.9235 3.67615 12.8084 3.74314 12.6981 3.82004C12.6557 3.84966 12.601 3.85642 12.5532 3.83658C12.5054 3.81677 12.4715 3.77334 12.4624 3.72241C12.4388 3.59006 12.4048 3.46131 12.3613 3.33705C12.2398 2.99032 12.044 2.6785 11.7931 2.42065C11.7929 2.42047 11.7933 2.42082 11.7931 2.42065C11.3389 1.95426 10.7037 1.66406 10.0013 1.66406C9.29891 1.66406 8.66417 1.95373 8.21003 2.42012C8.20986 2.42029 8.2102 2.41994 8.21003 2.42012C7.9591 2.67797 7.76283 2.99032 7.64133 3.33705C7.59779 3.46131 7.56378 3.59006 7.54019 3.72241C7.53111 3.77333 7.49721 3.81677 7.44942 3.83658C7.4016 3.85641 7.34695 3.84966 7.30448 3.82004C7.19422 3.74314 7.07914 3.67615 6.96049 3.61907C6.6294 3.45981 6.27048 3.37773 5.91071 3.37284C5.91047 3.37284 5.91096 3.37284 5.91071 3.37284C5.2598 3.36418 4.60541 3.60817 4.10875 4.10484C3.61208 4.60151 3.36808 5.25516 3.37674 5.90607C3.37674 5.90632 3.37673 5.90583 3.37674 5.90607C3.38163 6.26584 3.46371 6.62548 3.62298 6.95657C3.68005 7.07523 3.74704 7.19031 3.82395 7.30057C3.85356 7.34304 3.86032 7.39769 3.84049 7.44552C3.82067 7.4933 3.77724 7.52721 3.72631 7.53629C3.59396 7.55988 3.46521 7.59389 3.34095 7.63743C2.99422 7.75893 2.6824 7.95468 2.42455 8.20561C2.42438 8.20578 2.42473 8.20544 2.42455 8.20561C1.95816 8.65975 1.66797 9.295 1.66797 9.9974C1.66797 10.6998 1.95764 11.3345 2.42403 11.7887C2.4242 11.7888 2.42385 11.7885 2.42403 11.7887C2.68187 12.0396 2.99422 12.2359 3.34094 12.3574C3.46521 12.4009 3.59396 12.4349 3.72631 12.4585C3.77724 12.4676 3.82067 12.5015 3.84049 12.5493C3.86032 12.5971 3.85356 12.6518 3.82395 12.6942C3.74704 12.8045 3.68005 12.9196 3.62298 13.0382C3.46371 13.3693 3.38164 13.7282 3.37675 14.088C3.37674 14.0882 3.37675 14.0877 3.37675 14.088C3.36809 14.7389 3.61208 15.3933 4.10875 15.89C4.60541 16.3866 5.25907 16.6306 5.90998 16.622C5.91023 16.622 5.90974 16.622 5.90998 16.622C6.26974 16.6171 6.62938 16.535 6.96047 16.3757C7.07912 16.3187 7.19421 16.2517 7.30448 16.1748C7.34694 16.1451 7.4016 16.1384 7.44942 16.1582C7.49721 16.178 7.53112 16.2215 7.54019 16.2724C7.56379 16.4047 7.5978 16.5335 7.64134 16.6578C7.76284 17.0045 7.95859 17.3163 8.20952 17.5741C8.20969 17.5743 8.20935 17.574 8.20952 17.5741C8.66366 18.0405 9.29891 18.3307 10.0013 18.3307C10.7037 18.3307 11.3384 18.0411 11.7926 17.5747C11.7927 17.5745 11.7924 17.5748 11.7926 17.5747C12.0435 17.3168 12.2398 17.0045 12.3613 16.6578C12.4048 16.5335 12.4388 16.4047 12.4624 16.2724C12.4715 16.2215 12.5054 16.178 12.5532 16.1582C12.601 16.1384 12.6557 16.1451 12.6981 16.1748C12.8084 16.2517 12.9235 16.3187 13.0421 16.3757C13.3732 16.535 13.7321 16.6171 14.0919 16.622C14.0921 16.622 14.0916 16.6219 14.0919 16.622C14.7428 16.6306 15.3972 16.3866 15.8939 15.89C16.3905 15.3933 16.6345 14.7396 16.6259 14.0887C16.6259 14.0885 16.6259 14.089 16.6259 14.0887C16.621 13.729 16.5389 13.3693 16.3796 13.0382C16.3226 12.9196 16.2556 12.8045 16.1787 12.6942C16.149 12.6518 16.1423 12.5971 16.1621 12.5493C16.1819 12.5015 16.2254 12.4676 16.2763 12.4585C16.4086 12.4349 16.5374 12.4009 16.6617 12.3574C17.0084 12.2359 17.3202 12.0401 17.5781 11.7892C17.5782 11.789 17.5779 11.7894 17.5781 11.7892C18.0444 11.335 18.3346 10.6998 18.3346 9.9974C18.3346 9.295 18.045 8.66027 17.5786 8.20612C17.5784 8.20595 17.5788 8.2063 17.5786 8.20612C17.3207 7.95519 17.0084 7.75893 16.6617 7.63743C16.5374 7.59389 16.4086 7.55988 16.2763 7.53629C16.2254 7.52721 16.1819 7.4933 16.1621 7.44552C16.1423 7.39769 16.149 7.34304 16.1787 7.30057C16.2556 7.1903 16.3226 7.07522 16.3796 6.95656C16.5389 6.62548 16.621 6.26584 16.6259 5.90607C16.6259 5.90632 16.6259 5.90583 16.6259 5.90607ZM14.7153 5.28335C14.4267 4.99467 13.9756 4.9611 13.6515 5.18708C13.1599 5.52993 12.5071 5.62175 11.9148 5.37613C11.324 5.13115 10.9269 4.6056 10.8216 4.01488C10.7523 3.62598 10.4096 3.33073 10.0013 3.33073C9.59304 3.33073 9.25032 3.62597 9.18099 4.01488C9.0757 4.60559 8.67861 5.13115 8.08784 5.37613C7.49553 5.62174 6.84267 5.52993 6.35107 5.18708C6.02705 4.96109 5.57594 4.99467 5.28726 5.28335C4.99857 5.57203 4.965 6.02314 5.19098 6.34717C5.53384 6.83877 5.62565 7.49163 5.38004 8.08393C5.13506 8.6747 4.6095 9.07179 4.01879 9.17709C3.62988 9.24642 3.33464 9.58914 3.33464 9.9974C3.33464 10.4057 3.62988 10.7484 4.01879 10.8177C4.6095 10.923 5.13506 11.3201 5.38004 11.9109C5.62565 12.5032 5.53384 13.156 5.19098 13.6476C4.965 13.9716 4.99857 14.4228 5.28726 14.7114C5.57594 15.0001 6.02705 15.0337 6.35107 14.8077C6.84266 14.4649 7.49552 14.373 8.08783 14.6187C8.6786 14.8636 9.0757 15.3892 9.181 15.9799C9.25032 16.3688 9.59304 16.6641 10.0013 16.6641C10.4096 16.6641 10.7523 16.3688 10.8216 15.9799C10.9269 15.3892 11.324 14.8636 11.9148 14.6187C12.5071 14.373 13.1599 14.4649 13.6515 14.8077C13.9756 15.0337 14.4267 15.0001 14.7153 14.7114C15.004 14.4228 15.0376 13.9716 14.8116 13.6476C14.4688 13.156 14.377 12.5032 14.6226 11.9109C14.8675 11.3201 15.3931 10.923 15.9838 10.8177C16.3727 10.7484 16.668 10.4057 16.668 9.9974C16.668 9.58914 16.3727 9.24642 15.9838 9.17709C15.3931 9.07179 14.8675 8.6747 14.6226 8.08393C14.377 7.49162 14.4688 6.83876 14.8116 6.34716C15.0376 6.02314 15.004 5.57203 14.7153 5.28335Z"/>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M10.0013 11.6641C10.9218 11.6641 11.668 10.9179 11.668 9.9974C11.668 9.07692 10.9218 8.33073 10.0013 8.33073C9.08083 8.33073 8.33464 9.07692 8.33464 9.9974C8.33464 10.9179 9.08083 11.6641 10.0013 11.6641ZM10.0013 13.3307C11.8423 13.3307 13.3346 11.8383 13.3346 9.9974C13.3346 8.15645 11.8423 6.66406 10.0013 6.66406C8.16035 6.66406 6.66797 8.15645 6.66797 9.9974C6.66797 11.8383 8.16035 13.3307 10.0013 13.3307Z"/>
+                                </svg>
+                                <div>
+                                    <p class="button2 white">Settings</p>
+                                    <p class="caption3-medium grey">Additional settings</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" class="dropdown-item">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="#777E91" xmlns="http://www.w3.org/2000/svg" style="transform: rotate(-90deg)">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M8.99858 10.0405C9.02798 10.592 8.60474 11.063 8.05324 11.0924C7.30055 11.1325 6.7044 11.1816 6.23854 11.2307C5.61292 11.2967 5.23278 11.681 5.16959 12.2337C5.07886 13.0274 5 14.2284 5 16.0007C5 17.7729 5.07886 18.974 5.16959 19.7676C5.23289 20.3213 5.61207 20.7045 6.23675 20.7705C7.33078 20.8859 9.13925 21.0007 12 21.0007C14.8608 21.0007 16.6692 20.8859 17.7632 20.7705C18.3879 20.7045 18.7671 20.3213 18.8304 19.7676C18.9211 18.974 19 17.7729 19 16.0007C19 14.2284 18.9211 13.0274 18.8304 12.2337C18.7672 11.681 18.3871 11.2967 17.7615 11.2307C17.2956 11.1816 16.6995 11.1325 15.9468 11.0924C15.3953 11.063 14.972 10.592 15.0014 10.0405C15.0308 9.48904 15.5017 9.06579 16.0532 9.09519C16.8361 9.13693 17.4669 9.18854 17.9712 9.24173C19.4556 9.39828 20.6397 10.4514 20.8175 12.0066C20.9188 12.893 21 14.1722 21 16.0007C21 17.8292 20.9188 19.1084 20.8175 19.9948C20.6398 21.549 19.4585 22.6027 17.9732 22.7594C16.7919 22.8841 14.9108 23.0007 12 23.0007C9.08922 23.0007 7.20806 22.8841 6.02684 22.7594C4.54151 22.6027 3.36021 21.5491 3.18253 19.9948C3.0812 19.1084 3 17.8292 3 16.0007C3 14.1722 3.0812 12.893 3.18253 12.0066C3.36031 10.4514 4.54436 9.39828 6.02877 9.24173C6.53306 9.18854 7.16393 9.13693 7.94676 9.09519C8.49827 9.06579 8.96918 9.48904 8.99858 10.0405Z"/>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M9.20711 6.20711C8.81658 6.59763 8.18342 6.59763 7.79289 6.20711C7.40237 5.81658 7.40237 5.18342 7.79289 4.79289L11.2929 1.29289C11.6834 0.902369 12.3166 0.902369 12.7071 1.29289L16.2071 4.79289C16.5976 5.18342 16.5976 5.81658 16.2071 6.20711C15.8166 6.59763 15.1834 6.59763 14.7929 6.20711L13 4.41421V14C13 14.5523 12.5523 15 12 15C11.4477 15 11 14.5523 11 14V4.41421L9.20711 6.20711Z"/>
+                                </svg>
+                                <div>
+                                    <p class="button2 white">Log out</p>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="burger"></div>
+        </div>
+    </div>
+</header>
+<div class="burger-menu">
+    <nav class="burger-navigation">
+        <a href="" class="burger-nav__element grey body1">Trade</a>
+        <div class="burger-dropdown">
+            <a class="burger-nav__element grey body1 element-with-arrow">Orders</a>
+            <div class="burger-dropdown-container">
+                <a class="body2 white" href="">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="#777E91" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M12 13C8.13401 13 5 16.134 5 20V22C5 22.5523 4.55228 23 4 23C3.44772 23 3 22.5523 3 22V20C3 15.0294 7.02944 11 12 11C16.9706 11 21 15.0294 21 20V22C21 22.5523 20.5523 23 20 23C19.4477 23 19 22.5523 19 22V20C19 16.134 15.866 13 12 13Z"/>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M12 11C14.2091 11 16 9.20914 16 7C16 4.79086 14.2091 3 12 3C9.79086 3 8 4.79086 8 7C8 9.20914 9.79086 11 12 11ZM12 13C15.3137 13 18 10.3137 18 7C18 3.68629 15.3137 1 12 1C8.68629 1 6 3.68629 6 7C6 10.3137 8.68629 13 12 13Z"/>
+                    </svg>
+                    Credit card
+                </a>
+                <a class="body2 white" href="">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="#777E91" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M10.0013 3.33073C8.37444 3.33073 6.87477 3.4649 5.67106 3.62388C4.58774 3.76695 3.77086 4.58383 3.62778 5.66715C3.46881 6.87086 3.33464 8.37054 3.33464 9.9974C3.33464 11.6243 3.46881 13.1239 3.62778 14.3276C3.77086 15.411 4.58774 16.2278 5.67106 16.3709C6.87477 16.5299 8.37444 16.6641 10.0013 16.6641C11.6282 16.6641 13.1278 16.5299 14.3315 16.3709C15.4149 16.2278 16.2317 15.411 16.3748 14.3276C16.5338 13.1239 16.668 11.6243 16.668 9.9974C16.668 8.37054 16.5338 6.87086 16.3748 5.66715C16.2317 4.58383 15.4149 3.76695 14.3315 3.62388C13.1278 3.4649 11.6282 3.33073 10.0013 3.33073ZM5.45284 1.97156C3.62217 2.21333 2.21724 3.61827 1.97546 5.44893C1.80925 6.70746 1.66797 8.28179 1.66797 9.9974C1.66797 11.713 1.80925 13.2873 1.97546 14.5459C2.21724 16.3765 3.62217 17.7815 5.45283 18.0232C6.71137 18.1895 8.2857 18.3307 10.0013 18.3307C11.7169 18.3307 13.2912 18.1895 14.5498 18.0232C16.3804 17.7815 17.7854 16.3765 18.0271 14.5459C18.1934 13.2873 18.3346 11.713 18.3346 9.9974C18.3346 8.28179 18.1934 6.70746 18.0271 5.44893C17.7854 3.61827 16.3804 2.21333 14.5498 1.97156C13.2912 1.80534 11.7169 1.66406 10.0013 1.66406C8.2857 1.66406 6.71137 1.80534 5.45284 1.97156Z"/>
+                        <path d="M7.49953 9.16927C8.42001 9.16927 9.1662 8.42308 9.1662 7.5026C9.1662 6.58213 8.42001 5.83594 7.49953 5.83594C6.57906 5.83594 5.83287 6.58213 5.83287 7.5026C5.83287 8.42308 6.57906 9.16927 7.49953 9.16927Z"/>
+                        <path d="M15.1006 10.592L16.5959 12.0873C16.5443 12.8675 16.469 13.5914 16.3859 14.2343L13.9221 11.7705C13.5967 11.4451 13.069 11.4451 12.7436 11.7705L10.934 13.5802C9.95765 14.5565 8.37474 14.5565 7.39843 13.5802L7.25545 13.4372C6.93001 13.1118 6.40238 13.1118 6.07694 13.4372L4.06939 15.4447C3.83682 15.1294 3.68122 14.751 3.626 14.3328C3.59588 14.1048 3.56665 13.8662 3.53906 13.618L4.89843 12.2587C5.87474 11.2824 7.45765 11.2824 8.43396 12.2587L8.57694 12.4017C8.90238 12.7271 9.43002 12.7271 9.75545 12.4017L11.5651 10.592C12.5414 9.6157 14.1243 9.61571 15.1006 10.592Z"/>
+                    </svg>
+                    Bank deposit
+                </a>
+            </div>
+        </div>
+        <a href="" class="burger-nav__element grey body1">Swap</a>
+        <a href="" class="burger-nav__element grey body1">Staking</a>
+    </nav>
+    <a href="" class="grey-button burger-menu__button" style="font-size: 16px;">Profile settings</a>
+</div>
+<script>
+    let menuToggled = false;
+    const burger = document.querySelector('.burger');
+    const menu = document.querySelector('.burger-menu');
+    const header = document.getElementsByTagName('header')[0];
+    burger.addEventListener('click', () => {
+        if (menuToggled) {
+            menu.style.left = '100%';
+            document.body.style = '';
+            burger.style.backgroundImage = 'url(img/burger-menu.svg)';
+            menuToggled = false;
+        } else {
+            menu.style.left = '0';
+            document.body.style = 'position: fixed';
+            document.body.style.width = '100vw'
+            burger.style.backgroundImage = 'url(img/close.svg)';
+            menuToggled = true;
+        }
+    });
+</script>
+
+<div class="modal" tabindex="-1" id="deposit">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content wallet-modal">
+            <div class="wallet-modal__top">
+                <p></p>
+                <button type="button" class="wallet-modal__close" data-bs-dismiss="modal" aria-label="Close">
+                    <svg width="14" height="14" viewBox="0 0 14 14" fill="currentColor"
+                         xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                              d="M0.292893 0.292893C0.683417 -0.0976309 1.31658 -0.0976309 1.70711 0.292893L7 5.58579L12.2929 0.292893C12.6834 -0.0976311 13.3166 -0.0976311 13.7071 0.292893C14.0976 0.683417 14.0976 1.31658 13.7071 1.70711L8.41421 7L13.7071 12.2929C14.0976 12.6834 14.0976 13.3166 13.7071 13.7071C13.3166 14.0976 12.6834 14.0976 12.2929 13.7071L7 8.41421L1.70711 13.7071C1.31658 14.0976 0.683418 14.0976 0.292893 13.7071C-0.0976309 13.3166 -0.0976309 12.6834 0.292893 12.2929L5.58579 7L0.292893 1.70711C-0.0976311 1.31658 -0.0976311 0.683418 0.292893 0.292893Z"/>
+                    </svg>
+                </button>
+            </div>
+            <div class="wallet-modal__content deposit-content">
+                <div class="success-container">
+                    <img src="img/deposit.png" width="166px" height="166px" alt="">
+                    <p class="body2 white">Select a protocol to see the corresponding address.</p>
+                </div>
+                <div>
+                    <button class="blue-button" data-bs-toggle="modal" data-bs-target="#deposit-currency">Deposit On
+                        Tron
+                    </button>
+                    <button class="blue-button" style="margin-top: 8px" data-bs-toggle="modal"
+                            data-bs-target="#deposit-currency">Deposit On Ethereum
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal" tabindex="-1" id="deposit-currency">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content wallet-modal">
+            <div class="wallet-modal__top">
+                <p class="headline4 white">Deposit USDT</p>
+                <button type="button" class="wallet-modal__close" data-bs-dismiss="modal" aria-label="Close">
+                    <svg width="14" height="14" viewBox="0 0 14 14" fill="currentColor"
+                         xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                              d="M0.292893 0.292893C0.683417 -0.0976309 1.31658 -0.0976309 1.70711 0.292893L7 5.58579L12.2929 0.292893C12.6834 -0.0976311 13.3166 -0.0976311 13.7071 0.292893C14.0976 0.683417 14.0976 1.31658 13.7071 1.70711L8.41421 7L13.7071 12.2929C14.0976 12.6834 14.0976 13.3166 13.7071 13.7071C13.3166 14.0976 12.6834 14.0976 12.2929 13.7071L7 8.41421L1.70711 13.7071C1.31658 14.0976 0.683418 14.0976 0.292893 13.7071C-0.0976309 13.3166 -0.0976309 12.6834 0.292893 12.2929L5.58579 7L0.292893 1.70711C-0.0976311 1.31658 -0.0976311 0.683418 0.292893 0.292893Z"/>
+                    </svg>
+                </button>
+            </div>
+            <p class="body2 grey" style="margin-top: 8px">on Ethereum</p>
+            <div class="wallet-modal__content deposit-content deposit-currency">
+                <div class="success-container">
+                    <img src="img/deposit.png" width="166px" height="166px" alt="">
+                </div>
+                <div class="available-balance">
+                    <div class="green-square" style="margin-top: 6px"></div>
+                    <div>
+                        <p class="body2 white">10075.56213968 USDT</p>
+                        <p class="caption grey">$2,095.35</p>
+                    </div>
+                </div>
+                <p class="body2 white mt32">Address</p>
+                <p class="caption2 grey mt12">Only send USDT to this address. Sending any other asset to this address
+                    may result in the loss of your deposit!</p>
+                <div class="address-input mt32">
+                    <input type="text" class="caption-bold white" value="0xf8aaa2b1842e796191e736434479" readonly>
+                    <button>
+                        <img src="img/coins.svg" alt="">
+                    </button>
+                </div>
+                <div class="dashed-square mt32">
+                    <div class="dashed-square__inner">
+                        <img src="img/logo.svg" width="50px" height="50px">
+                    </div>
+                </div>
+                <p class="caption3-medium grey mt32">Please be sure that the contract address is related to the tokens
+                    that you are depositing.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal" tabindex="-1" id="withdraw">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content wallet-modal">
+            <div class="wallet-modal__top">
+                <p class="headline4 white">Withdraw ETH</p>
+                <button type="button" class="wallet-modal__close" data-bs-dismiss="modal" aria-label="Close">
+                    <svg width="14" height="14" viewBox="0 0 14 14" fill="currentColor"
+                         xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                              d="M0.292893 0.292893C0.683417 -0.0976309 1.31658 -0.0976309 1.70711 0.292893L7 5.58579L12.2929 0.292893C12.6834 -0.0976311 13.3166 -0.0976311 13.7071 0.292893C14.0976 0.683417 14.0976 1.31658 13.7071 1.70711L8.41421 7L13.7071 12.2929C14.0976 12.6834 14.0976 13.3166 13.7071 13.7071C13.3166 14.0976 12.6834 14.0976 12.2929 13.7071L7 8.41421L1.70711 13.7071C1.31658 14.0976 0.683418 14.0976 0.292893 13.7071C-0.0976309 13.3166 -0.0976309 12.6834 0.292893 12.2929L5.58579 7L0.292893 1.70711C-0.0976311 1.31658 -0.0976311 0.683418 0.292893 0.292893Z"/>
+                    </svg>
+                </button>
+            </div>
+            <div class="wallet-modal__content">
+                <label class="hairline2">
+                    address
+                    <input type="text" class="caption-bold grey">
+                </label>
+                <p class="caption3-medium grey" style="margin-top: 12px">Do not send Tether USD unless you are certain
+                    the destination supports TRC-20 transactions. If it does not, you could permanently lose access to
+                    your coins.</p>
+                <div class="save-address">
+                    <div class="checkbox">
+                        <input type="checkbox" checked>
+                        <div class="custom-checkbox"></div>
+                    </div>
+                    <span class="caption-bold white">Save address for next time</span>
+                </div>
+                <div class="available-balance">
+                    <p class="caption-bold white">Available<br>balance</p>
+                    <div>
+                        <p class="body2 white">10075.56213968 USDT</p>
+                        <p class="caption grey">$2,095.35</p>
+                    </div>
+                </div>
+                <label class="hairline2 mt32">
+                    Amount to withdraw
+                    <div class="amount__input">
+                        <input type="text" class="caption-bold grey">
+                        <button class="button2 white">Max amount</button>
+                    </div>
+                </label>
+                <p class="caption3-medium grey" style="margin-top: 12px">$1,000,000.00 daily withdrawal limit
+                    remaining.</p>
+                <label class="hairline2 mt32">
+                    transaction fee
+                    <input type="text" class="caption-bold grey" value="0.00000000 ETH" readonly>
+                </label>
+                <label class="hairline2 mt32">
+                    total
+                    <input type="text" class="caption-bold grey" value="0.00000000 ETH" readonly>
+                </label>
+                <button class="blue-button" data-bs-toggle="modal" data-bs-target="#withdraw-success">Withdraw</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal" tabindex="-1" id="withdraw-success">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content wallet-modal">
+            <div class="wallet-modal__top">
+                <p></p>
+                <button type="button" class="wallet-modal__close" data-bs-dismiss="modal" aria-label="Close">
+                    <svg width="14" height="14" viewBox="0 0 14 14" fill="currentColor"
+                         xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                              d="M0.292893 0.292893C0.683417 -0.0976309 1.31658 -0.0976309 1.70711 0.292893L7 5.58579L12.2929 0.292893C12.6834 -0.0976311 13.3166 -0.0976311 13.7071 0.292893C14.0976 0.683417 14.0976 1.31658 13.7071 1.70711L8.41421 7L13.7071 12.2929C14.0976 12.6834 14.0976 13.3166 13.7071 13.7071C13.3166 14.0976 12.6834 14.0976 12.2929 13.7071L7 8.41421L1.70711 13.7071C1.31658 14.0976 0.683418 14.0976 0.292893 13.7071C-0.0976309 13.3166 -0.0976309 12.6834 0.292893 12.2929L5.58579 7L0.292893 1.70711C-0.0976311 1.31658 -0.0976311 0.683418 0.292893 0.292893Z"/>
+                    </svg>
+                </button>
+            </div>
+            <div class="wallet-modal__content deposit-content" style="margin-top: 0">
+                <div>
+                    <div class="success-container">
+                        <img src="img/withdraw-success.png" width="102px" height="102px" alt="">
+                        <p class="body2 white">You successfully a withdrawal<br><span class="green">100.00 USDT</span>
+                            from Binarrian</p>
+                    </div>
+                    <div class="status-container mt32">
+                        <div class="status-transaction">
+                            <div>
+                                <p class="caption grey">Status</p>
+                                <p class="caption-bold green">Completed</p>
+                            </div>
+                            <div>
+                                <p class="caption grey">Transaction ID</p>
+                                <p class="caption-bold white">0msx836930...87r398</p>
+                            </div>
+                        </div>
+                        <p class="caption grey">Address</p>
+                        <p class="caption-bold white">0xf8aaa2b1842e796191e736434sda....479</p>
+                    </div>
+                </div>
+                <button class="blue-button mt32" data-bs-dismiss="modal" aria-label="Close">Wallet</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal" tabindex="-1" id="transfer">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content wallet-modal">
+            <div class="wallet-modal__top">
+                <p class="headline4 white">Transfer</p>
+                <button type="button" class="wallet-modal__close" data-bs-dismiss="modal" aria-label="Close">
+                    <svg width="14" height="14" viewBox="0 0 14 14" fill="currentColor"
+                         xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                              d="M0.292893 0.292893C0.683417 -0.0976309 1.31658 -0.0976309 1.70711 0.292893L7 5.58579L12.2929 0.292893C12.6834 -0.0976311 13.3166 -0.0976311 13.7071 0.292893C14.0976 0.683417 14.0976 1.31658 13.7071 1.70711L8.41421 7L13.7071 12.2929C14.0976 12.6834 14.0976 13.3166 13.7071 13.7071C13.3166 14.0976 12.6834 14.0976 12.2929 13.7071L7 8.41421L1.70711 13.7071C1.31658 14.0976 0.683418 14.0976 0.292893 13.7071C-0.0976309 13.3166 -0.0976309 12.6834 0.292893 12.2929L5.58579 7L0.292893 1.70711C-0.0976311 1.31658 -0.0976311 0.683418 0.292893 0.292893Z"/>
+                    </svg>
+                </button>
+            </div>
+            <div class="wallet-modal__content">
+                <div class="available-balance" style="margin-top: 0">
+                    <p class="caption-bold white">Available<br>balance</p>
+                    <div>
+                        <p class="body2 white">10075.56213968 USDT</p>
+                        <p class="caption grey">$2,095.35</p>
+                    </div>
+                </div>
+                <label class="hairline2 mt32">
+                    from
+                    <select class="caption-bold white">
+                        <option>Margin</option>
+                    </select>
+                </label>
+                <button class="from-to-switch">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="#E6E8EC" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                              d="M4.86225 6.80734C5.1226 7.06769 5.54471 7.06769 5.80506 6.80734L7.66699 4.94541L9.52892 6.80734C9.78927 7.06769 10.2114 7.06769 10.4717 6.80734C10.7321 6.54699 10.7321 6.12488 10.4717 5.86453L8.1384 3.5312C7.87805 3.27085 7.45594 3.27085 7.19559 3.5312L4.86225 5.86453C4.6019 6.12488 4.6019 6.54699 4.86225 6.80734Z"/>
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                              d="M4.86225 9.19656C5.1226 8.93621 5.54471 8.93621 5.80506 9.19656L7.66699 11.0585L9.52892 9.19656C9.78927 8.93621 10.2114 8.93621 10.4717 9.19656C10.7321 9.45691 10.7321 9.87902 10.4717 10.1394L8.1384 12.4727C7.87805 12.7331 7.45594 12.7331 7.19559 12.4727L4.86225 10.1394C4.6019 9.87902 4.6019 9.45691 4.86225 9.19656Z"/>
+                    </svg>
+                </button>
+                <label class="hairline2 mt32">
+                    to
+                    <select class="caption-bold white">
+                        <option>Fiat and Spot</option>
+                    </select>
+                </label>
+                <label class="hairline2 mt32">
+                    coin
+                    <select class="caption-bold white">
+                        <option>ETH</option>
+                    </select>
+                </label>
+                <label class="hairline2 mt32">
+                    Amount to withdraw
+                    <div class="amount__input">
+                        <input type="text" class="caption-bold grey">
+                        <button class="button2 white">Max amount</button>
+                    </div>
+                </label>
+                <p class="caption3-medium grey" style="margin-top: 12px">2.14646231064565653 ETH available</p>
+                <div class="blue-button">Transfer</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="wallet-container">
+    <div class="left-nav">
+        <ul>
+            <li><a href="" class="button2 grey"><img src="img/wallet-overview.svg" alt="">Overview</a></li>
+            <li><a href="" class="button2 grey"><img src="img/wallet-margin.svg" alt="">Margin</a></li>
+            <li><a href="" class="button2 grey"><img src="img/wallet-spot.svg" alt="">Spot</a></li>
+            <li class="active"><a href="" class="button2 grey"><img src="img/blue-point.svg" alt="">Staking</a></li>
+            <li><a href="" class="button2 grey"><img src="img/green-point.svg" alt="">Swap</a></li>
+            <li class="divider"></li>
+            <li><a class="button2 grey" data-bs-toggle="modal" data-bs-target="#transfer"><img
+                    src="img/wallet-transfer.svg" alt="">Transfer</a></li>
+        </ul>
+        <div class="left-buttons">
+            <a class="button2 white blue-button" data-bs-toggle="modal" data-bs-target="#deposit">Deposit</a>
+            <a class="button2 white grey-button" data-bs-toggle="modal" data-bs-target="#withdraw">Widthdraw</a>
+            <a class="button2 white grey-button transfer" data-bs-toggle="modal" data-bs-target="#transfer">Transfer</a>
+        </div>
+        <select name="" class="left-nav__select caption-bold white">
+            <option value="">Overview</option>
+            <option value="">Margin</option>
+            <option value="">Fiat and Spot</option>
+            <option value="" selected>Staking</option>
+            <option value="">Swap</option>
+        </select>
+    </div>
+    <div class="wallet-main">
+        <div class="overview">
+            <div class="overview-left">
+                <p class="headline4 white overview__title">Staking</p>
+                <p class="caption" style="color: #B1B5C4">Total earning</p>
+                <div class="balance">
+                    <span class="body1 white">0.27894652</span>
+                    <span class="currency-code hairline2 black">BTC</span>
+                </div>
+                <p class="body2 grey">$10,098.36</p>
+            </div>
+            <div class="overview-right">
+                <p class="overview__title-mobile body1 white">Staking</p>
+                <div class="search-coin">
+                    <input class="caption2 grey" type="text" placeholder="Search coin">
+                    <button><img src="img/search.svg" alt=""></button>
+                </div>
+                <select name="" id="" class="currency-select button2 white">
+                    <option value="">USD</option>
+                    <option value="">EUR</option>
+                    <option value="">RUB</option>
+                </select>
+            </div>
+        </div>
+        <p class="caption2-medium grey">Stake</p>
+        <div class="stake-blocks">
+            <div class="stake__block">
+                <div>
+                    <p class="caption-bold white">
+                        <svg style="margin-right: 8px" width="12" height="12" viewBox="0 0 12 12" fill="none"
+                             xmlns="http://www.w3.org/2000/svg">
+                            <rect width="12" height="12" rx="4" fill="#26A17B"/>
+                        </svg>
+                        Input
+                    </p>
+                    <p class="caption-bold white">
+                        <svg style="margin-right: 8px" width="12" height="12" viewBox="0 0 12 12" fill="none"
+                             xmlns="http://www.w3.org/2000/svg">
+                            <rect width="12" height="12" rx="4" fill="#F7931A"/>
+                        </svg>
+                        Balance: 0.1
+                    </p>
+                </div>
+                <div style="margin-top: 20px">
+                    <p class="caption-bold grey">0.05</p>
+                    <select class="caption-bold grey staking__select">
+                        <option>BTC</option>
+                    </select>
+                </div>
+            </div>
+            <div class="stake__block">
+                <div>
+                    <p class="caption-bold white">
+                        <svg style="margin-right: 8px" width="12" height="12" viewBox="0 0 12 12" fill="none"
+                             xmlns="http://www.w3.org/2000/svg">
+                            <rect width="12" height="12" rx="4" fill="#D40325"/>
+                        </svg>
+                        Sent
+                    </p>
+                    <p class="caption-bold white">
+                        <svg style="margin-right: 8px" width="12" height="12" viewBox="0 0 12 12" fill="none"
+                             xmlns="http://www.w3.org/2000/svg">
+                            <rect width="12" height="12" rx="4" fill="#9BFFBF"/>
+                        </svg>
+                        Received
+                    </p>
+                </div>
+                <div style="margin-top: 20px">
+                    <p class="caption-bold grey">
+                        <img style="margin-right: 8px" width="20px" src="img/btc.svg" alt="">
+                        0.05
+                    </p>
+                    <p class="caption-bold grey">
+                        <img style="margin-right: 8px" width="20px" src="img/btc.svg" alt="">
+                        0.11
+                    </p>
+                </div>
+            </div>
+            <div class="stake__block">
+                <div>
+                    <button class="caption-bold grey count-button">-</button>
+                    <p style="margin: 0 8px" class="caption-bold white">3</p>
+                    <button class="caption-bold grey count-button">+</button>
+                    <select class="caption-bold grey">
+                        <option>Months</option>
+                    </select>
+                </div>
+                <p class="caption-bold grey stake__text">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor"
+                         xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                              d="M8 13C10.7614 13 13 10.7614 13 8C13 5.23858 10.7614 3 8 3C5.23858 3 3 5.23858 3 8C3 10.7614 5.23858 13 8 13ZM8 14.25C11.4518 14.25 14.25 11.4518 14.25 8C14.25 4.54822 11.4518 1.75 8 1.75C4.54822 1.75 1.75 4.54822 1.75 8C1.75 11.4518 4.54822 14.25 8 14.25Z"/>
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                              d="M8 4.875C7.65482 4.875 7.375 5.15482 7.375 5.5C7.375 5.84518 7.65482 6.125 8 6.125C8.34518 6.125 8.625 5.84518 8.625 5.5C8.625 5.15482 8.34518 4.875 8 4.875ZM8 7.375C7.65482 7.375 7.375 7.65482 7.375 8V10.5C7.375 10.8452 7.65482 11.125 8 11.125C8.34518 11.125 8.625 10.8452 8.625 10.5V8C8.625 7.65482 8.34518 7.375 8 7.375Z"/>
+                    </svg>
+                    You can stake from 30 to 120 days.
+                </p>
+                <button class="grey-button button2 white">Go Stake</button>
+            </div>
+        </div>
+        <p class="caption2-medium grey">Locked Staking</p>
+        <table class="asset-balances staking-table">
+
+            <tr>
+                <th class="caption2 white">Token</th>
+                <th class="caption2 white ta-center">Est. APY</th>
+                <th class="caption2 white ta-center">Duration (Days)</th>
+                <th class="caption2 white ta-center">Min Locked Amount</th>
+                <th class="caption2 white ta-right">Stake</th>
+            </tr>
+
+            <tr>
+                <td>
+                    <div class="td__container">
+                        <img src="img/btc.svg" alt="" width="32px">
+                        <div class="asset-title">
+                            <p class="caption-bold white">BTC</p>
+                            <p class="caption grey">Bitcoin</p>
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <div class="td__container d-flex justify-content-center">
+                        <div class="earn hairline2 black" style="height: fit-content">22%</div>
+                    </div>
+                </td>
+                <td class="ta-center">
+                    <div class="td__container">
+                        <p class="caption white">120</p>
+                    </div>
+                </td>
+                <td class="ta-center">
+                    <div class="td__container">
+                        <p class="caption white">1ZIL</p>
+                    </div>
+                </td>
+                <td>
+                    <div class="td__container d-flex justify-content-end">
+                        <button class="grey-button button2 white" style="height: fit-content">Go Stake</button>
+                    </div>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <div class="td__container">
+                        <img src="img/btc.svg" alt="" width="32px">
+                        <div class="asset-title">
+                            <p class="caption-bold white">BTC</p>
+                            <p class="caption grey">Bitcoin</p>
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <div class="td__container d-flex justify-content-center">
+                        <div class="earn hairline2 black" style="height: fit-content">22%</div>
+                    </div>
+                </td>
+                <td class="ta-center">
+                    <div class="td__container">
+                        <p class="caption white">120</p>
+                    </div>
+                </td>
+                <td class="ta-center">
+                    <div class="td__container">
+                        <p class="caption white">1ZIL</p>
+                    </div>
+                </td>
+                <td>
+                    <div class="td__container d-flex justify-content-end">
+                        <button class="grey-button button2 white" style="height: fit-content">Go Stake</button>
+                    </div>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <div class="td__container">
+                        <img src="img/btc.svg" alt="" width="32px">
+                        <div class="asset-title">
+                            <p class="caption-bold white">BTC</p>
+                            <p class="caption grey">Bitcoin</p>
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <div class="td__container d-flex justify-content-center">
+                        <div class="earn hairline2 black" style="height: fit-content">22%</div>
+                    </div>
+                </td>
+                <td class="ta-center">
+                    <div class="td__container">
+                        <p class="caption white">120</p>
+                    </div>
+                </td>
+                <td class="ta-center">
+                    <div class="td__container">
+                        <p class="caption white">1ZIL</p>
+                    </div>
+                </td>
+                <td>
+                    <div class="td__container d-flex justify-content-end">
+                        <button class="grey-button button2 white" style="height: fit-content">Go Stake</button>
+                    </div>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <div class="td__container">
+                        <img src="img/btc.svg" alt="" width="32px">
+                        <div class="asset-title">
+                            <p class="caption-bold white">BTC</p>
+                            <p class="caption grey">Bitcoin</p>
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <div class="td__container d-flex justify-content-center">
+                        <div class="earn hairline2 black" style="height: fit-content">22%</div>
+                    </div>
+                </td>
+                <td class="ta-center">
+                    <div class="td__container">
+                        <p class="caption white">120</p>
+                    </div>
+                </td>
+                <td class="ta-center">
+                    <div class="td__container">
+                        <p class="caption white">1ZIL</p>
+                    </div>
+                </td>
+                <td>
+                    <div class="td__container d-flex justify-content-end">
+                        <button class="grey-button button2 white" style="height: fit-content">Go Stake</button>
+                    </div>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <div class="td__container">
+                        <img src="img/btc.svg" alt="" width="32px">
+                        <div class="asset-title">
+                            <p class="caption-bold white">BTC</p>
+                            <p class="caption grey">Bitcoin</p>
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <div class="td__container d-flex justify-content-center">
+                        <div class="earn hairline2 black" style="height: fit-content">22%</div>
+                    </div>
+                </td>
+                <td class="ta-center">
+                    <div class="td__container">
+                        <p class="caption white">120</p>
+                    </div>
+                </td>
+                <td class="ta-center">
+                    <div class="td__container">
+                        <p class="caption white">1ZIL</p>
+                    </div>
+                </td>
+                <td>
+                    <div class="td__container d-flex justify-content-end">
+                        <button class="grey-button button2 white" style="height: fit-content">Go Stake</button>
+                    </div>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <div class="td__container">
+                        <img src="img/btc.svg" alt="" width="32px">
+                        <div class="asset-title">
+                            <p class="caption-bold white">BTC</p>
+                            <p class="caption grey">Bitcoin</p>
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <div class="td__container d-flex justify-content-center">
+                        <div class="earn hairline2 black" style="height: fit-content">22%</div>
+                    </div>
+                </td>
+                <td class="ta-center">
+                    <div class="td__container">
+                        <p class="caption white">120</p>
+                    </div>
+                </td>
+                <td class="ta-center">
+                    <div class="td__container">
+                        <p class="caption white">1ZIL</p>
+                    </div>
+                </td>
+                <td>
+                    <div class="td__container d-flex justify-content-end">
+                        <button class="grey-button button2 white" style="height: fit-content">Go Stake</button>
+                    </div>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <div class="td__container">
+                        <img src="img/btc.svg" alt="" width="32px">
+                        <div class="asset-title">
+                            <p class="caption-bold white">BTC</p>
+                            <p class="caption grey">Bitcoin</p>
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <div class="td__container d-flex justify-content-center">
+                        <div class="earn hairline2 black" style="height: fit-content">22%</div>
+                    </div>
+                </td>
+                <td class="ta-center">
+                    <div class="td__container">
+                        <p class="caption white">120</p>
+                    </div>
+                </td>
+                <td class="ta-center">
+                    <div class="td__container">
+                        <p class="caption white">1ZIL</p>
+                    </div>
+                </td>
+                <td>
+                    <div class="td__container d-flex justify-content-end">
+                        <button class="grey-button button2 white" style="height: fit-content">Go Stake</button>
+                    </div>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <div class="td__container">
+                        <img src="img/btc.svg" alt="" width="32px">
+                        <div class="asset-title">
+                            <p class="caption-bold white">BTC</p>
+                            <p class="caption grey">Bitcoin</p>
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <div class="td__container d-flex justify-content-center">
+                        <div class="earn hairline2 black" style="height: fit-content">22%</div>
+                    </div>
+                </td>
+                <td class="ta-center">
+                    <div class="td__container">
+                        <p class="caption white">120</p>
+                    </div>
+                </td>
+                <td class="ta-center">
+                    <div class="td__container">
+                        <p class="caption white">1ZIL</p>
+                    </div>
+                </td>
+                <td>
+                    <div class="td__container d-flex justify-content-end">
+                        <button class="grey-button button2 white" style="height: fit-content">Go Stake</button>
+                    </div>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <div class="td__container">
+                        <img src="img/btc.svg" alt="" width="32px">
+                        <div class="asset-title">
+                            <p class="caption-bold white">BTC</p>
+                            <p class="caption grey">Bitcoin</p>
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <div class="td__container d-flex justify-content-center">
+                        <div class="earn hairline2 black" style="height: fit-content">22%</div>
+                    </div>
+                </td>
+                <td class="ta-center">
+                    <div class="td__container">
+                        <p class="caption white">120</p>
+                    </div>
+                </td>
+                <td class="ta-center">
+                    <div class="td__container">
+                        <p class="caption white">1ZIL</p>
+                    </div>
+                </td>
+                <td>
+                    <div class="td__container d-flex justify-content-end">
+                        <button class="grey-button button2 white" style="height: fit-content">Go Stake</button>
+                    </div>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <div class="td__container">
+                        <img src="img/btc.svg" alt="" width="32px">
+                        <div class="asset-title">
+                            <p class="caption-bold white">BTC</p>
+                            <p class="caption grey">Bitcoin</p>
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <div class="td__container d-flex justify-content-center">
+                        <div class="earn hairline2 black" style="height: fit-content">22%</div>
+                    </div>
+                </td>
+                <td class="ta-center">
+                    <div class="td__container">
+                        <p class="caption white">120</p>
+                    </div>
+                </td>
+                <td class="ta-center">
+                    <div class="td__container">
+                        <p class="caption white">1ZIL</p>
+                    </div>
+                </td>
+                <td>
+                    <div class="td__container d-flex justify-content-end">
+                        <button class="grey-button button2 white" style="height: fit-content">Go Stake</button>
+                    </div>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <div class="td__container">
+                        <img src="img/btc.svg" alt="" width="32px">
+                        <div class="asset-title">
+                            <p class="caption-bold white">BTC</p>
+                            <p class="caption grey">Bitcoin</p>
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <div class="td__container d-flex justify-content-center">
+                        <div class="earn hairline2 black" style="height: fit-content">22%</div>
+                    </div>
+                </td>
+                <td class="ta-center">
+                    <div class="td__container">
+                        <p class="caption white">120</p>
+                    </div>
+                </td>
+                <td class="ta-center">
+                    <div class="td__container">
+                        <p class="caption white">1ZIL</p>
+                    </div>
+                </td>
+                <td>
+                    <div class="td__container d-flex justify-content-end">
+                        <button class="grey-button button2 white" style="height: fit-content">Go Stake</button>
+                    </div>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <div class="td__container">
+                        <img src="img/btc.svg" alt="" width="32px">
+                        <div class="asset-title">
+                            <p class="caption-bold white">BTC</p>
+                            <p class="caption grey">Bitcoin</p>
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <div class="td__container d-flex justify-content-center">
+                        <div class="earn hairline2 black" style="height: fit-content">22%</div>
+                    </div>
+                </td>
+                <td class="ta-center">
+                    <div class="td__container">
+                        <p class="caption white">120</p>
+                    </div>
+                </td>
+                <td class="ta-center">
+                    <div class="td__container">
+                        <p class="caption white">1ZIL</p>
+                    </div>
+                </td>
+                <td>
+                    <div class="td__container d-flex justify-content-end">
+                        <button class="grey-button button2 white" style="height: fit-content">Go Stake</button>
+                    </div>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <div class="td__container">
+                        <img src="img/btc.svg" alt="" width="32px">
+                        <div class="asset-title">
+                            <p class="caption-bold white">BTC</p>
+                            <p class="caption grey">Bitcoin</p>
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <div class="td__container d-flex justify-content-center">
+                        <div class="earn hairline2 black" style="height: fit-content">22%</div>
+                    </div>
+                </td>
+                <td class="ta-center">
+                    <div class="td__container">
+                        <p class="caption white">120</p>
+                    </div>
+                </td>
+                <td class="ta-center">
+                    <div class="td__container">
+                        <p class="caption white">1ZIL</p>
+                    </div>
+                </td>
+                <td>
+                    <div class="td__container d-flex justify-content-end">
+                        <button class="grey-button button2 white" style="height: fit-content">Go Stake</button>
+                    </div>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <div class="td__container">
+                        <img src="img/btc.svg" alt="" width="32px">
+                        <div class="asset-title">
+                            <p class="caption-bold white">BTC</p>
+                            <p class="caption grey">Bitcoin</p>
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <div class="td__container d-flex justify-content-center">
+                        <div class="earn hairline2 black" style="height: fit-content">22%</div>
+                    </div>
+                </td>
+                <td class="ta-center">
+                    <div class="td__container">
+                        <p class="caption white">120</p>
+                    </div>
+                </td>
+                <td class="ta-center">
+                    <div class="td__container">
+                        <p class="caption white">1ZIL</p>
+                    </div>
+                </td>
+                <td>
+                    <div class="td__container d-flex justify-content-end">
+                        <button class="grey-button button2 white" style="height: fit-content">Go Stake</button>
+                    </div>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <div class="td__container">
+                        <img src="img/btc.svg" alt="" width="32px">
+                        <div class="asset-title">
+                            <p class="caption-bold white">BTC</p>
+                            <p class="caption grey">Bitcoin</p>
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <div class="td__container d-flex justify-content-center">
+                        <div class="earn hairline2 black" style="height: fit-content">22%</div>
+                    </div>
+                </td>
+                <td class="ta-center">
+                    <div class="td__container">
+                        <p class="caption white">120</p>
+                    </div>
+                </td>
+                <td class="ta-center">
+                    <div class="td__container">
+                        <p class="caption white">1ZIL</p>
+                    </div>
+                </td>
+                <td>
+                    <div class="td__container d-flex justify-content-end">
+                        <button class="grey-button button2 white" style="height: fit-content">Go Stake</button>
+                    </div>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <div class="td__container">
+                        <img src="img/btc.svg" alt="" width="32px">
+                        <div class="asset-title">
+                            <p class="caption-bold white">BTC</p>
+                            <p class="caption grey">Bitcoin</p>
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <div class="td__container d-flex justify-content-center">
+                        <div class="earn hairline2 black" style="height: fit-content">22%</div>
+                    </div>
+                </td>
+                <td class="ta-center">
+                    <div class="td__container">
+                        <p class="caption white">120</p>
+                    </div>
+                </td>
+                <td class="ta-center">
+                    <div class="td__container">
+                        <p class="caption white">1ZIL</p>
+                    </div>
+                </td>
+                <td>
+                    <div class="td__container d-flex justify-content-end">
+                        <button class="grey-button button2 white" style="height: fit-content">Go Stake</button>
+                    </div>
+                </td>
+            </tr>
+
+        </table>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+</body>
+</html>
