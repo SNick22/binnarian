@@ -7,10 +7,12 @@
     <list default="true" id="b79b7fe8-39e6-4b23-9501-d7477cb1e50a" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/css/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/sass/main.sass" beforeDir="false" afterPath="$PROJECT_DIR$/app/sass/main.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/staking.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/staking.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/swap.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/swap.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/dist/css/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/staking.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/staking.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/swap.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/swap.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -98,7 +100,7 @@
       <workItem from="1670242149300" duration="5064000" />
       <workItem from="1670766781353" duration="10989000" />
       <workItem from="1671088674185" duration="5549000" />
-      <workItem from="1671191103793" duration="9115000" />
+      <workItem from="1671191103793" duration="11145000" />
     </task>
     <servers />
   </component>

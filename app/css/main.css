@@ -5112,3 +5112,9 @@ textarea.ticket-input::-webkit-scrollbar {
     margin-bottom: 64px;
   }
 }
+
+.transparent-void {
+  outline: none;
+  background: rgba(0, 0, 0, 0);
+  width: 36px;
+}
